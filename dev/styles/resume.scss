@@ -1,0 +1,55 @@
+@import 'mixins.scss';
+@import 'footer.scss';
+
+.titles {
+    margin-top: 5rem;
+} 
+
+.resume {
+    padding: 5rem 0;
+    color: #222222;
+	background-color:#FFFFFF;
+
+		.exp {
+			margin-bottom: 5rem;
+		}
+		
+		.cv {
+			margin: 0 auto;
+			width: 60%;
+			
+			.cvList {
+				display: flex;
+				justify-content: space-between;
+				padding: 1rem 0;
+				border-bottom: 1px solid #CCCCCC;
+			}
+		}
+
+		.edList {
+			display: flex;
+		}
+}
+
+
+// media queries //
+@media only screen 
+  and (min-device-width: 360px) 
+  and (max-device-width: 667px) 
+  and (-webkit-min-device-pixel-ratio: 2) { 
+		.resume .cv {
+			width: 90%;
+			}
+		
+		
+			.title {
+				width: 60%;
+			}
+
+			.date {
+				width: 40%;
+				text-align: end;
+			}
+		
+
+  }

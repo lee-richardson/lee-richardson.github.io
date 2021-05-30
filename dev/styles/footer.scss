@@ -1,0 +1,72 @@
+
+@import 'mixins.scss';
+
+/* footer =======================================*/
+
+.footerContent {
+	@include orange;
+	display: flex;
+	flex-direction: row;
+	padding: 5rem 0;
+	width: 100%;
+	justify-content: space-between;
+
+	.servicesel {
+		font-family: 'Playfair Display', serif;
+	}
+	
+	a {
+		font-family: 'Playfair Display', serif;
+		font-weight: 400;
+		color: #18293F;
+
+		// &:hover {
+		// 	color: #00e;
+		// }
+	}
+
+	ul li {
+		color: #18293F;
+		padding: 0.2rem 0;
+		@include bodyLink;
+	}
+
+	.weather {
+		.weatherTextHolder {
+			font-style: italic;
+		}
+		
+		@include bodyLink;
+	}
+	
+
+
+}
+
+/* end of footer =======================================*/
+
+
+@media only screen 
+  and (min-device-width: 360px) 
+  and (max-device-width: 667px) 
+  and (-webkit-min-device-pixel-ratio: 2) { 
+
+
+.footerContent {
+	flex-direction: column;
+	padding: 3rem 0;
+	width: 100%;
+
+	.footerCol {
+		margin: 1rem 0;
+	}
+
+	.footerList li {
+		padding: 0.5rem 0;
+		
+		a {
+			font-size: 14px;
+			}
+		}
+	}
+}

@@ -1,0 +1,127 @@
+
+@import 'mixins.scss';
+@import 'footer.scss';
+
+.header {
+	display: flex;
+}
+
+.headerImage {
+	padding: 3rem 0;
+
+	img {
+		height: 20rem;
+		rotate: 2deg;
+	}
+}
+
+.caseIntro {
+	display: flex;
+	flex-direction: column;
+
+	.caseList {
+		display: flex;
+		justify-content: space-between;
+		border-top: 1px solid #000;
+		padding: 0.5rem 0 2rem 0;
+
+		.caseBlurb {
+			flex-direction: column;
+			width: 25%;
+
+			.title {
+				margin: 0.5rem 0;
+			}
+
+			.content {
+				color: #000;
+				margin: 0;
+			}
+		}
+	}
+}
+
+.caseStudy {
+	width: 60%;
+	margin: 5rem auto;
+
+	.caseStudyTitle {
+		margin-bottom: 5rem;
+	}
+
+	.caseTitle {
+		margin-top: 5rem;
+	}
+}
+
+.mainContent {
+	background-color: #fff;
+	padding: 5rem 0;
+
+	p {
+		text-align: left;
+	}
+
+	li {
+		color: #222;
+		line-height: 1.5;
+		font-style: italic;
+	}
+
+	.caseStudyImg {
+		text-align: center;
+
+		.result {
+			max-width: 80%;
+		} 
+	}
+
+	img {
+		max-width: 100%;
+		margin-top: 3rem;
+	}
+
+	.secondaryCaseTitle {
+		margin-top: 3rem;
+	}
+
+	.endMessageText {
+		text-align: center;
+		margin-top: 5rem;
+		font-weight: 700;
+	}
+
+}
+
+
+
+// media queries //
+@media only screen 
+  and (min-device-width: 360px) 
+  and (max-device-width: 667px) 
+  and (-webkit-min-device-pixel-ratio: 2) { 
+		.headerImage img {
+			height: 10rem;
+		}
+
+		.caseIntro .caseList {
+			flex-direction: column;
+			.caseBlurb {
+				width: 100%;
+				margin-top: 1rem;
+			}
+		}
+
+		.caseStudy {
+			margin: 0 auto;
+			width: 80%;
+
+			.caseStudyTitle {
+				margin-bottom: 3rem;
+			}
+		}
+
+		.mainContent img {
+			margin: 1rem 0;
+		}
+  }
