@@ -1,0 +1,47 @@
+@import 'mixins.scss';
+
+ul a {
+    font-weight: 400;
+}
+
+.about {
+
+
+.titles img {
+    width: 100%;
+}
+    
+    .aboutText {
+        width: 60%;
+        margin: 2rem auto;
+    }
+
+    h2 {
+        margin-bottom: 0;
+    }
+
+}    
+    
+    @media only screen 
+  and (min-device-width: 360px) 
+  and (max-device-width: 667px) 
+  and (-webkit-min-device-pixel-ratio: 2) { 
+
+    .headerContainer .header .titles {
+
+        .aboutPhoto {
+            width: 100%;
+            margin: 1.5rem 0;
+        }
+    }
+
+    .contentContainer .aboutHeader {
+        height: 45vh;
+    
+        .titles {
+            display: flex;
+            flex-direction: column;
+        }
+    }
+    
+}

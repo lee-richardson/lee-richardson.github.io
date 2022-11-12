@@ -1,0 +1,65 @@
+@import 'mixins.scss';
+@import 'footer.scss';
+
+.titles {
+    margin-top: 5rem;
+} 
+
+.cvContainer {
+	height: 30vh;
+}
+
+.resume {
+	padding: 5rem 0;
+
+			.cv {
+			margin: 0 auto;
+			width: 60%;
+			
+			.cvList {
+				display: flex;
+				justify-content: space-between;
+				padding: 1rem 0;
+				border-bottom: 1px solid #CCCCCC;
+			}
+		}
+
+		.education {
+			margin-top: 5rem;
+		}
+
+		.edList {
+			display: flex;
+		}
+}
+
+.starContainer {
+	margin-top: 2.5rem;
+	display: flex;
+	justify-content: center;
+}
+
+
+// media queries //
+@media only screen 
+  and (min-device-width: 360px) 
+  and (max-device-width: 667px) 
+  and (-webkit-min-device-pixel-ratio: 2) { 
+		.resume .cv {
+			width: 90%;
+			}
+		
+			.title {
+				width: 50%;
+			}
+
+			.date {
+				width: 50%;
+			}
+
+			.cvContainer {
+				height: 25vh;
+			}
+		
+
+  }
