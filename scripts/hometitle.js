@@ -9,7 +9,7 @@ function homeReplace(id, content) {
 };
 
 var containerId = "change";
-var strings = ["a Product designer", "🇬🇧🇨🇦", "designing in Figma", "a former journalist", "a fan of dogs"];
+var strings = ["a Product designer", "lære dansk 🧠", "designing in Figma", "a UX writer", "a fan of dogs"];
 var count = 0;
 var timerId = setInterval(cycle, 1200);
 function cycle() {

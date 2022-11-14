@@ -13,21 +13,6 @@ function handleError(err) {
     }, 1000)
   }
 
-  
-  // function updateText() {
-  //   let hoursText = document.querySelector(".changeText");
-  //   var hour = new Date().getHours();
-  // if (hour >= 8 && hour <= 18)
-  // {
-  //   hoursText.innerHTML = "open";
-  // }
-  // else
-  // {
-  //   hoursText.innerHTML = "closed";
-  // }
-  // setInterval(updateText, 1000)
-  // }
-
   function updateText() {
     setTimeout(function() {
     let hoursText = document.querySelector(".changeText");
