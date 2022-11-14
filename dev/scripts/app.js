@@ -6,7 +6,7 @@
   };
 
   var containerId = "change";
-  var strings = ["a product designer.", "a front-end developer.", "a former journalist.", "designing in Figma.", "a fan of dogs.", "an Android user.", "an expat 🇬🇧🇨🇦 in CPH."];
+  var strings = ["a Product designer", "lære dansk 🧠", "designing in Figma", "a UX writer", "a fan of dogs"];
   var count = 0;
   var timerId = setInterval(cycle, 1700);
   function cycle() {
