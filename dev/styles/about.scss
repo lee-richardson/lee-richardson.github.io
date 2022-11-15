@@ -7,10 +7,10 @@ ul a {
 .about {
 
 
-.titles img {
-    width: 100%;
-}
-    
+    .titles img {
+        width: 100%;
+    }
+
     .aboutText {
         width: 60%;
         margin: 2rem auto;
@@ -20,12 +20,9 @@ ul a {
         margin-bottom: 0;
     }
 
-}    
-    
-    @media only screen 
-  and (min-device-width: 360px) 
-  and (max-device-width: 667px) 
-  and (-webkit-min-device-pixel-ratio: 2) { 
+}
+
+@media only screen and (min-device-width: 360px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) {
 
     .headerContainer .header .titles {
 
@@ -36,12 +33,12 @@ ul a {
     }
 
     .contentContainer .aboutHeader {
-        height: 45vh;
-    
+        height: 55vh;
+
         .titles {
             display: flex;
             flex-direction: column;
         }
     }
-    
+
 }
