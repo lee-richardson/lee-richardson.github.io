@@ -7,7 +7,7 @@ function homeReplace(id, content) {
 };
 
 var containerId = "change";
-var strings = ["a UX designer", "lærer dansk", "solving problems", "a UX writer", "a researcher"];
+var strings = ["a web designer", "a UX designer", "lærer dansk", "solving problems", "a UX writer", "a researcher"];
 var count = 0;
 var timerId = setInterval(cycle, 2000);
 function cycle() {
