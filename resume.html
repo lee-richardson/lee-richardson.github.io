@@ -15,9 +15,7 @@
 	<meta charset="UTF-8">
 	<title>CV | Lee Richardson</title>
 	<link rel="stylesheet" type="text/css" href="/public/styles/style.css">
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+
 	<link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
 	<meta name="viewport" content="width=device-width,initial-scale=1.0">
 	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
@@ -31,21 +29,26 @@
 	<section class="cvContainer">
 		<section class="contentContainer">
 			<nav class="menu">
-				<ul class="menu-head">
-					<li><a href="index.html">Lee</a></li>
-				</ul>
-				<ul class="menu-list">
-					<li><a class="link" href="about.html">About</a></li>
-					<li><a class="link" href="resume.html">CV</a></li>
-					<!-- <li><a class="link" href="resume.html">EN</a></li>
-					<li><a class="link" href="./dk/genoptag.html">DK</a></li> -->
-				</ul>
+				<div class="menuContainer">
+					<ul class="menu-head">
+						<li><a href="./index.html">Lee Richardson</a></li>
+					</ul>
+					<ul class="menu-list">
+						<li><a class="link" href="./about.html">About</a></li>
+						<li>
+							<a class="link" href="./resume.html">CV</a>
+						</li>
+
+					</ul>
+
+				</div>
 			</nav>
 
-			<section class="header">
-				<section class="titles" tabindex=0>
-					<h1>Skills and experience 👨🏻‍💻</h1>
+			<section class="header cvheader">
+				<section class="titles cvtitles" tabindex=0>
+					<h1>CV & skills</h1>
 				</section>
+
 			</section><!-- end of header -->
 		</section><!-- end of container -->
 	</section>
@@ -56,33 +59,61 @@
 			<div class="work whatido">
 				<section class="whatgrid grid">
 					<div class="whatelement">
-						<h3>Tools ↴</h3>
-						<p>Figma, Figjam, Sketch, FullStory, Visual Studio Code, Devtools, InDesign, Photoshop, Miro,
-							Zeplin, Illustrator, Principle, Github Terminal, Adobe XD.
+						<h3>Design Tools ↴</h3>
+						<p> Figma, Figjam, Sketch, Adobe XD, InDesign, Photoshop, Illustrator, Principle
 						</p>
 					</div>
 					<div class="whatelement">
-						<h3>Skills ↴</h3>
-						<p>Product Design, User Experience (UX) Design, User Interface (UI) Design, JavaScript, React,
-							Vue.js, HTML and CSS, UX writing, Usability Testing, Copyediting.
+						<h3>Collaboration Tools ↴</h3>
+						<p>Miro, Zeplin
 						</p>
 					</div>
 					<div class="whatelement">
-						<h3>Activities ↴</h3>
-						<p>Adidas running club, CPHUX meetups, CopenhagenJS meetups, single-speed cycling.</p>
+						<h3>Development Tools ↴</h3>
+						<p>Visual Studio Code, Devtools, Terminal</p>
+					</div>
+					<div class="whatelement">
+						<h3>Design ↴</h3>
+						<p>Product Design, User Experience (UX) Design, User Interface (UI) Design, UX Writing</p>
+					</div>
+					<div class="whatelement">
+						<h3>Testing and Quality Assurance ↴</h3>
+						<p>Usability Testing, Copyediting</p>
 					</div>
 				</section>
 
 			</div>
 			<section class="cv">
 				<section class="exp experience">
+					<h2>Experience</h2>
 					<ul>
 						<li class="cvList">
 							<div class="date">
-								<p>Jun 2020 - Present</p>
+								<p>Feb 2023 - Present</p>
 							</div>
 							<div class="title">
-								<p>UX Designer at <a href="https://herogaming.com/">Hero Gaming</a></p>
+								<p>Product Designer<br><a href="https://herogaming.com/">Freelance client</a></p>
+
+							</div>
+							<div class="desc">
+								<p>Working on a Shopify store for a Danish e-commerce startup. Helping with brand
+									direction and leading UX and UI design.
+								</p>
+							</div>
+						</li>
+						<li class="cvList">
+							<div class="date">
+								<p>Jun 2020 - Feb 2023</p>
+							</div>
+							<div class="title">
+								<p>UX Designer<br><a href="https://herogaming.com/">Hero Gaming</a></p>
+
+							</div>
+							<div class="desc">
+								<p>Working over multiple brands operating in various global
+									markets. My main focus was to enhance the user experience (UX) and user interface
+									(UI) by leveraging data analytics, customer feedback, and business strategy.
+								</p>
 							</div>
 						</li>
 						<li class="cvList">
@@ -92,14 +123,24 @@
 							<div class="title">
 								<p>On leave: Relocation to Denmark</p>
 							</div>
+							<div class="desc">
+								<p>After moving to Denmark, I took some time to myself. This involved finding an
+									apartment, registering a CPR number, and adjusting to moving country. </p>
+							</div>
 						</li>
 						<li class="cvList">
 							<div class="date">
 								<p>2018 - 2019</p>
 							</div>
 							<div class="title">
-								<p>Product Designer at DealTap (now part of <a
-										href="https://www.remine.com/">Remine)</a></p>
+								<p>Product Designer<br><a href="https://www.remine.com/">DealTap (now
+										Remine)</a></p>
+							</div>
+							<div class="desc">
+								<p>I oversaw the UX and UI design process for a product redesign project. Working in an
+									agile team, I led the user testing process and translated the insights gained into
+									an effective design solution. I also developed a new UI design system to
+									standardize the design approach.</p>
 							</div>
 						</li>
 						<li class="cvList">
@@ -107,7 +148,12 @@
 								<p>2018</p>
 							</div>
 							<div class="title">
-								<p>Product Designer at <a href="https://www.wantboard.ca/">Wantboard</a></p>
+								<p>Product Designer<br><a href="https://www.wantboard.ca/">Wantboard</a></p>
+							</div>
+							<div class="desc">
+								<p>I was responsible for the UX and UI of an e-commerce startup, where I developed new
+									user interfaces that were in line with the brand identity.
+								</p>
 							</div>
 						</li>
 						<li class="cvList">
@@ -115,16 +161,25 @@
 								<p>2017 - 2018</p>
 							</div>
 							<div class="title">
-								<p>UX Designer at <a href="https://www.shopify.com/">Shopify</a></p>
+								<p>UX Designer<br><a href="https://www.shopify.com/">Shopify</a></p>
+							</div>
+							<div class="desc">
+								<p>I designed a tool to assist novice Shopify users. Working in an agile environment, I
+									was responsible for all aspects of business and user research, user testing, concept
+									development, information architecture, and visual UI design.</p>
 							</div>
 						</li>
-
 						<li class="cvList">
 							<div class="date">
 								<p>2015 - 2016</p>
 							</div>
 							<div class="title">
-								<p>Front-end Developer at <a href="https://www.thestar.com/">The Toronto Star</a></p>
+								<p>Front-end Developer<br><a href="https://www.thestar.com/">The Toronto Star</a></p>
+							</div>
+							<div class="desc">
+								<p>My work was creating and enhancing advertisements for the tablet version of a
+									newspaper. Following both brand and client guidelines, while incorporating UX
+									principles. I used HTML, CSS, and JavaScript on a daily basis.</p>
 							</div>
 						</li>
 						<li class="cvList">
@@ -132,7 +187,12 @@
 								<p>2014 - 2015</p>
 							</div>
 							<div class="title">
-								<p>Broadcast Associate at <a href="https://www.bnnbloomberg.ca/">BNN Bloomberg</a></p>
+								<p>Broadcast Associate<br><a href="https://www.bnnbloomberg.ca/">BNN Bloomberg</a></p>
+							</div>
+							<div class="desc">
+								<p>My job involved editing broadcast footage of news shows and publishing the edited
+									content on the BNN website. Additionally, I produced digital infographics and data
+									visualizations, and wrote articles on Canadian financial news.</p>
 							</div>
 						</li>
 						<li class="cvList">
@@ -140,7 +200,12 @@
 								<p>2013 - 2014</p>
 							</div>
 							<div class="title">
-								<p>News Editor at <a href="https://www.msn.com/en-ca">Microsoft MSN</a></p>
+								<p>News Editor<br><a href="https://www.msn.com/en-ca">Microsoft MSN</a></p>
+							</div>
+							<div class="desc">
+								<p>As an editor, I was tasked with overseeing the publication of news content on
+									Microsoft's Bing apps. This included editing the msn.ca homepage and the news
+									section of msn.</p>
 							</div>
 						</li>
 						<li class="cvList">
@@ -148,115 +213,56 @@
 								<p>2012 - 2013</p>
 							</div>
 							<div class="title">
-								<p>Designer & Copy Editor at <a href="https://nationalpost.com/">The National Post</a>
+								<p>Designer & Copy Editor<br><a href="https://nationalpost.com/">The National Post</a>
+								</p>
+							</div>
+							<div class="desc">
+								<p>I designed and copy edited pages for various sections of the paper, specializing on
+									the news, editorial, and finance sections. My design approach prioritized
+									user flow to ensure that readers had an engaging and seamless experience.
 								</p>
 							</div>
 						</li>
 					</ul>
+					<h3 class="refText">References available on request.</h3>
+					<div class="stars">
+						<img src="/dev/assets/brownstarshape.svg" class="rotate" alt="">
+						<img src="/dev/assets/brownstarshape.svg" class="rotate" alt="">
+						<img src="/dev/assets/brownstarshape.svg" class="rotate" alt="">
+						<img src="/dev/assets/brownstarshape.svg" class="rotate" alt="">
+						<img src="/dev/assets/brownstarshape.svg" class="rotate" alt="">
+						<img src="/dev/assets/brownstarshape.svg" class="rotate" alt="">
+					</div>
 				</section>
 				<section class="exp education">
-					<ul>
-						<h2 class="cvTitle">Education</h2>
-						<li class="cvList">
-							<div class="date">
-								<p>2021</p>
-							</div>
-							<div class="title">
-								<p>Swedish A1 & A2 - Grow Internationals</p>
-							</div>
-						</li>
-						<li class="cvList">
-							<div class="date">
-								<p>2020 - 2021</p>
-							</div>
-							<div class="title">
-								<p>Danish A1 & A2 - Studieskolen</p>
-							</div>
-						</li>
-						<li class="cvList">
-							<div class="date">
-								<p>2020</p>
-							</div>
-							<div class="title">
-								<p>Foundations of AI - University of Helsinki</p>
-							</div>
-						</li>
-						<li class="cvList">
-							<div class="date">
-								<p>2016</p>
-							</div>
-							<div class="title">
-								<p>UX Design - Juno College</p>
-							</div>
-						</li>
-						<li class="cvList">
-							<div class="date">
-								<p>2015</p>
-							</div>
-							<div class="title">
-								<p>Web development - Juno College</p>
-							</div>
-						</li>
-						<li class="cvList">
-							<div class="date">
-								<p>2009 - 2014</p>
-							</div>
-							<div class="title">
-								<p>Journalism - Toronto Metropolitan University</p>
-							</div>
-						</li>
-						<li class="cvList">
-							<div class="date">
-								<p>2007 - 2009</p>
-							</div>
-							<div class="title">
-								<p>Journalism - Mohawk College</p>
-							</div>
-						</li>
-						<li class="cvList">
-							<div class="date">
-								<p>2001 - 2004</p>
-							</div>
-							<div class="title">
-								<p>Art and Graphic Design - South Tyneside College</p>
-							</div>
-						</li>
-					</ul>
+					<h2>Education</h2>
+					<p>Swedish A1 & A2 at Grow Internationals 🇸🇪 (2021) / Danish A1 & A2 at Studieskolen 🇩🇰 (2020 -
+						2021) / Foundations of AI at University of Helsinki 🇫🇮 (2020) / UX Design at Juno College 🇨🇦
+						(2016) / Web development at Juno College 🇨🇦 (2015) / Journalism at Toronto Metropolitan
+						University 🇨🇦 (2009 - 2015) / Journalism at Mohawk College 🇨🇦 (2007 - 2009) / Art and
+						Graphic
+						Design at South Tyneside College 🇬🇧 (2001 - 2004)</p>
 				</section>
 			</section>
 		</section> <!-- end of resume container -->
-		<section class="starContainer rotate">
-			<img src="/dev/assets/startincircle.svg" alt="">
-		</section>
+
 	</section><!-- end of resume section-->
 
 	<footer>
 		<section class="contentContainer">
 			<div class="footerContent">
-				<div class="services footerCol">
-					<h3>Services</h3>
-					<ul>
-						<li class="servicesel">UX / UI Design</li>
-						<li class="servicesel">Product Design</li>
-						<li class="servicesel">UX writing</li>
-						<li class="servicesel">Content Editing</li>
-						<li class="servicesel">Brand Identity</li>
-					</ul>
-				</div>
-				<div class="Contact footerCol">
+				<div class="contact footerCol">
 					<h3>Contact</h3>
 					<ul>
-						<li><a href="about.html">Based in Copenhagen</a></li>
-						<li><a href="mailto:lee.richardson4@gmail.com">Contact me by email</a></li>
-						<li><a href="tel:4552824513">+4552824513</a></li>
-						<li><a href="https://dribbble.com/leerr">My UI work on Dribbble</a></li>
-						<li><a href="https://www.linkedin.com/in/lrchrdsn/">See my LinkedIn</a></li>
+						<li><a href="mailto:lee.richardson4@gmail.com">Email</a></li>
+						<li><a href="https://www.linkedin.com/in/lrchrdsn/">LinkedIn</a></li>
+						<li><a href="https://dribbble.com/leerr">Dribbble</a></li>
 					</ul>
 				</div>
 				<div class="weather footerCol">
 					<h3>Weather</h3>
-					<p class="weatherTextHolder">Copenhagen - It's <span class="weatherDegrees"></span>°C and <span
-							class="weatherText"></span></p>
+					<p class="weatherTextHolder">It's <span class="weatherDegrees"></span>°C and <span
+							class="weatherText"></span> in Copenhagen.</p>
 
 				</div>
 			</div>

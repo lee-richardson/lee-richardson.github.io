@@ -1,11 +1,9 @@
-
-
 "use strict";
 
 /* replace homepage title */
 function homeReplace(id, content) {
   var container = document.getElementById(id);
-  container.innerHTML = content;
+  container.innerHTML = content; 
 };
 
 var containerId = "change";

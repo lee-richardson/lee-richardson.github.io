@@ -16,47 +16,42 @@
 	<title>Home | Lee Richardson</title>
 	<link rel="stylesheet" type="text/css" href="/public/styles/style.css">
 	<meta name="viewport" content="width=device-width,initial-scale=1.0">
-	<link rel="preconnect" href="https://fonts.gstatic.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com">
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;700&display=swap" rel="stylesheet">
 	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
 	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
 	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
 	<link rel="manifest" href="/site.webmanifest">
 </head>
 
-<body id="home">
+<body id="home" class="body">
 	<section class="headerContainer">
 
 		<section class="contentContainer">
 			<nav class="menu">
-				<ul class="menu-head">
-					<li><a href="./index.html">Lee</a></li>
-				</ul>
-				<ul class="menu-list">
-					<li><a class="link" href="./about.html">About</a></li>
-					<li>
-						<a class="link" href="./resume.html">CV</a>
-					</li>
+				<div class="menuContainer">
+					<ul class="menu-head">
+						<li><a href="./index.html">Lee Richardson</a></li>
+					</ul>
+					<ul class="menu-list">
+						<li><a class="link" href="./about.html">About</a></li>
+						<li>
+							<a class="link" href="./resume.html">CV</a>
+						</li>
 
-				</ul>
+					</ul>
+
+				</div>
 			</nav>
 
 			<section class="header landingHeader">
 				<section class="titles" tabindex=0>
-					<h1 class="homeTitle">I'm <span id="change">a UX designer</span></h1>
+					<h1>I'm <span id="change">a web designer</span></h1>
 
+					<section class="titlespara">
+						<p>I help companies from enterprises to startups with their digital products, focusing on best
+							UX practices. My background is in journalism, news design, and front-end development.</p>
+					</section>
 				</section>
+
 			</section>
 		</section>
 	</section>
@@ -65,132 +60,121 @@
 	<section class="main">
 		<section class="contentContainer">
 			<div class="work">
-				<h2>Some past work ↓</h2>
 				<section class="workgrid grid">
 					<div class="workitem">
-						<a href="/amuleto.html">
-							<img src="/dev/assets/amuletohome.png" class="workImg"
+						<div class="worktitle">
+
+							<h3>Designed a new brand for Brazil</h3>
+
+						</div>
+						<a href="./amuleto.html">
+							<img src="/dev/assets/amuletoscreen.png" class="workImg workimgset1"
 								alt="a laptop showing the amuleto user interface">
 						</a>
-						<div class="worktitle">
-							<div class="textContainer">
-								<a href="/amuleto.html">AmuletoBet</a>
+						<div class="subContainer">
 
-								<p>Creating a high-end experience.</p>
-								<p>Product design - UX, UI. 2021 - 2022</p>
-
-							</div>
-							<div class="logoContainer"><img src="/dev/assets/amuletologo.svg" alt=""></div>
+							<a href="./amuleto.html">
+								<h4>AmuletoBet</h4>
+							</a>
+							<p>Stakeholder interviews, Competitive analysis, Journey mapping, Prototype testing,
+								Analytics review, wireframing, UI elements.
+							</p>
 						</div>
 					</div>
 					<div class="workitem">
-						<a href="/casinome.html">
-							<img src="/dev/assets/filterscreenshot.png" class="workImg" alt="casino me filter ui">
+						<div class="worktitle">
+							<h3>Improved the browsing experience</h3>
+						</div>
+						<a href="./casinome.html">
+							<img src="/dev/assets/casinome.png" class="workImg workimgset2" alt="casino me filter ui">
 						</a>
-						<div class="worktitle">
-							<div class="textContainer">
-								<a href="/casinome.html">Casino.me</a>
-								<p>Helping users browse games easier.</p>
-								<p>Product design - UX, UI. 2021</p>
-							</div>
-							<div class="logoContainer"> <img src="/dev/assets/casinomelogo.svg" alt=""></div>
+						<div class="subContainer">
+							<a href="./casinome.html">
+								<h4>Casino.Me</h4>
+							</a>
+							<p>UI elements, wireframing, prototype testing, competitive analysis, stakeholder
+								interviews.</p>
 						</div>
 					</div>
 					<div class="workitem">
-						<a href="/dealtap.html">
-							<img src="/dev/assets/dealtapdashboard.png" class="workImg"
+						<div class="worktitle">
+							<h3>Redesigned a digital product</h3>
+						</div>
+						<a href="./dealtap.html">
+							<img src="/dev/assets/dealtapdashboard.png" class="workImg workimgset3"
 								alt="a laptop showing the dealtap user interface">
 						</a>
-						<div class="worktitle">
-							<div class="textContainer">
-								<a href="/dealtap.html">DealTap</a>
-								<p>Redesign of a real estate platform.</p>
-								<p>Product design - UX, UI. 2018 - 2019</p>
-							</div>
-							<div class="logoContainer">
-								<img src="/dev/assets/dealtaplogo.svg" alt="">
-							</div>
+						<div class="subContainer">
+							<a href="./dealtap.html">
+								<h4>DealTap</h4>
+							</a>
+							<p>Wireframing, prototype testing, personas, card sorting, competitive analysis, stakeholder
+								interviews, user interviews and testing, UI elements.
+							</p>
 						</div>
 					</div>
 					<div class="workitem">
-						<a href="/shopify.html">
-							<img src="/dev/assets/shopifyphonenew.png" class="workImg"
-								alt="a laptop showing the shopify user interface">
-						</a>
 						<div class="worktitle">
-							<div class="textContainer">
-								<a href="/shopify.html">Shopify
-								</a>
-								<p>Designed a feature for beginner Shopify users.</p>
-								<p>UX Design. 2017 - 2018</p>
-							</div>
-							<div class="logoContainer">
-								<img src="/dev/assets/shopifylogo.svg" alt="">
-							</div>
+							<h3>Designed an onboarding tool</h3>
 						</div>
-
-					</div>
-					<div class="workitem">
-						<a href="/wantboard.html">
-							<img src="/dev/assets/wantboardfinal.png" class="workImg"
-								alt="a phone showing the wantboard user interface">
+						<a href="./shopify.html">
+							<img src="/dev/assets/shopifyphonenew.png" class="workImg workimgset4"
+								alt="a laptop showing the dealtap user interface">
 						</a>
-						<div class="worktitle">
-							<div class="textContainer">
-								<a href="/wantboard.html">Wantboard</a>
-								<p>Building brand trust through transparency.</p>
-								<p>Product design - UX, UI. 2018</p>
-							</div>
-							<div class="logoContainer">
-								<img src="/dev/assets/wantboardlogo.png" alt="">
-							</div>
+						<div class="subContainer">
+							<a href="./shopify.html">
+								<h4>Shopify</h4>
+							</a>
+							<p>Stakeholder
+								interviews, user interviews, competitive analysis, card-sorting, wireframing, prototype
+								testing, UI
+								design.
+							</p>
 						</div>
-					</div>
-					<div class="workitem">
-						<a href="/presto.html">
-							<img src="/dev/assets/prestofinal.png" class="workImg"
-								alt="a phone showing the presto user interface">
-						</a>
-						<div class="worktitle">
-							<div class="textContainer">
-								<a href="/presto.html">Presto</a>
-								<p>Making the commute easier for PRESTO users.</p>
-								<p>Product design - UX, UI. 2016</p>
-							</div>
-							<div class="logoContainer">
-								<img src="/dev/assets/Metrolinx_2017_logo.svg" alt="">
-							</div>
-						</div>
-					</div>
+					</div> <!-- end of work item list -->
 			</div>
 			<div class="work whatido">
 				<h2 class="sectionTitle">What I do</h2>
-				<p class="whattext">I help companies connect with the people that use their products,
-					specializing in UX
-					Design, UI Design, product strategy and UX writing.</p>
 				<section class="whatgrid grid">
 					<div class="whatelement">
-						<h3>UX Design ↴</h3>
-						<p>I've worked with companies big and small on features including e-commerce browsing, flow
-							optimization, and signup and registration.
-						</p>
+						<h3>UX and UI design ↴</h3>
+						<ul>
+							<li>User testing workshops</li>
+							<li>Atomic design systems</li>
+							<li>Web and app design</li>
+							<li>Wireframes</li>
+							<li>Prototypes</li>
+							<li>Ideation workshops</li>
+						</ul>
 					</div>
 					<div class="whatelement">
-						<h3>UI Design ↴</h3>
-						<p>Make the most of your UX research. I'll help you build interfaces that are user-friendly and
-							that create conversions.</p>
+						<h3>Branding ↴</h3>
+						<ul>
+							<li>Identity & positioning</li>
+							<li>Naming</li>
+							<li>Information architecture</li>
+							<li>Visual assets</li>
+							<li>Brand books & guidelines</li>
+						</ul>
 					</div>
 					<div class="whatelement">
-						<h3>Product Strategy ↴</h3>
-						<p>Building a design system, internal tool or a new product? I’ve set up design sprints, idea
-							workshops and user testing sessions to find the information needed to build a product.</p>
+						<h3>Web development ↴</h3>
+						<ul>
+							<li>Javascript</li>
+							<li>Web accessibility</li>
+							<li>Shopify</li>
+							<li>HTML and CSS</li>
+						</ul>
 					</div>
 					<div class="whatelement">
-						<h3>UX Writing ↴</h3>
-						<p>Need some copy? My time as a journalist and news editor means I can write to user's senses
-							and avoid overly corporate language.
-						</p>
+						<h3>News design ↴</h3>
+						<ul>
+							<li>Newspaper layout</li>
+							<li>Infographics</li>
+							<li>Website design</li>
+						</ul>
 					</div>
+
 				</section>
 
 			</div>
@@ -199,8 +183,8 @@
 
 	<section class="bigMessage">
 		<section class="contentContainer">
-			<h1 class="moveBounce">⌚️</h1>
-			<h2>It's <span class="timeText"></span>and I'm <span class="changeText"></span> for business</h2>
+			<h2 class="moveBounce">⌚️</h2>
+			<h2>It's <span class="timeText"></span><br>and I'm <span class="changeText"></span> for business</h2>
 			<a href="mailto:lee.richardson4@gmail.com" class="btn sayhibtn" role="button">Contact me by email</a>
 		</section>
 	</section>
@@ -208,30 +192,18 @@
 	<footer>
 		<section class="contentContainer">
 			<div class="footerContent">
-				<div class="services footerCol">
-					<h3>Services</h3>
-					<ul>
-						<li class="servicesel">UX / UI Design</li>
-						<li class="servicesel">Product Design</li>
-						<li class="servicesel">UX writing</li>
-						<li class="servicesel">Content Editing</li>
-						<li class="servicesel">Brand Identity</li>
-					</ul>
-				</div>
-				<div class="Contact footerCol">
+				<div class="contact footerCol">
 					<h3>Contact</h3>
 					<ul>
-						<li><a href="about.html">Based in Copenhagen</a></li>
-						<li><a href="mailto:lee.richardson4@gmail.com">Contact me by email</a></li>
-						<li><a href="tel:4552824513">+4552824513</a></li>
-						<li><a href="https://dribbble.com/leerr">My UI work on Dribbble</a></li>
-						<li><a href="https://www.linkedin.com/in/lrchrdsn/">See my LinkedIn</a></li>
+						<li><a href="mailto:lee.richardson4@gmail.com">Email</a></li>
+						<li><a href="https://www.linkedin.com/in/lrchrdsn/">LinkedIn</a></li>
+						<li><a href="https://dribbble.com/leerr">Dribbble</a></li>
 					</ul>
 				</div>
 				<div class="weather footerCol">
 					<h3>Weather</h3>
-					<p class="weatherTextHolder">Copenhagen - It's <span class="weatherDegrees"></span>°C and <span
-							class="weatherText"></span></p>
+					<p class="weatherTextHolder">It's <span class="weatherDegrees"></span>°C and <span
+							class="weatherText"></span> in Copenhagen.</p>
 
 				</div>
 			</div>

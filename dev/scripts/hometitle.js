@@ -7,9 +7,9 @@ function homeReplace(id, content) {
 };
 
 var containerId = "change";
-var strings = ["a Product designer", "lære dansk 🧠", "designing in Figma", "a UX writer", "a fan of dogs"];
+var strings = ["a UX designer", "lærer dansk", "solving problems", "a UX writer", "a researcher"];
 var count = 0;
-var timerId = setInterval(cycle, 1200);
+var timerId = setInterval(cycle, 2000);
 function cycle() {
   if (count < strings.length) {
     homeReplace(containerId, strings[count]);
@@ -19,7 +19,49 @@ function cycle() {
   }
 };
 
-var backgroundDefault = "#fff";
-var background1 = '#fed876';
+//change background colour on hover
+
+const imgs = document.querySelectorAll('.workImg');
+const bodyel = document.querySelector(".body");
+const menu = document.querySelector(".menuContainer");
+
+imgs.forEach(img => {
+  img.addEventListener('mouseover', (event) => {
+    if (event.target.matches('.workimgset1')) {
+      bodyel.style.background = '#D4DAE4';
+      menu.style.background = '#D4DAE4';
+    } else {
+      (event.target.matches('.workimgset2')) 
+        bodyel.style.background = '#E5DADA';
+        menu.style.background = '#E5DADA';
+    } 
+  },);
+});
 
 
+imgs.forEach(img => {
+  img.addEventListener('mouseover', (event) => {
+    if (event.target.matches('.workimgset3')) {
+      bodyel.style.background = '#CCC9D4';
+      menu.style.background = '#CCC9D4';
+    } 
+  },);
+});
+
+imgs.forEach(img => {
+  img.addEventListener('mouseover', (event) => {
+    if (event.target.matches('.workimgset4')) {
+      bodyel.style.background = '#BDCCD1';
+      menu.style.background = '#BDCCD1';
+    } 
+  },);
+});
+
+imgs.forEach(img => {
+  img.addEventListener('mouseout', (event) => {
+    if (event.target.matches('.workImg')) {
+      bodyel.style.background = '#ffffff';
+      menu.style.background = '#ffffff';
+    }
+  });
+});

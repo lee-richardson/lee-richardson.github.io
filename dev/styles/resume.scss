@@ -1,65 +1,126 @@
 @import 'mixins.scss';
 @import 'footer.scss';
+@import 'menu.scss';
+
+.cvheader {
+	display: flex;
+	align-content: center;
+}
 
 .titles {
-    margin-top: 5rem;
-} 
+	margin-top: 5rem;
+	display: flex;
+}
 
-.cvContainer {
-	height: 30vh;
+.cvtitles {
+	display: flex;
+	align-items: center;
 }
 
 .resume {
-	padding: 5rem 0;
+	margin: 4rem 0;
 
-			.cv {
-			margin: 0 auto;
-			width: 60%;
-			
-			.cvList {
-				display: flex;
-				justify-content: space-between;
-				padding: 1rem 0;
-				border-bottom: 1px solid #CCCCCC;
-			}
+	.cv {
+		margin: 0 auto;
+		width: 100%;
+
+	}
+
+	.cvList {
+		display: flex;
+		justify-content: space-between;
+		padding: 1rem 0;
+		border-bottom: 1px solid #d1d2dd;
+
+		.date {
+			width: 15%;
 		}
 
-		.education {
-			margin-top: 5rem;
+		.title {
+			width: 25%;
 		}
 
-		.edList {
-			display: flex;
+		.desc {
+			width: 55%;
 		}
+	}
+
+	.education {
+		margin: 4rem 0 8rem 0;
+		text-align: center;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+
+		p {
+			width: 65%;
+		}
+	}
 }
 
-.starContainer {
-	margin-top: 2.5rem;
+ul {
+	margin-bottom: 2rem;
+}
+
+
+.refText {
+	text-align: center;
+}
+
+.stars {
 	display: flex;
 	justify-content: center;
 }
 
 
 // media queries //
-@media only screen 
-  and (min-device-width: 360px) 
-  and (max-device-width: 667px) 
-  and (-webkit-min-device-pixel-ratio: 2) { 
-		.resume .cv {
+@media only screen and (min-device-width: 320px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) {
+
+
+	.cvContainer {
+		height: 35vh;
+	}
+
+	.cvtitles {
+		align-items: flex-start;
+	}
+
+	.main {
+		margin-top: 0;
+	}
+
+	.whatido {
+		margin-top: 0;
+	}
+
+	.resume {
+		.cv .cvList {
+			display: flex;
+			flex-direction: column;
+			margin: 0;
+
+			h5 {
+				margin: 0 0 0.2rem 0;
+			}
+
+			p {
+				margin: 0;
+			}
+
+			.date,
+			.title,
+			.desc {
+				width: 100%;
+			}
+
+			.desc {
+				margin-top: 1rem;
+			}
+		}
+
+		.education p {
 			width: 90%;
-			}
-		
-			.title {
-				width: 50%;
-			}
+		}
+	}
 
-			.date {
-				width: 50%;
-			}
-
-			.cvContainer {
-				height: 25vh;
-			}
-		
-
-  }
+}

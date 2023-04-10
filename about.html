@@ -13,11 +13,8 @@
 	</script>
 
 	<meta charset="UTF-8">
-	<title>About me | Lee Richardson</title>
+	<title>About | Lee Richardson</title>
 	<link rel="stylesheet" type="text/css" href="/public/styles/style.css">
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;700&display=swap" rel="stylesheet">
 	<link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
 	<meta name="viewport" content="width=device-width,initial-scale=1.0">
 	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
@@ -31,18 +28,33 @@
 
 		<section class="contentContainer">
 			<nav class="menu">
-				<ul class="menu-head">
-					<li><a href="index.html">Lee</a></li>
-				</ul>
-				<ul class="menu-list">
-					<li><a class="link" href="./about.html">About</a></li>
-					<li><a class="link" href="resume.html">CV</a></li>
-				</ul>
+				<div class="menuContainer">
+					<ul class="menu-head">
+						<li><a href="./index.html">Lee Richardson</a></li>
+					</ul>
+					<ul class="menu-list">
+						<li><a class="link" href="./about.html">About</a></li>
+						<li>
+							<a class="link" href="./resume.html">CV</a>
+						</li>
+
+					</ul>
+
+				</div>
 			</nav>
-			<section class="header aboutHeader">
-				<section class="titles" tabindex=0>
-					<h1>Product Designer and writer</h1>
-					<img src="/dev/assets/chat.png" class="aboutPhoto" alt="photo of me">
+			<section class="aboutHeader">
+				<section class="titles abouttitle" tabindex=0>
+					<div class="text">
+						<h1>About</h1>
+					</div>
+					<div class="zoomImage">
+						<img src="/dev/assets/testzoom.jpg" class="aboutPhoto" alt="photo of me">
+						<div class="zoomControls">
+							<img src="/dev/assets/mic.svg" alt="">
+							<img src="/dev/assets/zoomStar.svg" class="rotate zoomStar" alt="">
+							<img src="/dev/assets/nocam.svg" alt="">
+						</div>
+					</div>
 				</section>
 			</section>
 		</section>
@@ -56,26 +68,41 @@
 				<section class="whatgrid grid">
 					<div class="whatelement">
 						<h3>What ↴</h3>
-						<p>I'm a designer with 7+ years of UX and UI experience, from
-							startups to international companies. I can write for UX and edit content
-							from my time working in the journalism industry.</p>
+						<p>I'm a product designer who focuses on UX design. I've worked as a UX specialist for
+							large and small clients, both
+							independently and as part of centralized and decentralized design teams.
+							My background includes education in
+							design, journalism and web development.</p>
 					</div>
 					<div class="whatelement">
 						<h3>Where ↴</h3>
-						<p>I live in Copenhagen, and previously lived in Toronto, Canada for 15 years.
-							I'm still in the middle of learning to speak Danish, but can read it comfortably.
-							Originally I grew up in Sunderland, England.</p>
+						<p>I currently live in Copenhagen, but I previously lived in Toronto, Canada for 15 years. My
+							birthplace is in the Newcastle area of northern England.
+						</p>
 					</div>
 					<div class="whatelement">
 						<h3>Who ↴</h3>
-						<p>When I'm not working, I love to read, cook and ride single-speed bikes. I'm a fan of finding
-							new music, too.
-							My time in journalism means I have a strong interest in infographics and news, especially
-							health and science news.
+						<p>During my free time, I enjoy reading, cooking, and riding single-speed bikes. Exploring new
+							music is also one of my interests. From my time in journalism, I have a
+							keen interest in infographics and news, especially health and science.
 					</div>
 
 				</section>
 
+				<section class="contactInfo">
+					<div class="contactText">
+						<h3>Feel free to reach out at:</h3>
+						<h3>hileerichardson@gmail.com</h3>
+						<h3>(+45) 5282 4513</h3>
+					</div>
+					<!-- <div class="contactPhoto">
+						<img src="/dev/assets/kbh-museum.jpg" class="cphimage" alt="">
+						<p class="caption">Located in København V</p>
+
+					</div> -->
+
+
+				</section>
 			</div>
 		</section>
 	</section><!-- end of about section-->
@@ -85,30 +112,18 @@
 	<footer>
 		<section class="contentContainer">
 			<div class="footerContent">
-				<div class="services footerCol">
-					<h3>Services</h3>
-					<ul>
-						<li class="servicesel">UX / UI Design</li>
-						<li class="servicesel">Product Design</li>
-						<li class="servicesel">UX writing</li>
-						<li class="servicesel">Content Editing</li>
-						<li class="servicesel">Brand Identity</li>
-					</ul>
-				</div>
-				<div class="Contact footerCol">
+				<div class="contact footerCol">
 					<h3>Contact</h3>
 					<ul>
-						<li><a href="about.html">Based in Copenhagen</a></li>
-						<li><a href="mailto:lee.richardson4@gmail.com">Contact me by email</a></li>
-						<li><a href="tel:4552824513">+4552824513</a></li>
-						<li><a href="https://dribbble.com/leerr">My UI work on Dribbble</a></li>
-						<li><a href="https://www.linkedin.com/in/lrchrdsn/">See my LinkedIn</a></li>
+						<li><a href="mailto:lee.richardson4@gmail.com">Email</a></li>
+						<li><a href="https://www.linkedin.com/in/lrchrdsn/">LinkedIn</a></li>
+						<li><a href="https://dribbble.com/leerr">Dribbble</a></li>
 					</ul>
 				</div>
 				<div class="weather footerCol">
 					<h3>Weather</h3>
-					<p class="weatherTextHolder">Copenhagen - It's <span class="weatherDegrees"></span>°C and <span
-							class="weatherText"></span></p>
+					<p class="weatherTextHolder">It's <span class="weatherDegrees"></span>°C and <span
+							class="weatherText"></span> in Copenhagen.</p>
 
 				</div>
 			</div>

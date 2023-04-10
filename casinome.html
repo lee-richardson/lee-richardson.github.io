@@ -31,21 +31,26 @@
 
     <section class="contentContainer">
       <nav class="menu">
-        <ul class="menu-head">
-          <li><a href="index.html">Lee</a></li>
-        </ul>
-        <ul class="menu-list">
-          <li><a class="link" href="about.html">About</a></li>
-          <li><a class="link" href="resume.html">CV</a></li>
-          <!-- <li><a class="link" href="./wantboard.html">EN</a></li>
-          <li><a class="link" href="./dk/wantboard.html">DK</a></li> -->
-        </ul>
+        <div class="menuContainer">
+          <ul class="menu-head">
+            <li><a href="./index.html">Lee Richardson</a></li>
+          </ul>
+          <ul class="menu-list">
+            <li><a class="link" href="./about.html">About</a></li>
+            <li>
+              <a class="link" href="./resume.html">CV</a>
+            </li>
+
+          </ul>
+
+        </div>
       </nav>
 
       <section class="caseHeader">
         <section class="titles" tabindex=0>
-          <h1>Casino.me</h1>
-          <h3>Helping users browse games</h3>
+          <h1>Improved the browsing experience</h1>
+          <h3>Casino.Me</h3>
+          <p>2022</p>
         </section>
         <div class="figmaContainer">
           <img src="/dev/assets/figmaarrow.svg" alt="">
@@ -53,67 +58,101 @@
             <h5>Lee</h5>
           </div>
         </div>
-        <img src="/dev/assets/filterscreenshot.png" alt="the filterting feature" class="result">
+        <section class="image" tabindex=0>
+          <img src="/dev/assets/casinome.png" alt="casinome filtering" class="result">
+        </section>
       </section><!-- end of header -->
       <section class="subHeader">
         <section class="caseIntro" tabindex=0>
           <div class="caseList">
-            <div class="respon caseBlurb">
-              <h4 class="title">Responsibilities</h4>
-              <p class="content">Product Design - UX, UI. 2021</p>
-            </div>
-            <div class="goals caseBlurb">
-              <h4 class="title">Goals</h4>
-              <p class="content">Add a feature that allows users find games easier.</p>
-            </div>
-            <div class="deliv caseBlurb">
-              <h4 class="title">Deliverable</h4>
-              <p class="content">Product feature</p>
-            </div>
+            <section class="whatgrid grid">
+              <div class="whatelement">
+                <h3>Methods ↴</h3>
+                <p>UI elements, wireframing, prototype testing, competitive analysis, stakeholder
+                  interviews.
+                </p>
+              </div>
+              <div class="whatelement">
+                <h3>Description ↴</h3>
+                <p>Hero Gaming wanted to add a feature to its Japanese brand, to help users find games
+                  easier.
+                </p>
+              </div>
+            </section>
+          </div>
           </div>
 
         </section><!-- end of caseintro -->
       </section><!-- end of subheader-->
     </section><!-- end of container-->
   </section>
-  <h2 class="seeMoreArrow">↓</h2>
   <section class="mainContent">
     <!--full width background starts here-->
 
     <section class="contentContainer">
 
       <section class="caseStudy research">
-        <h2 class="caseTitle">Overview</h2>
-        <p>With a huge number of games, users needed some help narrowing down their options. Our products already had
-          search and category sub-categorisation, but we added an extra feature - provider filtering. I worked with
-          another designer on the project.
-        </p>
         <h2 class="caseTitle">The challenge</h2>
-        <p>Designing for a mobile-first audience, we need a flow that worked easily on a small screen. We also had to
-          design for the Japanese market, which is used to having a lot of visual information on screen at once.
+        <p>We realized that users needed help navigating our large game selection. Two designers worked together to make
+          this happen.
         </p>
-        <img src="/dev/assets/wireframes.png" alt="wireframes of casinome">
-        <p>With our users being Japanese, and most game providers being European, we learned that
-          our players could maybe not recognise names of game providers in English. We decided the best solution was to
-          go use provider logos instead of text. We collected a list of all game providers and sourced their logos,
-          using wireframes and Figma prototypes to ideate the flow of the filter.
+        <h2 class="caseTitle">The goal</h2>
+        <p>Add a new feature that allows users to filter games and the companies that created them (called "providers").
         </p>
-        <p>In order not to overwhelm the user, we decided the filter must initially show only a couple of rows of
-          options, and not the dozens that were available. Users would also be able to combine their filtering with a
-          search term, which would have visual priority in the hierarchy. We tested this multiple times to make sure
-          things weren’t too confusing.
+        <h2 class="caseTitle">The process</h2>
+        <h3 class="secondaryCaseTitle">Understand</h3>
+        <p>Because analytics showed us our Japanese players mostly used phones, we had to make sure that the feature
+          worked smoothly on mobile devices. We also took into account that Japanese users are used to seeing a lot of
+          information on the screen at once.
         </p>
+        <h3 class="secondaryCaseTitle">Research</h3>
+        <p>We already used Fullstory software to track user analytics, so we had a large amount of qualitative data to
+          dig through. We started looking at the flow of how users find games, and how many use the already existing
+          search function. Access to screen recordings, also through Fullstory, helped us spot any moments of confusion
+          or frustration.
+        </p>
+        <p>
+          To think about filtering, we looked at casino gaming, travel booking and e-commerce sites, to see if any
+          common patterns emerged.
+        </p>
+        <img src="/dev/assets/filtercomp.png" alt="a screenshot of a competitor filtering feature.">
+        <p class="caption">Competitor research helped us discover common patterns in game browsing.</p>
+        <h3 class="secondaryCaseTitle">Analyze</h3>
+        <p>A common problem we found is that Japanese users don’t always want to type in English, as it adds another
+          layer of thought which removes them from the gaming experience. Because most providers have English names
+          (“Evolution Gaming”, “Blueprint Gaming”) we decided to use tiles with logos, instead of a dropdown with text
+          content.
+        </p>
+        <h3 class="secondaryCaseTitle">Sketch</h3>
+        <p>I quickly drew some rough ideas about where we could put the filtering function and how it could work within
+          the existing flow. By exploring different options, we were able to choose the most effective placement.
+        </p>
+        <h3 class="secondaryCaseTitle">Wireframes and prototype</h3>
+        <p>We gathered logos from all the game providers and created wireframes. To keep things simple for users, we
+          showed only a few filtering options at a time, with a choice to expand the filter. Users could also search for
+          games using keywords. We made sure that the search bar stood out so that users could find it easily.
+        </p>
+        <img src="/dev/assets/filterwireframe.png" alt="wireframes of casinome">
+        <p class="caption">Thinking through the feature with wireframes.</p>
         <img src="/dev/assets/wireframeslogos.png" alt="wireframes of casinome with logos">
-        <p>Once the flow was optimised for ease-of-use, we applied the UI to the wireframes. Data showed that users
-          found their favourite games faster as a result.</p>
+        <p class="caption">Wireframes showing the different states.</p>
+        <h3 class="secondaryCaseTitle">Test design and iterate</h3>
+        <p>We tested the feature multiple times using prototypes, then ran an A/B test and followed the results using
+          Fullstory analytics.
+        </p>
+        <h2 class="caseTitle">Result</h2>
+        <p>Data showed that after the feature was added to the flow, users were able to find their favourite games
+          faster.</p>
         <img src="/dev/assets/filterscreenshot.png" alt="the filter feature">
-        <img src="/dev/assets/filtering.gif" alt="gif of the filter feature">
+        <p class="caption">The user can choose to combine the filter feature with a searchterm.</p>
+        <img src="/dev/assets/filter.gif" alt="gif of the filter feature">
+        <p class="caption">Interacting with tiles filters the game catalogue.</p>
       </section>
       <div class="bigMessage">
         <section class="contentContainer">
           <h2>Thanks for reading</h2>
           <a href="mailto:lee.richardson4@gmail.com" class="btn sayhibtn" role="button">Contact me by email</a>
-          <h1><img src="/dev/assets/thinStar.svg" class="rotate" alt=""></h1>
+          <h3><img src="/dev/assets/brownshape3.svg" class="rotate" alt=""></h3>
         </section>
       </div>
     </section><!-- end of caseStudy-->
@@ -123,30 +162,18 @@
   <footer>
     <section class="contentContainer">
       <div class="footerContent">
-        <div class="services footerCol">
-          <h3>Services</h3>
-          <ul>
-            <li class="servicesel">UX / UI Design</li>
-            <li class="servicesel">Product Design</li>
-            <li class="servicesel">UX writing</li>
-            <li class="servicesel">Content Editing</li>
-            <li class="servicesel">Brand Identity</li>
-          </ul>
-        </div>
-        <div class="Contact footerCol">
+        <div class="contact footerCol">
           <h3>Contact</h3>
           <ul>
-            <li><a href="about.html">Based in Copenhagen</a></li>
-            <li><a href="mailto:lee.richardson4@gmail.com">Contact me by email</a></li>
-            <li><a href="tel:4552824513">+4552824513</a></li>
-            <li><a href="https://dribbble.com/leerr">My UI work on Dribbble</a></li>
-            <li><a href="https://www.linkedin.com/in/lrchrdsn/">See my LinkedIn</a></li>
+            <li><a href="mailto:lee.richardson4@gmail.com">Email</a></li>
+            <li><a href="https://www.linkedin.com/in/lrchrdsn/">LinkedIn</a></li>
+            <li><a href="https://dribbble.com/leerr">Dribbble</a></li>
           </ul>
         </div>
         <div class="weather footerCol">
           <h3>Weather</h3>
-          <p class="weatherTextHolder">Copenhagen - It's <span class="weatherDegrees"></span>°C and <span
-              class="weatherText"></span></p>
+          <p class="weatherTextHolder">It's <span class="weatherDegrees"></span>°C and <span class="weatherText"></span>
+            in Copenhagen.</p>
 
         </div>
       </div>
