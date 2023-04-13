@@ -48,3 +48,17 @@
 		}
 	}
 }
+
+
+// large screen media queries //
+@media (min-width: 1910px) and (-webkit-min-device-pixel-ratio: 1) {
+
+	.menu {
+
+		.menuContainer {
+			width: 70vw;
+			height: 6vh;
+		}
+	}
+
+}
