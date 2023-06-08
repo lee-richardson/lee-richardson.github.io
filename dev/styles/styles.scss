@@ -9,36 +9,41 @@ hgroup,
 nav,
 section,
 summary {
-	display: block
+	display: block;
 }
 
 audio,
 canvas,
 video {
-	display: inline-block
+	display: inline-block;
 }
 
 audio:not([controls]) {
 	display: none;
-	height: 0
+	height: 0;
 }
 
 [hidden] {
-	display: none
+	display: none;
 }
 
 html {
+	font-family: sans-serif;
 	-webkit-text-size-adjust: 100%;
-	-ms-text-size-adjust: 100%
+	-ms-text-size-adjust: 100%;
 }
 
 a:focus {
-	outline: dotted thin
+	outline: thin dotted;
 }
 
 a:active,
 a:hover {
-	outline: 0
+	outline: 0;
+}
+
+h1 {
+	font-size: 2em;
 }
 
 abbr[title] {
@@ -47,16 +52,16 @@ abbr[title] {
 
 b,
 strong {
-	font-weight: 700
+	font-weight: 700;
 }
 
 dfn {
-	font-style: italic
+	font-style: italic;
 }
 
 mark {
 	background: #ff0;
-	color: #000
+	color: #000;
 }
 
 code,
@@ -64,20 +69,20 @@ kbd,
 pre,
 samp {
 	font-family: monospace, serif;
-	font-size: 1em
+	font-size: 1em;
 }
 
 pre {
 	white-space: pre-wrap;
-	word-wrap: break-word
+	word-wrap: break-word;
 }
 
 q {
-	quotes: \201C \201D \2018 \2019
+	quotes: \201C \201D \2018 \2019;
 }
 
 small {
-	font-size: 80%
+	font-size: 80%;
 }
 
 sub,
@@ -85,29 +90,29 @@ sup {
 	font-size: 75%;
 	line-height: 0;
 	position: relative;
-	vertical-align: baseline
+	vertical-align: baseline;
 }
 
 sup {
-	top: -.5em
+	top: -.5em;
 }
 
 sub {
-	bottom: -.25em
+	bottom: -.25em;
 }
 
 img {
-	border: 0
+	border: 0;
 }
 
 svg:not(:root) {
-	overflow: hidden
+	overflow: hidden;
 }
 
 fieldset {
 	border: 1px solid silver;
 	margin: 0 2px;
-	padding: .35em .625em .75em
+	padding: .35em .625em .75em;
 }
 
 button,
@@ -116,65 +121,66 @@ select,
 textarea {
 	font-family: inherit;
 	font-size: 100%;
-	margin: 0
+	margin: 0;
 }
 
 button,
 input {
-	line-height: normal
+	line-height: normal;
 }
 
 button,
 html input[type=button],
+/* 1 */
 input[type=reset],
 input[type=submit] {
 	-webkit-appearance: button;
-	cursor: pointer
+	cursor: pointer;
 }
 
 button[disabled],
 input[disabled] {
-	cursor: default
+	cursor: default;
 }
 
 input[type=checkbox],
 input[type=radio] {
 	box-sizing: border-box;
-	padding: 0
+	padding: 0;
 }
 
 input[type=search] {
 	-webkit-appearance: textfield;
 	-moz-box-sizing: content-box;
 	-webkit-box-sizing: content-box;
-	box-sizing: content-box
+	box-sizing: content-box;
 }
 
 input[type=search]::-webkit-search-cancel-button,
 input[type=search]::-webkit-search-decoration {
-	-webkit-appearance: none
+	-webkit-appearance: none;
 }
 
 textarea {
 	overflow: auto;
-	vertical-align: top
+	vertical-align: top;
 }
 
 table {
 	border-collapse: collapse;
-	border-spacing: 0
+	border-spacing: 0;
 }
 
 body,
 figure {
-	margin: 0
+	margin: 0;
 }
 
+legend,
 button::-moz-focus-inner,
-input::-moz-focus-inner,
-legend {
+input::-moz-focus-inner {
 	border: 0;
-	padding: 0
+	padding: 0;
 }
 
 .clearfix:after {
@@ -183,13 +189,13 @@ legend {
 	font-size: 0;
 	content: " ";
 	clear: both;
-	height: 0
+	height: 0;
 }
 
 * {
 	-moz-box-sizing: border-box;
 	-webkit-box-sizing: border-box;
-	box-sizing: border-box
+	box-sizing: border-box;
 }
 
 @import 'mixins.scss';
@@ -197,59 +203,16 @@ legend {
 @import 'project.scss';
 @import 'footer.scss';
 @import 'resume.scss';
-@import 'menu.scss';
-
-@font-face {
-	font-family: 'GTSuperReg';
-	src: url(/dev/assets/font/GTSuperText-Book.otf) format("opentype");
-	font-weight: normal;
-	font-style: normal;
-}
-
-@font-face {
-	font-family: 'GTEestiDispReg';
-	src: url(/dev/assets/font/GTEestiProDisplay-Regular.ttf) format("opentype");
-	font-weight: normal;
-	font-style: normal;
-}
-
-@font-face {
-	font-family: 'GTEestiBook';
-	src: url(/dev/assets/font/GTEestiProText-Book.ttf) format("opentype");
-	font-weight: normal;
-	font-style: normal;
-}
-
-@font-face {
-	font-family: 'GTEestiBookItal';
-	src: url(/dev/assets/font/GTEestiProText-BookItalic.ttf) format("opentype");
-	font-weight: normal;
-	font-style: normal;
-}
 
 html {
-	background-color: #fff;
+	@include mainBackground;
 	@include mainBlue;
 }
 
 body {
-	font-size: 22px;
-	font-family: 'GTSuperReg', Palatino, serif;
-	margin: 0;
-	-webkit-transition: all 0.5s;
-	-o-transition: all 0.5s;
-	transition: all 0.5s;
-	color: #1a1f54;
-	line-height: 1.5;
-}
-
-p {
-	margin: 0;
-}
-
-.caption {
-	font-family: 'GTEestiBook';
-	text-align: center;
+	font-size: 18px;
+	font-family: 'Open Sans', sans-serif;
+	color: red;
 }
 
 .contentContainer {
@@ -285,7 +248,7 @@ p {
 }
 
 .rotate {
-	animation: moveRotate 10s infinite linear;
+	animation: moveRotate 5s infinite linear;
 }
 
 @keyframes moveRotate {
@@ -298,133 +261,123 @@ p {
 	}
 }
 
+.menu {
+	display: flex;
+	justify-content: space-between;
+	@include bodyLink;
+
+	li {
+		a {
+			font-size: 1.3rem;
+		}
+	}
+
+	.menu-head {
+		width: 50%;
+	}
+
+	.menu-list {
+		font-weight: 400;
+		justify-content: end;
+
+		li {
+			display: inline-block;
+			padding: 0 0.5rem 0 0.5rem;
+
+		}
+	}
+}
+
+
 
 .header {
-	height: 50vh;
+	height: 40vh;
 }
 
 h1,
-h2,
-h3,
-h4 {
+h2 {
 	margin: 0;
+	font-weight: 700;
+	font-family: 'Open Sans', sans-serif;
 }
 
 a {
+	font-weight: 500;
 	@include mainBlue;
-	font-family: 'GTEestiBook', Arial, sans-serif;
-	border-bottom: 1px solid #1a1f54;
+	border-bottom: 1px solid #0a2681;
 	text-decoration: none;
-	-webkit-transition: all 1s;
-	-o-transition: all 1s;
-	transition: all 1s;
-	line-height: 1.2;
 
 	&:hover {
-		border-bottom: 1px dashed #1a1f54;
-		font-family: 'GTEestiBookItal', Arial, sans-serif;
+		border-bottom: 1px dashed #0a2681;
 	}
 }
 
 h1 {
-	font-size: 5rem;
-	font-family: 'GTEestiDispReg', Arial, sans-serif;
+	font-size: 4rem;
+	font-weight: 700;
 }
 
 h2 {
-	font-size: 3.5rem;
-	font-family: 'GTEestiBook', Arial, sans-serif;
+	font-size: 3rem;
 }
 
+.landingHeader {
+	h1 {
+		font-size: 6rem;
+	}
+}
+
+
+.moveFigma {
+	animation: move 2s infinite linear;
+}
+
+@keyframes move {
+	0% {
+		transform: translateY(0);
+		transform: translateX(0.8rem);
+	}
+
+	50% {
+		transform: translateY(4rem);
+		transform: translateX(1rem);
+	}
+
+	100% {
+		transform: translateY(0);
+		transform: translateX(0.8rem);
+	}
+}
+
+
+
 h3 {
-	font-size: 2rem;
-	font-family: 'GTEestiBook', Arial, sans-serif;
+	font-size: 2.5rem;
+	margin: 0;
+	font-weight: 500;
 }
 
 h4 {
-	font-size: 1.5rem;
-	font-family: 'GTEestiBook', Arial, sans-serif;
+	font-size: 1.6rem;
+	font-weight: 500;
 }
 
-h5 {
-	font-size: 1rem;
-	font-family: 'GTEestiBook', Arial, sans-serif;
+p {
+	line-height: 1.6;
+	font-size: 1.2rem;
+	color: #18293F;
 }
-
-
-.landingHeader {
-	height: 80vh;
-	display: flex;
-	border-bottom: 1px solid #1a1f54;
-	flex-direction: column;
-
-	.titles {
-		flex-direction: column;
-
-		p {
-			width: 50%;
-		}
-	}
-
-
-	img {
-		width: 2rem;
-	}
-
-
-	.hiContainer {
-		img {
-			position: relative;
-			top: 2rem;
-			right: 0.7rem;
-		}
-
-		.hiBox {
-			background-color: #EEEEEE;
-			border-radius: 0.3rem;
-			width: fit-content;
-
-			h5 {
-				padding: 0.4rem;
-			}
-		}
-	}
-
-
-	.moveFigma {
-		animation: move 2s infinite linear;
-	}
-
-	@keyframes move {
-		0% {
-			transform: translateY(0);
-			transform: translateX(0.8rem);
-		}
-
-		50% {
-			transform: translateY(4rem);
-			transform: translateX(1rem);
-		}
-
-		100% {
-			transform: translateY(0);
-			transform: translateX(0.8rem);
-		}
-	}
-
-}
-
 
 .btn {
-	border: 3px solid #d1d2dd;
+	border: 3px solid #0a2681;
 	padding: 1rem;
 	border-radius: 2rem;
 	@include blueBtn;
-	margin: 2rem 0 1rem 0;
+	margin-top: 2rem;
 	display: inline-block;
 
 	&:hover {
-		@include hoverBtn;
+		@include redBtn;
 	}
 }
 
@@ -433,12 +386,16 @@ h5 {
 ul {
 	list-style-type: none;
 	padding: 0;
+
+	li {
+		color: #18293F;
+	}
 }
 
 .titles {
+	margin: 5rem 0;
 	width: 100%;
 	display: flex;
-	// justify-content: space-between;
 
 	img {
 		width: 50%;
@@ -455,31 +412,59 @@ ul {
 	@include bodyLink;
 }
 
-.workgrid {
+.work {
+	padding: 5rem 0;
+}
 
+.workgrid {
 	.workitem {
-		margin: 2rem 0;
-		width: 48%;
+		margin: 1rem 0 4rem 0;
+		width: 49%;
+
+		a {
+			font-size: 1.5rem;
+		}
+
+		p {
+			margin: 0;
+		}
+
+		.project-info-mobile {
+			display: none;
+		}
+
+		.worktitle {
+			display: flex;
+			justify-content: space-between;
+
+			.textContainer {
+				width: 80%;
+				padding-top: 0.5rem;
+			}
+
+			.logoContainer {
+				width: 30%;
+				align-items: flex-start;
+				display: flex;
+				justify-content: end;
+				padding-top: 1rem;
+			}
+
+			img {
+				width: 4rem;
+			}
+
+		}
 
 		.workImg {
 			display: flex;
-			margin: 1rem 0;
-			align-self: center;
+			margin: 0;
 			max-width: 100%;
-			-webkit-transition: all 0.5s;
-			-o-transition: all 0.5s;
-			transition: all 0.5s;
-		}
 
-		.subContainer {
-			display: flex;
-			align-items: center;
-			justify-content: space-between;
-			flex-direction: column;
-			align-items: flex-start;
-
-			p {
-				margin: 0.5rem 0 0.3rem 0;
+			&:hover {
+				box-shadow: 8px 8px 0 #D2D3D7;
+				-webkit-transition: 0.5s;
+				transition: 0.5s;
 			}
 		}
 
@@ -490,108 +475,104 @@ ul {
 }
 
 .whatido {
-	margin: 4rem 0;
+	padding-top: 0;
 }
 
+.whattext {
+	width: 80%;
+}
 
 .whatgrid {
 
+	margin: 3rem 0;
+
 	.whatelement {
 		width: 45%;
-		margin: 1.5rem 0;
-	}
+		margin: 1rem 0;
 
-	ul {
-		margin: 0;
+		p {
+			margin-top: 0.5rem;
+		}
 	}
 }
 
 .bigMessage {
-	height: auto;
-	margin: 8rem 0 8rem 0;
+	padding: 2rem 0 10rem 0;
 	text-align: center;
-
-	h2 {
-		font-family: 'GTEestiBook';
-		line-height: 1.2;
-	}
 }
 
 
 // mobile media queries //
-@media only screen and (min-device-width: 318px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) {
+@media only screen and (min-device-width: 315px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) {
 
 	body {
-		font-size: 20px;
+		font-size: 16px;
 
 		h1 {
-			font-size: 3.5rem;
-			line-height: 1;
+			font-size: 3rem;
 		}
 
 		h2 {
 			font-size: 2rem;
-
 		}
 
 		h3 {
-			font-size: 1.7rem;
-		}
-
-		h4 {
-			font-size: 1rem;
+			font-size: 1.5rem;
 		}
 	}
 
-	.contentContainer {
-		width: 90vw;
-	}
+	.menu {
+		margin-top: 0.3rem;
+		display: flex;
+		align-items: center;
 
 
-	.caption {
-		font-size: 1.1rem;
+		ul {
+			margin: 0;
+		}
+
+		.menu-head,
+		.menu-list {
+			margin: 0;
+		}
 	}
 
 
 	.landingHeader {
-		display: flex;
-		height: 80vh;
+		height: 20vh;
 	}
 
 
 	.titles {
-		align-content: center;
-		margin-top: 8rem;
+		margin: 3rem 0;
 
-
-		.titlespara p {
-			margin-top: 1rem;
-			width: 90vw;
+		h1 {
+			font-size: 3rem;
 		}
+	}
+
+	.main {
+		padding: 3rem 0;
 	}
 
 	.grid {
 		flex-direction: column;
 	}
 
+	.work {
+		padding: 2rem 0;
+	}
 
 	.workgrid {
+		margin-top: 1rem;
 
 		.workitem {
 			width: 100%;
-
-			p {
-				margin: 0.5rem 0;
-			}
 
 			.worktitle {
 				img {
 					width: 2rem;
 				}
-			}
-
-			h4 {
-				font-size: 1.4rem;
 			}
 		}
 	}
@@ -603,7 +584,6 @@ ul {
 
 		.whatelement {
 			width: 100%;
-			margin: 2rem 0;
 		}
 	}
 
@@ -613,17 +593,8 @@ ul {
 
 
 	.bigMessage {
+		padding: 2rem 0 10rem 0;
 		text-align: center;
-		margin: 2rem 0 4rem 0;
-
-		.moveBounce {
-			margin: 1rem 0;
-			font-size: 3rem;
-		}
-
-		.contentContainer {
-			width: 90vw;
-		}
 
 		.rotate {
 			margin-top: 2rem;
@@ -649,25 +620,5 @@ ul {
 			}
 		}
 	}
-
-}
-
-
-
-// large screen media queries //
-@media (min-width: 1910px) {
-
-	.contentContainer {
-		width: 70vw;
-	}
-
-	.landingHeader {
-		height: 70vh;
-
-		.titles {
-			margin-top: 18rem;
-		}
-	}
-
 
 }
