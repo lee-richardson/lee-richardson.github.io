@@ -7,9 +7,9 @@ function homeReplace(id, content) {
 };
 
 var containerId = "change";
-var strings = ["a web designer", "a UX designer", "lærer dansk", "solving problems", "a UX writer", "a researcher"];
+var strings = ["designing strategically", "lærer dansk", "helping brands grow", "solving problems", "designing for people", "building products"];
 var count = 0;
-var timerId = setInterval(cycle, 2000);
+var timerId = setInterval(cycle, 2500);
 function cycle() {
   if (count < strings.length) {
     homeReplace(containerId, strings[count]);
