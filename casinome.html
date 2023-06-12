@@ -59,7 +59,7 @@
           </div>
         </div>
         <section class="image" tabindex=0>
-          <img src="/dev/assets/casinome.png" alt="casinome filtering" class="result">
+          <img src="/dev/assets/cas-1.png" alt="casinome filtering" class="result">
         </section>
       </section><!-- end of header -->
       <section class="subHeader">
@@ -74,9 +74,22 @@
               </div>
               <div class="whatelement">
                 <h3>Description ↴</h3>
-                <p>Hero Gaming wanted to add a feature to its Japanese brand, to help users find games
-                  easier.
+                <p>Based on business and user requirements, we introduced a feature into the user flow to help users
+                  find games easier. The task was completed by working with another designer over a two-week agile
+                  sprint.
                 </p>
+              </div>
+              <div class="whatelement">
+                <h3>The challenge ↴</h3>
+                <p>Users needed help navigating our large game catalogue. We needed a way to make browsing easier
+                  without
+                  drastically changing the user flow.</p>
+              </div>
+              <div class="whatelement">
+                <h3>The goal ↴</h3>
+                <p>Find the best way to add filter functionality into the user flow, which allows users to easily find
+                  games and
+                  the companies that created them (called "providers").</p>
               </div>
             </section>
           </div>
@@ -92,66 +105,110 @@
     <section class="contentContainer">
 
       <section class="caseStudy research">
-        <h2 class="caseTitle">The challenge</h2>
-        <p>We realized that users needed help navigating our large game selection. Two designers worked together to make
-          this happen.
+
+        <h3 class="secondaryCaseTitle">Discover</h3>
+        <p>We set up time for <span class="boldText">requirements gathering,</span> where we carried out <span
+            class="boldText">stakeholder interviews</span> to determine the
+          return on investment (ROI) and key performance indicator (KPI). From using the Fullstory analytics software,
+          we knew that around 85% of our players in Japan used smartphones. While we had search functionality, In terms
+          of UX <span class="boldText">benchmarking</span> we had to add filtering to give a smoother experience than
+          that offered by our competitors.</p>
+        <img src="/dev/assets/cas-2.png" alt="A screenshot of a competitor filtering feature.">
+        <p class="caption">I took screenshots during competitor analysis to determine any best practices in terms of
+          design patterns.
         </p>
-        <h2 class="caseTitle">The goal</h2>
-        <p>Add a new feature that allows users to filter games and the companies that created them (called "providers").
+        <p>We ran a <span class="boldText">competitor analysis</span> session where we signed into other products and
+          browsed for games. While most
+          only used search functionality, a couple of products allowed filtering of their game catalogue. We also
+          investigated how filtering functions outside of iGaming, focusing on travel booking and e-commerce industries.
+          This was to see if any common <span class="boldText">design patterns</span> and UX <span
+            class="boldText">mental models</span> emerged.
         </p>
-        <h2 class="caseTitle">The process</h2>
-        <h3 class="secondaryCaseTitle">Understand</h3>
-        <p>Because analytics showed us our Japanese players mostly used phones, we had to make sure that the feature
-          worked smoothly on mobile devices. We also took into account that Japanese users are used to seeing a lot of
-          information on the screen at once.
+        <h3 class="secondaryCaseTitle">Define</h3>
+        <p>We used the Fullstory <span class="boldText">analytics</span> tool to observe video recordings of the <span
+            class="boldText">user flow</span> of browsing and searching
+          for games in our product. This helped us form an <span class="boldText">empathetic</span> approach to our
+          design ideas. Access to screen
+          recordings helped us spot any edge cases or moments of user confusion or frustration.
         </p>
-        <h3 class="secondaryCaseTitle">Research</h3>
-        <p>We already used Fullstory software to track user analytics, so we had a large amount of qualitative data to
-          dig through. We started looking at the flow of how users find games, and how many use the already existing
-          search function. Access to screen recordings, also through Fullstory, helped us spot any moments of confusion
-          or frustration.
+        <h3 class="secondaryCaseTitle">Develop</h3>
+        <p>A couple of ideation workshops took place, with time spent on <span class="boldText">brainstorming</span> and
+          <span class="boldText">sketching</span> rapid prototypes of flow ideas.
         </p>
-        <p>
-          To think about filtering, we looked at casino gaming, travel booking and e-commerce sites, to see if any
-          common patterns emerged.
+        <img src="/dev/assets/cas-2b.png" alt="A notebook with early flow ideas sketched out.">
+        <p class="caption">I quickly sketched ideas to consider flow and interactions.
         </p>
-        <img src="/dev/assets/filtercomp.png" alt="a screenshot of a competitor filtering feature.">
-        <p class="caption">Competitor research helped us discover common patterns in game browsing.</p>
-        <h3 class="secondaryCaseTitle">Analyze</h3>
-        <p>A common problem we found is that Japanese users don’t always want to type in English, as it adds another
-          layer of thought which removes them from the gaming experience. Because most providers have English names
-          (“Evolution Gaming”, “Blueprint Gaming”) we decided to use tiles with logos, instead of a dropdown with text
-          content.
+        <p>We sketched ideas that aligned with:</p>
+        <ul>
+          <li>• Fitt’s law — the further away a target is and the smaller the size of the target, the longer it takes
+            for a user to complete a task.
+          </li>
+          <li>• Hick’s law — the more options are available, the longer it will take a user to make a decision.
+          </li>
+          <li>Cognitive load - the amount of mental effort required to use the feature should be low, and shouldn’t
+            overwhelm or confuse users.
+          </li>
+        </ul>
+        <img src="/dev/assets/cas-2c.png" alt="A notebook with more developed flow ideas sketched out.">
+        <p class="caption">Still in the paper sketch phase, ideas began to form around feature interactions.</p>
+        <p>A common problem we found is that Japanese users don’t always want to, or can’t, type in English characters.
+          Because most providers use English characters (“Evolution Gaming”, “Blueprint Gaming”) we decided to use tiles
+          with logos, instead of a dropdown with text content.</p>
+        <p>I created <span class="boldText">low-fidelity</span> digital sketches of how the filtering function could
+          work within the existing flow. We
+          took into account the <span class="boldText">mental model</span> around filtering, so users could recognize
+          that the filter should function
+          the way it appears.</p>
+        <img src="/dev/assets/cas-3.png" alt="A screenshot of a digital wireframe.">
+        <p class="caption">Low-fidelity digital sketches helped me explore visual hierarchy, design patterns and mental
+          models of interactions.</p>
+        <p>We created <span class="boldText">wireframes,</span> and experimented with adding a filter function, keeping
+          in mind the law of proximity.
+          To reduce the cognitive load during the user flow, we decided to initially display only a few tiles in the
+          default state, with a choice to expand the filter and show all tiles. Users could also search for games using
+          a searchbar. We made sure that the searchbar stood out in the <span class="boldText">visual hierarchy</span>
+          so that users could find it easily.
         </p>
-        <h3 class="secondaryCaseTitle">Sketch</h3>
-        <p>I quickly drew some rough ideas about where we could put the filtering function and how it could work within
-          the existing flow. By exploring different options, we were able to choose the most effective placement.
+        <img src="/dev/assets/cas-4.png" alt="A screenshot of a digital wireframe with some notes on the side.">
+        <p class="caption">Notes on how the filtering feature fits into the user flow.</p>
+        <p>We tested the low-fidelity prototypes during a <span class="boldText">user testing</span> workshop with five
+          employees of Hero Gaming, who
+          weren’t familiar with the product. The response showed that the user flow caused no confusion and allowed
+          users to find games quicker than the current <span class="boldText">task-completion</span> time.
         </p>
-        <h3 class="secondaryCaseTitle">Wireframes and prototype</h3>
-        <p>We gathered logos from all the game providers and created wireframes. To keep things simple for users, we
-          showed only a few filtering options at a time, with a choice to expand the filter. Users could also search for
-          games using keywords. We made sure that the search bar stood out so that users could find it easily.
+        <img src="/dev/assets/cas-5.png" alt="A digital wireframe of the flow.">
+        <p class="caption">These low-fidelity prototypes were guerilla tested by five people, to give us insights into
+          user expectations around the flow.
         </p>
-        <img src="/dev/assets/filterwireframe.png" alt="wireframes of casinome">
-        <p class="caption">Thinking through the feature with wireframes.</p>
-        <img src="/dev/assets/wireframeslogos.png" alt="wireframes of casinome with logos">
-        <p class="caption">Wireframes showing the different states.</p>
-        <h3 class="secondaryCaseTitle">Test design and iterate</h3>
-        <p>We tested the feature multiple times using prototypes, then ran an A/B test and followed the results using
-          Fullstory analytics.
+        <p>Happy with the outcome of the user testing workshop, we began creating new components needed for the filter
+          feature. These were incorporated into a master design system to speed up our workflow.
         </p>
+        <img src="/dev/assets/cas-6.png" alt="A screenshot of the UI in progress.">
+        <p class="caption">Work began on the UI. Filter states are shown here.</p>
+        <img src="/dev/assets/cas-7.png" alt="Another screenshot of the UI in progress.">
+        <p class="caption">A high-fidelity prototype with notes on resetting the filter to a default state.</p>
+        <p>We created <span class="boldText">high-fidelity prototypes</span> and tested the feature again in another
+          <span class="boldText">user testing workshop,</span> again with five
+          employees of Hero Gaming unfamiliar with the product. Comparing workshop test times against the current data
+          analytics, we confirmed that there was less time spent finding a game, and less <span
+            class="boldText">cognitive load</span> overall.
+        </p>
+        <h3 class="secondaryCaseTitle">Deliver</h3>
+        <p>Design was approved by product management and went through handoff to the developers, and after development
+          we confirmed the flow with the QA team.</p>
         <h2 class="caseTitle">Result</h2>
-        <p>Data showed that after the feature was added to the flow, users were able to find their favourite games
-          faster.</p>
-        <img src="/dev/assets/filterscreenshot.png" alt="the filter feature">
-        <p class="caption">The user can choose to combine the filter feature with a searchterm.</p>
+        <p>After a month we analyzed the data analytics and results indicated that users were able to find their
+          preferred games more quickly, and with less cognitive load. This met our <span class="boldText">key
+            performance indicator (KPI</span> of
+          the task.
+        </p>
         <img src="/dev/assets/filter.gif" alt="gif of the filter feature">
-        <p class="caption">Interacting with tiles filters the game catalogue.</p>
+        <p class="caption">The filter feature shown in a live-product environment.</p>
       </section>
       <div class="bigMessage">
         <section class="contentContainer">
           <h2>Thanks for reading</h2>
-          <a href="mailto:lee.richardson4@gmail.com" class="btn sayhibtn" role="button">Contact me by email</a>
+          <h4 class="nextLink"><a href="/dealtap.html">See next project: Redesigned a digital product</a></h4>
           <h3><img src="/dev/assets/brownshape3.svg" class="rotate" alt=""></h3>
         </section>
       </div>
@@ -167,8 +224,6 @@
           <ul>
             <li><a href="mailto:lee.richardson4@gmail.com">Email</a></li>
             <li><a href="https://www.linkedin.com/in/lrchrdsn/">LinkedIn</a></li>
-            <li><a href="https://dribbble.com/leerr">Dribbble</a></li>
-          </ul>
         </div>
         <div class="weather footerCol">
           <h3>Weather</h3>
