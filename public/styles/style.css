@@ -442,7 +442,7 @@ footer {
     -ms-flex-direction: column;
     flex-direction: column;
     max-width: 50%;
-    margin-top: 4rem; }
+    justify-content: space-between; }
   .caseHeader .result {
     max-width: 100%; }
     .caseHeader .result img {
@@ -1295,7 +1295,7 @@ footer {
     -ms-flex-direction: column;
     flex-direction: column;
     max-width: 50%;
-    margin-top: 4rem; }
+    justify-content: space-between; }
   .caseHeader .result {
     max-width: 100%; }
     .caseHeader .result img {
