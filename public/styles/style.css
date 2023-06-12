@@ -1981,12 +1981,8 @@ ul {
   margin: 8rem 0 8rem 0;
   text-align: center;
   display: flex;
-  justify-content: center; }
-  .bigMessage h2 {
-    font-family: 'GTEestiBook';
-    line-height: 1.2; }
-  .bigMessage h3 {
-    width: 70vw; }
+  justify-content: center;
+  width: 95vw; }
 
 @media only screen and (min-device-width: 318px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) {
   body {
