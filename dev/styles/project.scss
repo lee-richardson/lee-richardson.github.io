@@ -17,7 +17,8 @@
 		-ms-flex-direction: column;
 		flex-direction: column;
 		max-width: 50%;
-		margin-top: 4rem;
+		// margin: 4rem 0 2rem 0;
+		justify-content: space-between;
 	}
 
 	.result {
