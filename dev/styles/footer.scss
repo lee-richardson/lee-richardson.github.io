@@ -66,10 +66,13 @@ footer {
 			margin: 1rem 0;
 		}
 
-		.contact ul {
-			width: 50vw;
-			flex-direction: column;
+		.contact {
+			ul {
+				width: 50vw;
+				flex-direction: column;
+			}
 		}
+
 
 		.weather {
 
@@ -80,6 +83,21 @@ footer {
 			p {
 				text-align: left;
 			}
+		}
+	}
+
+}
+
+@media (min-width: 1910px) {
+	.footerContent {
+		padding: 4rem 0;
+
+		.contact ul {
+			margin-top: 1rem;
+		}
+
+		.weather .weatherTextHolder {
+			margin-top: 1rem;
 		}
 	}
 
