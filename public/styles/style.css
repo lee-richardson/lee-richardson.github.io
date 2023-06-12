@@ -443,9 +443,6 @@ footer {
     flex-direction: column;
     max-width: 50%;
     margin-top: 4rem; }
-    .caseHeader .titles h1 {
-      font-size: 4rem;
-      line-height: 4.5rem; }
   .caseHeader .result {
     max-width: 100%; }
     .caseHeader .result img {
@@ -1299,9 +1296,6 @@ footer {
     flex-direction: column;
     max-width: 50%;
     margin-top: 4rem; }
-    .caseHeader .titles h1 {
-      font-size: 4rem;
-      line-height: 4.5rem; }
   .caseHeader .result {
     max-width: 100%; }
     .caseHeader .result img {
