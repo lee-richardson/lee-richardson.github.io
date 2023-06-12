@@ -17,13 +17,14 @@ function handleError(err) {
     setTimeout(function() {
     let hoursText = document.querySelector(".changeText");
     let hour = new Date().getHours();
-    if (hour >= 8 && hour <= 18)
+    let day = new Date().getDay();
+    if (hour >= 8 && hour <= 18 && day == 1 || day == 5)
     {
-      hoursText.innerHTML = "open";
+      hoursText.innerHTML = "open for business.";
     }
     else
     {
-    hoursText.innerHTML = "closed";
+    hoursText.innerHTML = "available Monday to Friday, 8 - 17.";
     }
 
     }, 1000)
