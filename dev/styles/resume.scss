@@ -58,16 +58,13 @@
 	}
 }
 
-ul {
-	margin-bottom: 4rem;
-}
-
 
 .refText {
 	text-align: center;
 }
 
 .stars {
+	margin-top: 4rem;
 	display: flex;
 	justify-content: center;
 }
@@ -78,11 +75,13 @@ ul {
 
 
 	.cvContainer {
-		height: 35vh;
+		height: 30vh;
 	}
 
 	.cvtitles {
 		align-items: flex-start;
+		height: 30vh;
+		justify-content: center;
 	}
 
 	.main {
@@ -99,14 +98,6 @@ ul {
 			flex-direction: column;
 			margin: 0;
 
-			h5 {
-				margin: 0 0 0.2rem 0;
-			}
-
-			p {
-				margin: 0;
-			}
-
 			.date,
 			.title,
 			.desc {
@@ -119,8 +110,29 @@ ul {
 		}
 
 		.education p {
-			width: 90%;
+			width: 100%;
+		}
+
+		.education {
+			margin: 3rem 0;
 		}
 	}
 
+
+	.refText {
+		margin-top: 1rem;
+	}
+
+
+
+}
+
+@media (min-width: 1910px) {
+	.cvheader {
+		height: 70vh;
+	}
+
+	.refText {
+		margin-top: 1rem;
+	}
 }

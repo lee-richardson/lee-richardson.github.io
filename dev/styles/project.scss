@@ -20,8 +20,8 @@
 		margin-top: 4rem;
 
 		h1 {
-			font-size: 3rem;
-			line-height: 3.5rem;
+			font-size: 4rem;
+			line-height: 4.5rem;
 		}
 	}
 
@@ -76,7 +76,7 @@
 
 	img {
 		position: relative;
-		top: 3rem;
+		top: 2.5rem;
 		right: 0.7rem;
 	}
 
@@ -148,7 +148,7 @@
 
 .caseStudy {
 	margin: 4rem auto;
-	width: 55vw;
+	width: 70vw;
 
 	.caseStudyTitle {
 		margin: 4rem 0 0.5rem 0;
@@ -172,9 +172,13 @@
 	}
 }
 
+ul {
+	margin: 0;
+}
+
 img {
 	max-width: 100%;
-	margin: 2rem 0 0.5rem 0;
+	margin: 2rem 0 0 0;
 }
 
 .secondaryCaseTitle {
@@ -184,6 +188,10 @@ img {
 .endMessageText {
 	text-align: center;
 	margin-top: 4rem;
+}
+
+.nextLink {
+	margin-top: 1rem;
 }
 
 .centreImgContainer {
