@@ -1,33 +1,163 @@
 @import 'mixins.scss';
+@import 'menu.scss';
+@import 'footer.scss';
 
-ul a {
-    font-weight: 400;
+.abouttitle {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    // text-align: center;
+
 }
 
-.about {
 
 
-.titles img {
-    width: 100%;
+.aboutHeader {
+    height: auto;
+    margin-top: 4rem;
+    border-bottom: 1px solid #1a1f54;
+
+    .text {
+        width: 50%;
+        margin-top: 4rem;
+    }
+
+    .zoomImage {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 1.5rem;
+        background-color: #EEEEEE;
+        margin-bottom: 1rem;
+
+        img {
+            width: 100%;
+            margin: 0;
+        }
+
+        .zoomControls {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            width: 35%;
+            margin-top: 1rem;
+
+            img {
+                width: 3rem;
+            }
+
+            .zoomStar {
+                width: 4rem;
+            }
+
+        }
+    }
+
 }
-    
-    .aboutText {
-        width: 60%;
-        margin: 2rem auto;
+
+.services {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+
+    .rowContainer {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-self: center;
+        margin: 2rem 0;
     }
 
-    h2 {
-        margin-bottom: 0;
+    .row {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        width: 50vw;
+        align-self: center;
+
+        .icon {
+            width: 5%;
+            margin-top: 0.5rem;
+        }
+
+        .titleLeft {
+            width: 40%;
+            text-align: right;
+        }
+
+        .titleRight {
+            width: 40%;
+            text-align: left;
+        }
+
+        h4 {
+            font-weight: 400;
+            margin: 0.5rem 0;
+        }
     }
 
-}    
-    
-    @media only screen 
-  and (min-device-width: 360px) 
-  and (max-device-width: 667px) 
-  and (-webkit-min-device-pixel-ratio: 2) { 
+}
 
-    .headerContainer .header .titles {
+.contactInfo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 8rem 0;
+
+
+    .contactText {
+        align-items: center;
+        text-align: center;
+    }
+
+    .contactPhoto {
+        align-items: center;
+
+        .cphimage {
+            width: 40%;
+        }
+    }
+}
+
+@media only screen and (min-device-width: 319px) and (max-device-width: 844px) and (-webkit-min-device-pixel-ratio: 2) {
+
+
+    .aboutHeader {
+        margin-top: 8rem;
+    }
+
+    .titles {
+        // align-items: start;
+        margin-top: 0;
+        flex-direction: column;
+
+        .text {
+            width: 100%;
+            margin-top: 0;
+        }
+
+        .zoomImage {
+            width: 100%;
+            padding: 1rem;
+            margin-top: 1rem;
+
+            img {
+                margin: 0;
+            }
+
+            .zoomControls {
+                img {
+                    width: 2.5rem;
+                }
+
+                .zoomStar {
+                    width: 3rem;
+                }
+            }
+        }
 
         .aboutPhoto {
             width: 100%;
@@ -35,13 +165,42 @@ ul a {
         }
     }
 
-    .contentContainer .aboutHeader {
-        height: 45vh;
-    
-        .titles {
-            display: flex;
-            flex-direction: column;
+    .about .whatido {
+        margin: 0.5rem 0;
+    }
+
+    .bigMessage {
+        margin: 2rem 0;
+        height: auto;
+    }
+
+
+    .contactInfo {
+        margin: 2rem 0 6rem 0;
+
+        .contactText {
+            width: 100%;
+        }
+
+        h3 {
+            font-size: 1.4rem;
+        }
+
+        .contactPhoto .cphimage {
+            width: 100%;
+            margin-bottom: 0;
         }
     }
-    
+
+
+}
+
+@media (min-width: 1910px) {
+    .aboutHeader {
+        height: 70vh;
+    }
+
+    // .whatelement p {
+    //     margin-top: 1rem;
+    // }
 }

@@ -5,7 +5,7 @@
 }
 
 @mixin mainRed {
-	color:#FF494A;
+	color: #FF494A;
 }
 
 @mixin blueBtn {
@@ -13,12 +13,13 @@
 	border: 3px solid #0a2681;
 }
 
-@mixin redBtn {
-	color:#FF494A;
-	border: 3px solid #FF494A;
-	box-shadow: 4px 4px 0 #FF494A;
-				-webkit-transition: .3s;
-				transition: .3s;
+@mixin hoverBtn {
+	color: #0a2681;
+	background-color: #BDCCD1;
+	border: 3px solid #0a2681;
+	box-shadow: 4px 4px 0 #0a2681;
+	-webkit-transition: .3s;
+	transition: .3s;
 }
 
 
@@ -26,19 +27,9 @@
 	background-color: #fff;
 }
 
-@mixin greyBackground {
-	background-color: #C9D1D7;
-}
-
 @mixin bodyLink {
 	a {
-    	-webkit-transition: .3s;
+		-webkit-transition: .3s;
 		transition: .3s;
 	}
 }
-
-
-@mixin greyBorder {
-	border: solid 0.5px #ccc;
-}
-

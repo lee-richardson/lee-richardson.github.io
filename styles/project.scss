@@ -1,32 +1,64 @@
-
 @import 'mixins.scss';
 @import 'footer.scss';
+@import 'menu.scss';
+
+
 
 .caseHeader {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
+	margin-top: 4rem;
+	border-bottom: 1px solid #1a1f54;
 
 	.titles {
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		-ms-flex-direction: column;
 		flex-direction: column;
+		max-width: 50%;
+		margin-top: 4rem;
+
+		h1 {
+			font-size: 4rem;
+			line-height: 4.5rem;
+		}
 	}
-	
+
 	.result {
-		width: 100%;
+		max-width: 100%;
+
+		img {
+			max-width: 50%;
+			height: auto;
+		}
 	}
 }
 
 .caseIntro {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: column;
 	flex-direction: column;
 
 	.caseList {
+		display: -webkit-box;
+		display: -ms-flexbox;
 		display: flex;
+		-webkit-box-pack: justify;
+		-ms-flex-pack: justify;
 		justify-content: space-between;
-		border-top: 1px solid #000;
 		padding: 0.5rem 0 2rem 0;
 
 		.caseBlurb {
+			-webkit-box-orient: vertical;
+			-webkit-box-direction: normal;
+			-ms-flex-direction: column;
 			flex-direction: column;
-			width: 25%;
+			width: 40%;
 
 			.title {
 				margin: 0.5rem 0;
@@ -39,20 +71,20 @@
 	}
 }
 
-.seeMoreArrow {
-	text-align: center;
-}
-
 .figmaContainer {
+	top: 4.5rem;
+
 	img {
 		position: relative;
-		top: 2rem;
+		top: 2.5rem;
 		right: 0.7rem;
-	  }
-	
+	}
+
 	.figmaBox {
 		background-color: #D2D3D7;
 		border-radius: 0.3rem;
+		width: -webkit-fit-content;
+		width: -moz-fit-content;
 		width: fit-content;
 
 		h5 {
@@ -63,94 +95,160 @@
 }
 
 .figmaContainer {
+	-webkit-animation: move 1s infinite linear;
 	animation: move 1s infinite linear;
 }
 
 
-@keyframes move {
+@-webkit-keyframes move {
 	0% {
+		-webkit-transform: translateX(0);
+		-ms-transform: translateX(0);
 		transform: translateX(0);
 	}
+
 	50% {
+		-webkit-transform: translateX(5rem);
+		-ms-transform: translateX(5rem);
 		transform: translateX(5rem);
 	}
+
 	100% {
+		-webkit-transform: translateX(0);
+		-ms-transform: translateX(0);
 		transform: translateX(0);
 	}
 }
 
+
+@keyframes move {
+
+	0% {
+		-webkit-transform: translateX(0);
+		-ms-transform: translateX(0);
+		transform: translateX(0);
+	}
+
+	50% {
+		-webkit-transform: translateX(5rem);
+		-ms-transform: translateX(5rem);
+		transform: translateX(5rem);
+	}
+
+	100% {
+		-webkit-transform: translateX(0);
+		-ms-transform: translateX(0);
+		transform: translateX(0);
+	}
+}
+
+
+
+
+
 .caseStudy {
-	width: 60%;
-	margin: 5rem auto;
+	margin: 4rem auto;
+	width: 70vw;
 
 	.caseStudyTitle {
-		margin-bottom: 5rem;
+		margin: 4rem 0 0.5rem 0;
 	}
 
 	.caseTitle {
-		margin-top: 5rem;
+		margin-top: 4rem;
+	}
+
+	.caption {
+		margin-bottom: 2rem;
 	}
 }
 
-.seeMoreArrow {
-	font-size: 3rem;
+
+.caseStudyImg {
+	text-align: center;
+
+	.result {
+		max-width: 50%;
+	}
 }
 
-.mainContent {
-
-	.caseStudyImg {
-		text-align: center;
-
-		.result {
-			max-width: 80%;
-		} 
-	}
-
-	ul li {
-		font-size: 1.2rem;
-		line-height: 1.6;
-	}
-
-	img {
-		max-width: 100%;
-		margin-top: 3rem;
-	}
-
-	.secondaryCaseTitle {
-		margin-top: 3rem;
-	}
-
-	.endMessageText {
-		text-align: center;
-		margin-top: 5rem;
-		font-weight: 700;
-	}
-
-	.centreImgContainer {
-		display: flex;
-		justify-content: center;
-	}
-
+ul {
+	margin: 0;
 }
+
+img {
+	max-width: 100%;
+	margin: 2rem 0 0 0;
+}
+
+.secondaryCaseTitle {
+	margin: 2rem 0 0.5rem 0;
+}
+
+.endMessageText {
+	text-align: center;
+	margin-top: 4rem;
+}
+
+.nextLink {
+	margin-top: 1rem;
+}
+
+.centreImgContainer {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+}
+
+
 
 
 
 // media queries //
-@media only screen 
-  and (min-device-width: 360px) 
-  and (max-device-width: 667px) 
-  and (-webkit-min-device-pixel-ratio: 2) { 
+@media only screen and (min-device-width: 319px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) {
+
+	.contentContainer {
+		width: 90vw;
+
+	}
+
+	.subHeader {
+		// margin-top: 10rem;
+
+		.whatgrid .whatelement {
+			margin: 1rem 0;
+		}
+	}
+
+	.caseStudy {
+		width: 100%;
+		margin-top: 0;
+
+		img {
+			margin: 1rem 0;
+		}
+	}
 
 	.caseHeader {
+		display: -webkit-box;
+		display: -ms-flexbox;
 		display: flex;
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		-ms-flex-direction: column;
 		flex-direction: column;
+		-webkit-box-pack: start;
+		-ms-flex-pack: start;
 		justify-content: start;
-		height: 50vh;
 		position: relative;
+		margin-top: 8rem;
 
 		.titles {
-			width: 100%;
-			margin: 1rem auto;
+			max-width: 100%;
+			margin: 0;
 		}
 
 		.result {
@@ -159,29 +257,39 @@
 
 		.figmaContainer {
 			position: absolute;
-			top: 20rem;
-			left: 4rem;
+			top: 8rem;
+			left: 10rem;
+
+			img {
+				top: 4.5rem;
+			}
 		}
 	}
 
-		.caseIntro .caseList {
-			flex-direction: column;
-			.caseBlurb {
-				width: 100%;
-				margin-top: 1rem;
-			}
-		}
+	.caseIntro .caseList {
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		-ms-flex-direction: column;
+		flex-direction: column;
 
-		.caseStudy {
-			margin: 0 auto;
-			width: 95%;
+		padding: 0;
 
-			.caseStudyTitle {
-				margin-bottom: 3rem;
-			}
+		.caseBlurb {
+			width: 100%;
+			margin-top: 1rem;
 		}
+	}
 
-		.mainContent img {
-			margin: 1rem 0;
-		}
-  }
+	.bigMessage {
+		margin: 4rem 0;
+		padding: 0;
+		height: 25vh;
+	}
+
+	// .caseStudyTitle {
+	// 	margin-bottom: 3rem;
+	// }
+
+
+
+}
