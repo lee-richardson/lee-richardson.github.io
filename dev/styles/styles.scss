@@ -201,23 +201,23 @@ legend {
 
 //body text
 @font-face {
-	font-family: 'GTEestiBook';
-	src: url(/dev/assets/font/GTEestiProText-Book.ttf) format("opentype");
+	font-family: 'GTWalsheimReg';
+	src: url(/dev/assets/font/gt-walsheim-regular.ttf) format("opentype");
 	font-weight: normal;
 	font-style: normal;
 }
 
 //case study highlight
 @font-face {
-	font-family: 'GTEestiBold';
-	src: url(/dev/assets/font/GTEestiProText-Bold.ttf) format("opentype");
+	font-family: 'GTWalsheimBold';
+	src: url(/dev/assets/font/gt-walsheim-bold.ttf) format("opentype");
 	font-weight: normal;
 	font-style: normal;
 }
 
 //main display
 @font-face {
-	font-family: 'GTEestiDispReg';
+	font-family: 'GTSuperDisplayMed';
 	src: url(/dev/assets/font/GTSuperDisplay-Medium.otf) format("opentype");
 	font-weight: normal;
 	font-style: normal;
@@ -225,16 +225,16 @@ legend {
 
 //secondary display
 @font-face {
-	font-family: 'GTSuperReg';
-	src: url(/dev/assets/font/GTSuperDisplay-Regular.otf) format("opentype");
+	font-family: 'GTSuperText';
+	src: url(/dev/assets/font/GTSuperText-Regular.otf) format("opentype");
 	font-weight: normal;
 	font-style: normal;
 }
 
 //links
 @font-face {
-	font-family: 'GTEestiBookItal';
-	src: url(/dev/assets/font/GTEestiProText-BookItalic.ttf) format("opentype");
+	font-family: 'GTWalsheimRegItal';
+	src: url(/dev/assets/font/gt-walsheim-regular-oblique.ttf) format("opentype");
 	font-weight: normal;
 	font-style: normal;
 }
@@ -248,7 +248,7 @@ html {
 body {
 	font-size: 18px;
 	line-height: 1.6rem;
-	font-family: 'GTEestiBook', Palatino, serif;
+	font-family: 'GTWalsheimReg', Palatino, serif;
 	margin: 0;
 	-webkit-transition: all 0.5s;
 	-o-transition: all 0.5s;
@@ -261,7 +261,8 @@ p {
 }
 
 .caption {
-	font-family: 'GTSuperReg';
+	font-family: 'GTSuperText';
+	;
 }
 
 .contentContainer {
@@ -324,7 +325,7 @@ h4 {
 
 a {
 	@include mainBlue;
-	font-family: 'GTEestiBook', Arial, sans-serif;
+	font-family: 'GTWalsheimReg', Arial, sans-serif;
 	border-bottom: 1px solid #1a1f54;
 	text-decoration: none;
 	-webkit-transition: all 1s;
@@ -334,41 +335,41 @@ a {
 
 	&:hover {
 		border-bottom: 1px dashed #1a1f54;
-		font-family: 'GTEestiBookItal', Arial, sans-serif;
+		font-family: 'GTWalsheimRegItal', Arial, sans-serif;
 	}
 }
 
 h1 {
 	font-size: 5rem;
 	line-height: 5.5rem;
-	font-family: 'GTEestiDispReg', Arial, sans-serif;
+	font-family: 'GTSuperDisplayMed', Arial, sans-serif;
 }
 
 h2 {
 	font-size: 3.5rem;
 	line-height: 4rem;
-	font-family: 'GTSuperReg';
+	font-family: 'GTSuperDisplayMed';
 }
 
 h3 {
 	font-size: 2rem;
 	line-height: 2.5rem;
-	font-family: 'GTSuperReg', Arial, sans-serif;
+	font-family: 'GTSuperDisplayMed', Arial, sans-serif;
 }
 
 h4 {
 	font-size: 1.5rem;
 	font-size: 2rem;
-	font-family: 'GTSuperReg', Arial, sans-serif;
+	font-family: 'GTSuperText', Arial, sans-serif;
 }
 
 h5 {
 	font-size: 1rem;
-	font-family: 'GTEestiBook', Arial, sans-serif;
+	font-family: 'GTWalsheimBold', Arial, sans-serif;
 }
 
 .boldText {
-	font-family: 'GTEestiBold';
+	font-family: 'GTWalsheimBold';
 }
 
 .landingHeader {
@@ -496,7 +497,7 @@ ul {
 
 			a:hover {
 				border-bottom: 1px dashed #1a1f54;
-				font-family: 'GTEestiBookItal', Arial, sans-serif;
+				font-family: 'GTWalsheimRegItal', Arial, sans-serif;
 			}
 
 		}
