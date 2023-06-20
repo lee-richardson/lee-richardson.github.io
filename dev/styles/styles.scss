@@ -231,6 +231,15 @@ legend {
 	font-style: normal;
 }
 
+//caption
+@font-face {
+	font-family: 'GTWalsheimlight';
+	src: url(/dev/assets/font/gt-walsheim-light.ttf) format("opentype");
+	font-weight: normal;
+	font-style: normal;
+}
+
+
 //links
 @font-face {
 	font-family: 'GTWalsheimRegItal';
@@ -261,7 +270,7 @@ p {
 }
 
 .caption {
-	font-family: 'GTSuperText';
+	font-family: 'GTWalsheimlight';
 	;
 }
 
