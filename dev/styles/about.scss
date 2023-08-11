@@ -2,43 +2,103 @@
 @import 'menu.scss';
 @import 'footer.scss';
 
-.abouttitle {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    // text-align: center;
+.aboutpage {
+    background-color: #2e2e2e;
 
+    a {
+        color: #fff;
+        font-family: 'MatterReg';
+        border-bottom: 1px solid #E3E3E3;
+        text-decoration: none;
+        -webkit-transition: all 1s;
+        -o-transition: all 1s;
+        transition: all 1s;
+
+        &:hover {
+            border-bottom: 1px dashed #E3E3E3;
+        }
+    }
+
+    body {
+        color: #fff;
+    }
+
+    .menu {
+        background-color: #2e2e2e;
+        border-bottom: 0.5px solid #E3E3E3;
+    }
+
+    .aboutdo {
+        background-color: #E3E3E3;
+        color: #000;
+    }
 }
 
 
+.abouttitle {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+
+}
 
 .aboutHeader {
-    height: auto;
+    height: 60vh;
     margin-top: 4rem;
-    border-bottom: 1px solid #1a1f54;
+
+    .titles {
+        margin-top: 8rem;
+    }
 
     .text {
-        width: 50%;
-        margin-top: 4rem;
+        width: 40%;
+
+        h1 {
+            margin: 0 0 1rem 0;
+        }
     }
 
     .zoomImage {
+
+        background-color: #E3E3E3;
+        border-radius: 1rem;
         width: 50%;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
         flex-direction: column;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
         align-items: center;
         padding: 1.5rem;
-        background-color: #EEEEEE;
         margin-bottom: 1rem;
 
         img {
             width: 100%;
             margin: 0;
+            border-radius: 0;
         }
 
         .zoomControls {
+
+            display: -webkit-box;
+            display: -ms-flexbox;
             display: flex;
+            -webkit-box-orient: horizontal;
+            -webkit-box-direction: normal;
+            -ms-flex-direction: row;
             flex-direction: row;
+            -ms-flex-pack: distribute;
             justify-content: space-around;
             width: 35%;
             margin-top: 1rem;
@@ -56,71 +116,53 @@
 
 }
 
-.services {
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    height: auto;
-
-    .rowContainer {
-        text-align: center;
-        display: flex;
-        flex-direction: column;
-        align-self: center;
-        margin: 2rem 0;
-    }
-
-    .row {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        align-items: center;
-        width: 50vw;
-        align-self: center;
-
-        .icon {
-            width: 5%;
-            margin-top: 0.5rem;
-        }
-
-        .titleLeft {
-            width: 40%;
-            text-align: right;
-        }
-
-        .titleRight {
-            width: 40%;
-            text-align: left;
-        }
-
-        h4 {
-            font-weight: 400;
-            margin: 0.5rem 0;
-        }
-    }
-
-}
-
-.contactInfo {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.work {
     margin: 8rem 0;
 
-
-    .contactText {
-        align-items: center;
-        text-align: center;
-    }
-
-    .contactPhoto {
-        align-items: center;
-
-        .cphimage {
-            width: 40%;
-        }
+    .aboutdo {
+        border-radius: 1rem;
     }
 }
+
+.aboutlocation {
+    background-color: #E3E3E3;
+    color: #000;
+    padding: 4rem;
+    border-radius: 1rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-align: normal;
+    -ms-flex-align: normal;
+    align-items: normal;
+
+    img {
+        max-width: 50vw;
+        border-radius: 0;
+        margin: 0 2rem 0 0;
+    }
+
+    text-align: left;
+    margin: 12rem 0;
+}
+
+.aboutfooter {
+    background-color: #2e2e2e;
+    border-top: 0.5px solid #E3E3E3;
+
+    p,
+    a {
+
+        color: #fff;
+    }
+
+}
+
+
 
 @media only screen and (min-device-width: 319px) and (max-device-width: 844px) and (-webkit-min-device-pixel-ratio: 2) {
 
@@ -129,9 +171,16 @@
         margin-top: 8rem;
     }
 
+    .work {
+        margin: 12rem 0;
+    }
+
     .titles {
-        // align-items: start;
+
         margin-top: 0;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
         flex-direction: column;
 
         .text {
@@ -142,7 +191,7 @@
         .zoomImage {
             width: 100%;
             padding: 1rem;
-            margin-top: 1rem;
+            margin-top: 4rem;
 
             img {
                 margin: 0;
@@ -174,6 +223,20 @@
         height: auto;
     }
 
+    .aboutlocation {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        padding: 2rem;
+        margin: 8rem 0;
+
+        .cphimage {
+            max-width: 100%;
+            margin: 0;
+        }
+    }
+
 
     .contactInfo {
         margin: 2rem 0 6rem 0;
@@ -197,10 +260,7 @@
 
 @media (min-width: 1910px) {
     .aboutHeader {
-        height: 70vh;
+        height: 55vh;
     }
 
-    // .whatelement p {
-    //     margin-top: 1rem;
-    // }
 }
