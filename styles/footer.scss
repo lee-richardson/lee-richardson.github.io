@@ -1,104 +1,68 @@
+
 @import 'mixins.scss';
 
 /* footer =======================================*/
 
 footer {
+	// @include greyBackground;
 	background-color: #fed876;
+	border-top: 1px solid #0a2681;
 }
 
 .footerContent {
-	display: -webkit-box;
-	display: -ms-flexbox;
+	@include mainBlue;
 	display: flex;
-	-webkit-box-orient: horizontal;
-	-webkit-box-direction: normal;
-	-ms-flex-direction: row;
 	flex-direction: row;
+	padding: 5rem 0;
 	width: 100%;
-	-webkit-box-pack: justify;
-	-ms-flex-pack: justify;
 	justify-content: space-between;
-	padding: 2rem 0;
 
-	.contact {
-		ul {
-			display: -webkit-box;
-			display: -ms-flexbox;
-			display: flex;
-			-webkit-box-pack: justify;
-			-ms-flex-pack: justify;
-			justify-content: space-between;
-			margin: 0;
-			width: 20vw;
+	ul li {
+		padding: 0.2rem 0;
+		@include bodyLink;
+		
+		a {
+			font-weight: 400;
 		}
-
 	}
 
-	.weather p,
-	.weather h3 {
-		text-align: right;
-	}
-
-	.weatherTextHolder {
-		margin: 0;
+	.weather p {
+		width: 80%;
 	}
 }
 
 /* end of footer =======================================*/
 
 
-@media only screen and (min-device-width: 319px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) {
+@media only screen 
+  and (min-device-width: 360px) 
+  and (max-device-width: 667px) 
+  and (-webkit-min-device-pixel-ratio: 2) { 
 
 
-	.footerContent {
-		-webkit-box-orient: vertical;
-		-webkit-box-direction: normal;
-		-ms-flex-direction: column;
-		flex-direction: column;
-		-webkit-box-align: start;
-		-ms-flex-align: start;
-		align-items: start;
-		width: 100%;
-		-ms-flex-wrap: wrap;
-		flex-wrap: wrap;
+.footerContent {
+	flex-direction: row;
+	padding: 3rem 0;
+	width: 100%;
+	flex-wrap: wrap;
 
-		.footerCol {
-			margin: 1rem 0;
-		}
+	.footerCol {
+		margin: 1rem 0;
+	}
 
-		.contact {
-			ul {
-				width: 50vw;
-				flex-direction: column;
-			}
-		}
-
-
-		.weather {
-
-			h3 {
-				text-align: left;
-			}
-
-			p {
-				text-align: left;
+	.footerList li {
+		padding: 0.5rem 0;
+		
+		a {
+			font-size: 14px;
 			}
 		}
 	}
 
-}
-
-@media (min-width: 1910px) {
-	.footerContent {
-		padding: 4rem 0;
-
-		.contact ul {
-			margin-top: 1rem;
-		}
-
-		.weather .weatherTextHolder {
-			margin-top: 1rem;
+	.weather {
+		p {
+			font-size: 1rem;
+			margin: 0.5rem 0;
 		}
 	}
-
 }

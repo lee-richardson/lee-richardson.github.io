@@ -1,138 +1,65 @@
 @import 'mixins.scss';
 @import 'footer.scss';
-@import 'menu.scss';
-
-.cvheader {
-	display: flex;
-	align-content: center;
-}
 
 .titles {
-	margin-top: 5rem;
-	display: flex;
-}
+    margin-top: 5rem;
+} 
 
-.cvtitles {
-	display: flex;
-	align-items: center;
+.cvContainer {
+	height: 30vh;
 }
 
 .resume {
-	margin: 4rem 0;
+	padding: 5rem 0;
 
-	.cv {
-		margin: 0 auto;
-		width: 100%;
-
-	}
-
-	.cvList {
-		display: flex;
-		justify-content: space-between;
-		padding: 1rem 0;
-		border-bottom: 1px solid #d1d2dd;
-
-		.date {
-			width: 15%;
+			.cv {
+			margin: 0 auto;
+			width: 60%;
+			
+			.cvList {
+				display: flex;
+				justify-content: space-between;
+				padding: 1rem 0;
+				border-bottom: 1px solid #CCCCCC;
+			}
 		}
 
-		.title {
-			width: 25%;
+		.education {
+			margin-top: 5rem;
 		}
 
-		.desc {
-			width: 55%;
+		.edList {
+			display: flex;
 		}
-	}
-
-	.education {
-		margin: 8rem 0 12rem 0;
-		text-align: center;
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-
-		p {
-			width: 65%;
-		}
-	}
 }
 
-
-.refText {
-	text-align: center;
-}
-
-.stars {
-	margin-top: 4rem;
+.starContainer {
+	margin-top: 2.5rem;
 	display: flex;
 	justify-content: center;
 }
 
 
 // media queries //
-@media only screen and (min-device-width: 320px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) {
-
-
-	.cvContainer {
-		height: 30vh;
-	}
-
-	.cvtitles {
-		align-items: flex-start;
-		height: 30vh;
-		justify-content: center;
-	}
-
-	.main {
-		margin-top: 0;
-	}
-
-	.whatido {
-		margin-top: 0;
-	}
-
-	.resume {
-		.cv .cvList {
-			display: flex;
-			flex-direction: column;
-			margin: 0;
-
-			.date,
-			.title,
-			.desc {
-				width: 100%;
+@media only screen 
+  and (min-device-width: 360px) 
+  and (max-device-width: 667px) 
+  and (-webkit-min-device-pixel-ratio: 2) { 
+		.resume .cv {
+			width: 90%;
+			}
+		
+			.title {
+				width: 50%;
 			}
 
-			.desc {
-				margin-top: 1rem;
+			.date {
+				width: 50%;
 			}
-		}
 
-		.education p {
-			width: 100%;
-		}
+			.cvContainer {
+				height: 25vh;
+			}
+		
 
-		.education {
-			margin: 3rem 0;
-		}
-	}
-
-
-	.refText {
-		margin-top: 1rem;
-	}
-
-
-
-}
-
-@media (min-width: 1910px) {
-	.cvheader {
-		height: 70vh;
-	}
-
-	.refText {
-		margin-top: 1rem;
-	}
-}
+  }
