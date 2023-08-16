@@ -590,10 +590,10 @@ ul {
 
 
 // mobile media queries //
-@media only screen and (min-device-width: 318px) and (max-device-width: 667px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {
+@media only screen and (min-device-width: 318px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 2) {
 
 	body {
-		line-height: 1.4;
+		line-height: 1.3;
 		font-size: 18px;
 
 		h1 {
@@ -683,6 +683,7 @@ ul {
 	.bigMessage {
 		margin: 8rem 0;
 		padding: 0;
+		height: auto;
 
 		.moveBounce {
 			margin: 1rem 0;
