@@ -54,7 +54,7 @@
     margin-top: 4rem;
 
     .titles {
-        margin-top: 8rem;
+        margin-top: 5rem;
     }
 
     .text {
@@ -164,20 +164,40 @@
 
 
 
-@media only screen and (min-device-width: 319px) and (max-device-width: 844px) and (-webkit-min-device-pixel-ratio: 2) {
+@media only screen and (min-device-width: 319px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 2) {
 
 
     .aboutHeader {
-        margin-top: 8rem;
+        margin-top: 4rem;
+        height: auto;
+
+        .abouttitle {
+            display: flex;
+            flex-wrap: nowrap;
+            justify-content: flex-start;
+            height: auto;
+        }
     }
 
     .work {
-        margin: 12rem 0;
+        margin: 8rem 0;
+
+        .whatgrid {
+            padding: 2rem;
+
+            .whatelement {
+                width: 100%;
+            }
+        }
     }
 
-    .titles {
 
-        margin-top: 0;
+    .titles {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
         -webkit-box-orient: vertical;
         -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -185,13 +205,12 @@
 
         .text {
             width: 100%;
-            margin-top: 0;
+            margin-bottom: 4rem;
         }
 
         .zoomImage {
             width: 100%;
             padding: 1rem;
-            margin-top: 4rem;
 
             img {
                 margin: 0;
@@ -206,6 +225,10 @@
                     width: 3rem;
                 }
             }
+        }
+
+        .aboutlocation {
+            padding: 1.5rem;
         }
 
         .aboutPhoto {

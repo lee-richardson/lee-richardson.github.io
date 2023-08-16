@@ -506,10 +506,12 @@ ul {
 	-ms-flex-pack: justify;
 	justify-content: space-between;
 	margin-bottom: 8rem;
+	flex-wrap: wrap;
+	align-items: flex-start;
 
 
 	.workitem {
-		width: 48%;
+		flex-basis: 48%;
 		margin: 0 0 4rem 0;
 
 		.workImg {
@@ -571,7 +573,7 @@ ul {
 }
 
 .bigMessage {
-	margin: 8rem 0 8rem 0;
+	margin: 2rem 0 2rem 0;
 	text-align: center;
 	display: -webkit-box;
 	display: -ms-flexbox;
@@ -579,7 +581,7 @@ ul {
 	-webkit-box-pack: center;
 	-ms-flex-pack: center;
 	justify-content: center;
-	padding: 8rem;
+	padding: 2rem;
 
 	.moveBounce {
 		margin: 0 0 1rem 0;
@@ -588,7 +590,7 @@ ul {
 
 
 // mobile media queries //
-@media only screen and (min-device-width: 318px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) {
+@media only screen and (min-device-width: 318px) and (max-device-width: 667px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {
 
 	body {
 		line-height: 1.4;
@@ -600,13 +602,13 @@ ul {
 		}
 
 		h2 {
-			font-size: 2.5rem;
+			font-size: 2rem;
 			line-height: 1.2;
 
 		}
 
 		h3 {
-			font-size: 2rem;
+			font-size: 1.5rem;
 			line-height: 1.2;
 		}
 
@@ -630,12 +632,12 @@ ul {
 		display: -webkit-box;
 		display: -ms-flexbox;
 		display: flex;
-		height: 50vh;
+		height: 60vh;
 	}
 
 
 	.titles {
-		height: 50vh;
+		height: 60vh;
 
 		.titlespara p {
 			margin-top: 1rem;
@@ -647,8 +649,8 @@ ul {
 	.workgrid {
 
 		.workitem {
-			width: 100%;
-			margin: 1.5rem 0;
+			flex-basis: 100%;
+			margin: 0 0 2rem 0;
 
 			.worktitle {
 				img {
@@ -669,8 +671,7 @@ ul {
 		margin: 0;
 
 		.whatelement {
-			width: 100%;
-			// margin: 2rem 0;
+			width: 80%;
 		}
 	}
 
@@ -700,74 +701,127 @@ ul {
 
 }
 
+@media (orientation: landscape) {
+	.landingHeader {
+		height: 100vh;
 
-// tablet media queries //
-@media only screen and (min-device-width: 680px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 2) {
-
-	.workgrid {
-		-webkit-box-orient: vertical;
-		-webkit-box-direction: normal;
-		-ms-flex-direction: column;
-		flex-direction: column;
-
-		.workitem {
-			width: 100%;
-
-			.project-info-mobile {
-				display: block;
-				margin-top: 1rem;
-			}
+		.titles {
+			height: 100vh;
 		}
 	}
 
-}
+	// tablet media queries //
 
+	@media only screen and (min-device-width: 680px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 2) {
 
-
-// large screen media queries //
-@media (min-width: 1910px) {
-
-	body {
-		line-height: 1.5;
 
 		h1 {
-			font-size: 5rem;
-			line-height: 1;
+			font-size: 3rem;
+			line-height: 1.2;
 		}
 
-		h2 {
-			font-size: 3.2rem;
-			line-height: 1.5;
-			margin: 1rem 0;
 
+		h2 {
+			font-size: 2rem;
+			line-height: 1.2;
 		}
 
 		h3 {
-			font-size: 2.5rem;
-			line-height: 1;
+			font-size: 1.2rem;
+			line-height: 1.2;
 		}
 
-		h4 {
-			font-size: 2rem;
-			line-height: 1;
+		p {
+			font-size: 18px;
+			line-height: 1.3;
 		}
+
+		a {
+			font-size: 18px;
+			line-height: 1.3;
+		}
+
+		.workgrid {
+			-webkit-box-orient: vertical;
+			-webkit-box-direction: normal;
+			flex-wrap: wrap;
+			margin-bottom: 0;
+
+			.workitem {
+				flex-basis: 45%;
+
+				img {
+					margin: 0.5rem 0;
+				}
+
+				.project-info-mobile {
+					display: block;
+					margin-top: 1rem;
+				}
+			}
+
+		}
+
+		.whatido {
+			.whatidomain {
+				padding: 2rem;
+
+				.whatelement {
+					flex-wrap: wrap;
+					flex-basis: 50%;
+				}
+			}
+		}
+
 	}
 
 
-	.contentContainer {
-		width: 75vw;
-	}
 
-	.landingHeader {
-		height: 50vh;
+	// large screen media queries //
+	@media (min-width: 1910px) {
 
-		.titles {
+		body {
+			line-height: 1.5;
+
+			h1 {
+				font-size: 5rem;
+				line-height: 1;
+			}
+
+			h2 {
+				font-size: 3.2rem;
+				line-height: 1.5;
+				margin: 1rem 0;
+
+			}
+
+			h3 {
+				font-size: 2.5rem;
+				line-height: 1;
+			}
+
+			h4 {
+				font-size: 2rem;
+				line-height: 1;
+			}
+		}
+
+
+		.contentContainer {
+			width: 75vw;
+		}
+
+		.landingHeader {
 			height: 50vh;
+
+			.titles {
+				height: 50vh;
+			}
 		}
-	}
 
 
-	.whatelement p {
-		margin-top: 1rem;
+		.whatelement p {
+			margin-top: 1rem;
+		}
 	}
 }
