@@ -1,44 +1,63 @@
-@import 'mixins.scss';
 @import 'menu.scss';
 @import 'footer.scss';
 
-.abouttitle {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    // text-align: center;
 
+body {
+    background-color: #F5F5F5;
 }
 
-
-
 .aboutHeader {
-    height: auto;
-    margin-top: 4rem;
-    border-bottom: 1px solid #1a1f54;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
 
     .text {
-        width: 50%;
-        margin-top: 4rem;
+        width: 100%;
+    }
+
+    .zoomcont {
+        background-color: #D0F1FE;
+        padding: 2rem;
+        border: 1px solid #000;
+        border-radius: 2rem;
     }
 
     .zoomImage {
-        width: 50%;
+        margin: 4rem 0;
+        background-color: #E3E3E3;
+        border-radius: 2rem;
+        width: 60%;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
         flex-direction: column;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
         align-items: center;
-        padding: 1.5rem;
-        background-color: #EEEEEE;
-        margin-bottom: 1rem;
+        padding: 0.3rem;
+        border: 1px solid #000;
+        background-color: #fff;
 
         img {
             width: 100%;
             margin: 0;
+            border-radius: 2rem 2rem 0 0;
         }
 
         .zoomControls {
+
+            display: -webkit-box;
+            display: -ms-flexbox;
             display: flex;
+            -webkit-box-orient: horizontal;
+            -webkit-box-direction: normal;
+            -ms-flex-direction: row;
             flex-direction: row;
+            -ms-flex-pack: distribute;
             justify-content: space-around;
             width: 35%;
             margin-top: 1rem;
@@ -56,93 +75,73 @@
 
 }
 
-.services {
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    height: auto;
-
-    .rowContainer {
-        text-align: center;
-        display: flex;
-        flex-direction: column;
-        align-self: center;
-        margin: 2rem 0;
-    }
-
-    .row {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        align-items: center;
-        width: 50vw;
-        align-self: center;
-
-        .icon {
-            width: 5%;
-            margin-top: 0.5rem;
-        }
-
-        .titleLeft {
-            width: 40%;
-            text-align: right;
-        }
-
-        .titleRight {
-            width: 40%;
-            text-align: left;
-        }
-
-        h4 {
-            font-weight: 400;
-            margin: 0.5rem 0;
-        }
-    }
-
-}
-
-.contactInfo {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.work {
     margin: 8rem 0;
 
+    .chat {
+        margin: 0 auto;
+        width: 90vw;
 
-    .contactText {
-        align-items: center;
-        text-align: center;
     }
 
-    .contactPhoto {
-        align-items: center;
-
-        .cphimage {
-            width: 40%;
-        }
-    }
 }
 
-@media only screen and (min-device-width: 319px) and (max-device-width: 844px) and (-webkit-min-device-pixel-ratio: 2) {
+
+.aboutfooter {
+    background-color: #2e2e2e;
+    border-top: 0.5px solid #E3E3E3;
+
+    p,
+    a {
+
+        color: #fff;
+    }
+
+}
+
+
+
+@media only screen and (min-device-width: 319px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 2) {
 
 
     .aboutHeader {
-        margin-top: 8rem;
+        margin-top: 4rem;
+        height: auto;
+
+        .abouttitle {
+            display: flex;
+            flex-wrap: nowrap;
+            justify-content: flex-start;
+            height: auto;
+        }
     }
 
+    .work {
+        margin: 8rem 0;
+
+
+    }
+
+
     .titles {
-        // align-items: start;
-        margin-top: 0;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
         flex-direction: column;
 
         .text {
             width: 100%;
-            margin-top: 0;
+            margin-bottom: 4rem;
         }
 
         .zoomImage {
             width: 100%;
             padding: 1rem;
-            margin-top: 1rem;
 
             img {
                 margin: 0;
@@ -159,21 +158,14 @@
             }
         }
 
-        .aboutPhoto {
-            width: 100%;
-            margin: 1.5rem 0;
-        }
+
     }
 
-    .about .whatido {
-        margin: 0.5rem 0;
-    }
 
     .bigMessage {
         margin: 2rem 0;
         height: auto;
     }
-
 
     .contactInfo {
         margin: 2rem 0 6rem 0;
@@ -197,10 +189,7 @@
 
 @media (min-width: 1910px) {
     .aboutHeader {
-        height: 70vh;
+        height: 55vh;
     }
 
-    // .whatelement p {
-    //     margin-top: 1rem;
-    // }
 }

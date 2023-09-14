@@ -16,67 +16,95 @@
   <title>Shopify | Lee Richardson</title>
   <link rel="stylesheet" type="text/css" href="/public/styles/style.css">
   <meta name="viewport" content="width=device-width,initial-scale=1.0">
-  <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;700&display=swap" rel="stylesheet">
-  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <link rel="icon" href="/dev/assets/favicon.ico" sizes="any">
+  <link rel="icon" href="dev/assets/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="dev/assets/apple-touch-icon.png">
   <link rel="manifest" href="/site.webmanifest">
+  <meta name="theme-color" content="#4a4a4a">
 </head>
 
 <body id="presto">
+  <nav class="menu">
+    <div class="menuContainer">
+      <ul class="menu-head">
+        <li><a href="./index.html">Lee Richardson</a></li>
+      </ul>
+      <ul class="menu-list">
+
+        <li>
+          <a class="link" href="./resume.html">CV</a>
+        </li>
+      </ul>
+
+    </div>
+  </nav>
   <section class="headerContainer">
 
     <section class="contentContainer">
-      <nav class="menu">
-        <div class="menuContainer">
-          <ul class="menu-head">
-            <li><a href="./index.html">Lee Richardson</a></li>
-          </ul>
-          <ul class="menu-list">
-            <li><a class="link" href="./about.html">About</a></li>
-            <li>
-              <a class="link" href="./resume.html">CV</a>
-            </li>
-
-          </ul>
-
-        </div>
-      </nav>
 
       <section class="caseHeader">
-        <section class="titles" tabindex=0>
-          <h1>Designed an onboarding tool</h1>
-          <h3>Shopify</h3>
-          <p>2017 - 2018</p>
-        </section>
-        <div class="figmaContainer">
-          <img src="/dev/assets/figmaarrow.svg" alt="">
-          <div class="figmaBox">
-            <h5>Lee</h5>
-          </div>
-        </div>
         <section class="image" tabindex=0>
-          <img src="/dev/assets/shopifyphonenew.png" alt="the shopify tool displayed on a phone" class="result">
+          <img src="/dev/assets/shophome.jpg" alt="The product prototype displayed on a phone" class="result">
         </section>
+        <section class="titles" tabindex=0>
+          <h1 class="reg">Guiding newcomers with an onboarding feature</h1>
+          <div class="bigquestion">
+            <h2 class="ital">What was the project?</h2>
+            <h2 class="reg">How can we help users launching a store? I collected user data and crafted a solution to
+              enhance their experience.</h2>
+            <div class="more">
+              <div class="col">
+                <h4 class="ital">Company</h4>
+                <p>Shopify</p>
+              </div>
+              <div class="col">
+                <h4 class="ital">Timeline</h4>
+                <p>May 2017 - Apr 2018</p>
+              </div>
+
+            </div>
+
+          </div>
+          <div class="secondary">
+            <h3>Shopify</h3>
+            <h4>May 2017 - Apr 2018</h4>
+            <p>How can we help users launching a store? I collected user data and crafted a solution to enhance their
+              experience.</p>
+          </div>
+        </section>
+
       </section><!-- end of header -->
       <section class="subHeader">
         <section class="caseIntro" tabindex=0>
           <div class="caseList">
-            <section class="whatgrid grid">
+            <section class="grid">
               <div class="whatelement">
-                <h3>Methods ↴</h3>
+                <h3>Methods</h3>
                 <p>Stakeholder
                   interviews, user interviews, competitive analysis, card-sorting, wireframing, prototype testing, UI
                   design.
                 </p>
               </div>
               <div class="whatelement">
-                <h3>Description ↴</h3>
-                <p>Shopify allows users to create and operate an online store without coding knowledge. I was contacted
-                  by a team who had a project to develop a tool.
+                <h3>Description</h3>
+                <p>Aligning with business needs, I carried out research to find user needs, and designed a new tool
+                  aimed at beginner users. Working in agile sprints, the project took almost a year, and I worked as the
+                  only designer on a product team.</p>
+              </div>
+              <div class="whatelement">
+                <h3>The challenge</h3>
+                <p>Through analytics, Shopify knew some stores were being created but remaining inactive, without any
+                  products
+                  being added or sales traffic. It seemed that after creating an account, some users had trouble finding
+                  ideas
+                  of what to sell. Clearly, this was a cause of frustration for Shopify and its users.</p>
+              </div>
+              <div class="whatelement">
+                <h3>The goal</h3>
+                <p>Utilize user research to find issues and create a tool that offers ideas of what to sell. As part of
+                  the
+                  larger Shopify product, the solution should share the same vision and design principles of Shopify.
                 </p>
               </div>
             </section>
@@ -91,128 +119,141 @@
 
     <section class="contentContainer">
       <section class="caseStudy challenge">
-        <h2 class="caseTitle">The challenge</h2>
-        <p>Shopify had a problem where some users were not selling products, after setting up a store. </p>
-        <h2 class="caseTitle">The goal</h2>
-        <p>Produce a tool that recommends trending products to new users.</p>
 
-        <h2 class="caseTitle">The process</h2>
+        <h3 class="secondaryCaseTitle">Define</h3>
+        <img src="/dev/assets/shop-2.png" alt="A notebook with some handwritten notes.">
+        <p class="caption">Notes from the kickoff meeting setting out business requirements.</p>
 
-        <h3 class="secondaryCaseTitle">Understand</h3>
-        <p>I organized a stakeholder session to brainstorm and share ideas with users, developers, and product managers.
-          We sketched out ideas, discussed them, and gave our thoughts.</p>
-
-        <h3 class="secondaryCaseTitle">Research</h3>
-        <p>I interviewed a variety of users, from beginners to business owners running a Shopify store full-time. I
-          identified success metrics for the product:
-        </p>
+        <p>The team kicked off the project with a business analyst to set up goals, requirements and <span
+            class="boldText">return on investment (ROI).</span> I had to find a solution that shared the vision, design
+          principles and content strategy of
+          Shopify.</p>
+        <p>I carried out <span class="boldText">stakeholder interviews</span> with the product team, consisting of two
+          project managers, two SEO
+          specialists and three back-end developers. These interviews were to find technical constraints and project
+          expectations. <span class="boldText">Key Performance Indicators (KPI)</span> included:</p>
         <ul>
-          <li>• Help users avoid feeling overwhelmed after setting up their store.</li>
-          <li>• Help users find products that are in high demand/trending.</li>
-          <li>• Boost sales for users.</li>
+          <li>• Increase stores that are actively adding products.</li>
+          <li>• Increase positive customer feedback.</li>
         </ul>
-        <h3 class="secondaryCaseTitle">Analyze</h3>
-        <p>I started identifying goals, creating personas based on the user interviews. These were:
+        <img src="/dev/assets/shop-3.png" alt="A notebook with some notes.">
+        <p class="caption">Notes from the stakeholder interviews around product vision and goals.</p>
+        <p>I began a day-long <span class="boldText">competitor analysis</span> session. This was to find any common
+          <span class="boldText">design patterns</span> and <span class="boldText">mental models</span> in terms of user
+          flows.
         </p>
+        <img src="/dev/assets/shop-4.png" alt="A screenshot of e-commerce sites for competitor research.">
+        <p class="caption">Some competitor research focusing on e-commerce design patterns.</p>
+        <p>An analytics tool provided the data needed for <span class="boldText">quantitative research,</span> but I
+          needed to find user insights
+          through <span class="boldText">qualitative research.</span> To explore user requirements, I facilitated
+          interviews over two days with five
+          users, from beginners to business owners running a Shopify store full-time.</p>
+        <img src="/dev/assets/shop-5.png" alt="A notebook with some notes about user testing.">
+        <p class="caption">Some rough notes from condensing user interview data into contextual information.</p>
+        <p>To help target different user demographics, I created two <span class="boldText">personas</span> based on
+          patterns found in my interview insights. These were given motivations, goals and frustrations. I worked to
+          empathetically align with both
+          personas in order to meet the user goals.</p>
+        <img src="/dev/assets/shop-6.png" alt="A notebook with some notes about user testing.">
+        <p class="caption">Some rough notes from condensing user interview data into contextual information.</p>
+        <p>I used a <span class="boldText">mind map</span> to identify user flow issues and an overview of user needs.
+          This was useful to see if any
+          patterns emerged and to find inspiration of what to focus on. Results included:</p>
         <ul>
-          <li>• A beginner looking to build a long-term brand.</li>
-          <li>• An existing seller wanting to sell something in demand.</li>
+          <li>• Searching.</li>
+          <li>• Related items.</li>
+          <li>• Categories.</li>
+          <li>• New and trending.</li>
+          <li>• Trust.</li>
         </ul>
-        <img src="/dev/assets/shopifypersonas.png" alt="A graphic of the two personas used to direct decision making.">
-        <p class="caption">User interviews led to two personas being created.</p>
-        <p>I now knew the main requirements of the product:
-        </p>
+        <h3 class="caseTitle">Develop</h3>
+        <p>With quantitative and qualitative data gathered, I used <span class="boldText">affinity diagramming</span> to
+          develop ideas around
+          functionality:</p>
         <ul>
-          <li>• Recommend trending products.</li>
-          <li>• Help users feel confident their products will sell.</li>
-          <li>• Suggest product categories and specific products.</li>
-          <li>• Allow users to search for and filter products.</li>
-          <li>• Avoid overwhelming the user with too many options.</li>
-          <li>• Be user-friendly for beginners and mobile users.</li>
+          <li>• Recommend trending products.</li>
+          <li>• Help users to feel confident that their products will sell.</li>
+          <li>• Suggest product categories and specific products. </li>
+          <li>• Allow users to search for and filter products.</li>
+          <li>• Avoid overwhelming the user with too many options.</li>
+          <li>• Be user-friendly for beginners and mobile users. </li>
           <li>• Fit into Shopify's main functionality.</li>
         </ul>
-
-        <img src="/dev/assets/stickynotes.jpg"
-          alt="A window with lots of sticky notes on it, showing the research process.">
-        <p class="caption">I used sticky notes during planning the journey map for flexible and quick ideas.</p>
-        <p>The product was defined as an app which can be installed onto a user’s dashboard. The app will guide the user
-          to getting their store stocked, registered with a domain, and ready to sell. The working title was ‘Niche
-          Finder’.</p>
-        <p>
-          Using SEO metrics, the app would highlight and recommend products that have high search volume, and low
-          competition with other stores. Basically, products that are in demand and have low presence in online
-          marketplaces.
-        </p>
-        <p>
-          Users would find a trending product niche, choose products, and push them to their store. Products would be
-          pulled in from AliExpress, with product data
-          scraped from Thieve. The ability to register for a domain and social media accounts, using existing Shopify
-          tools, would drive the idea of setting up a brand with opportunity for growth, and not just a store.
-        </p>
-
-        <h3 class="secondaryCaseTitle">Sketch</h3>
-        <p>I created a user journey, and started creating different layout designs while considering the needs of the
-          user. I kept in mind:
-        </p>
+        <img src="/dev/assets/shop-7.png" alt="Sticky notes on a window during affinity diagramming.">
+        <p class="caption">Affinity diagramming helped categorize ideas for functionality.</p>
+        <p>Using SEO, the app would highlight and recommend products that have high search volume, and low competition
+          with other Shopify stores. Basically, products that are in demand and have low presence in online
+          marketplaces.</p>
+        <p><span class="boldText">Iteration of ideas</span> led to the homepage resembling a to-do list, so users can
+          understand where they are in the
+          process and earn a feeling of completion when they complete the steps. This progression would also likely
+          drive users to complete all the steps.</p>
+        <img src="/dev/assets/shop-8.png" alt="Quick sketches showing a user flow idea.">
+        <p class="caption">Early notes showing the user flow idea of a to-do list.</p>
+        <p>Though development of the site map, the user flow emerged:</p>
         <ul>
-          <li>• Which UI elements would users interact with most frequently?</li>
-          <li>• How would text affect the user experience? </li>
-          <li>• What are the best practices for e-commerce UX?</li>
+          <li>• Browse product categories for one of interest.</li>
+          <li>• Add products from categories to a saved products list.</li>
+          <li>• Customize product information in the saved products list.</li>
+          <li>• Use search volume data to see if chosen products are unique enough to stand out in a marketplace.</li>
+          <li>• Push products to store.</li>
+          <li>• See and register with related available domains and social media accounts.</li>
+          <li>• Start selling.</li>
         </ul>
-        <p>I came up with the idea of the homepage resembling a to-do list so users can understand where they are in the
-          process. Though development of the journey map, the basic steps emerged as:
-        </p>
+        <h3 class="caseTitle">Design</h3>
+        <img src="/dev/assets/shop-9.png" alt="Quick sketches showing a user flow idea.">
+        <img src="/dev/assets/shop-10.png" alt="Quick sketches showing a user flow idea.">
+        <p class="caption">Sketches around the ideas for interactions and user flows.</p>
+        <p>With functionality laid out, I needed ideas around the user flow. At this point I began sketching, allowing
+          for experimentation while considering persona needs. Once I’d reached a complete user flow, the sketches were
+          cleaned up and developed into a <span class="boldText">low-fidelity prototype.</span> I facilitated a <span
+            class="boldText">user testing session</span> with five people
+          at different levels of experience. Two people were aware of Shopify but not users, to capture the demographic
+          of beginner Shopify users. A task-completion list was provided, and the testing session lasted a day.</p>
+        <img src="/dev/assets/shop-11.png" alt="A screenshot of wireframe prototypes.">
+        <p class="caption">A wireframe prototype with basic functionality of the user flow.</p>
+        <img src="/dev/assets/shop-12.png" alt="A screenshot of the wider wireframe prototype user flow.">
+        <p class="caption">An expanded view of the wireframe prototypes.</p>
+        <p>After testing, it became clear that some parts of the user flow needed to be simplified. The idea of a
+          shortlist seemed to be unnecessary, and I decided it should be removed for the initial MVP and reconsidered
+          after more research. After the flow of the design had been updated I refined the prototype, and <span
+            class="boldText">presented results</span> with the team.</p>
+        <p>The product had overall positive feedback in the final testing session. This involved a task-completion list
+          involving adding finding a category idea, adding products registering a domain. Feedback included:</p>
         <ul>
-          <li>• Browse product categories for one of interest.
-          </li>
-          <li>• Add products from categories to shortlist of saved products.
-          </li>
-          <li>• Customize product information in shortlist.
-          </li>
-          <li>• Use search volume data to see if chosen products are unique enough to stand out in a marketplace.
-          </li>
-          <li>• Push products to store.
-          </li>
-          <li>• See and register with related available domains and social media accounts.
-          </li>
-          <li>•Start selling in store.
-          </li>
+          <li>• New users appreciating the tool offering ideas for products to sell.</li>
+          <li>• Users understanding that the tool came at a correct time in the user onboarding flow.</li>
+          <li>• The focus on trending search volumes allowed users to utilize popular products.</li>
         </ul>
-        <img src="/dev/assets/shopifyjourney.png" alt="A hand-drawn sketch of some functions of the product.">
-        <p class="caption">Sketching was valuable for developing quick ideas.</p>
-        <img src="/dev/assets/shopifyjourney2.png" alt="A sketch of the user journey.">
-        <p class="caption">A sketch of ideas for the user journey.</p>
-        <h3 class="secondaryCaseTitle">Wireframes and prototype</h3>
-        <p>Once I’d reached a detailed journey map, sketches were developed into a prototype. This was tested with
-          people who were aware of Shopify as a company but who were not users, to capture the target audience of
-          beginner users.
-        </p>
-        <img src="/dev/assets/shopifywireframe.png" alt="A wireframe of one screen of the user journey.">
-        <p class="caption">A wireframe of a homescreen idea.</p>
-        <h3 class="secondaryCaseTitle">Test design and iterate</h3>
-        <p>After testing, it emerged that the idea of a shortlist of saved products wasn’t a priority to the users. I
-          made changes to the prototype and presented the results of the user testing with the product team.
-          I laid out all screens in Sketch, making sure existing Shopify components aligned with the new design.
-        </p>
-        <img src="/dev/assets/shopifydesktop1.png" alt="An image of the UI on a desktop mockup.">
-        <img src="/dev/assets/shopifydesktop2.png" alt="A second image of the UI on a desktop mockup.">
-        <img src="/dev/assets/shopifydesktop3.png" alt="A third image of the UI on a desktop mockup.">
-        <p class="caption">I began laying out all screens using the in-house design system and components.</p>
-        <h2 class="caseTitle">Result</h2>
-        <p>The product had overall positive feedback in the final prototype testing session. Design was ready and
-          development began until some members of the team left, and work was discontinued.
-        </p>
-
-        <img src="/dev/assets/shopifyphone.png" alt="A third image of the UI on a desktop mockup.">
-        <p class="caption">The UI in mobile view.</p>
+        <img src="/dev/assets/shop-13.png" alt="A screenshot of the home screen.">
+        <img src="/dev/assets/shop-14.png" alt="A screenshot of a proudct category screen.">
+        <p class="caption">Screenshots showing the development of the UI, and how the design aligns with the larger
+          Shopify product.</p>
+        <p>UI work began, and I collaborated with the development team to provide components and review development work
+          to confirm the user flow and UI. Any new components I created were added into Shopify’s existing <span
+            class="boldText">design system.</span></p>
+        <h3 class="caseTitle">Deliver</h3>
+        <p>Design was continuing and development sprints began until a key member of the team left. Business
+          requirements decided work should discontinue, and my research was absorbed into Shopify’s UX team’s work.</p>
+        <img src="/dev/assets/shop-15.png" alt="A mockup of the prototype displayed on a phone.">
+        <p class="caption">A view of the work-in-progress prototype.</p>
       </section>
     </section><!-- end of caseStudy-->
-    <div class="bigMessage">
-      <section class="contentContainer">
-        <h2>Thanks for reading</h2>
-        <a href="mailto:lee.richardson4@gmail.com" class="btn sayhibtn" role="button">Contact me by email</a>
-        <h3><img src="/dev/assets/brownshape3.svg" class="rotate" alt=""></h3>
-      </section>
+    <div class="otherlinks">
+      <h3 class="ital">Here are some other selected case studies</h3>
+      <ul>
+        <li class="green"><a href="/casinome.html">See Casino.Me case <span><img src="/dev/assets/arrow.svg"
+                alt=""></span></a></li>
+        <li class="green"><a href="/amuleto.html">See AmuletoBet case <span><img src="/dev/assets/arrow.svg"
+                alt=""></span></a></li>
+        <li class="white"><a href="/dealtap.html">See DealTap case <span><img src="/dev/assets/arrow.svg"
+                alt=""></span></a></li>
+        <li class="white"><a href="/wantboard.html">See Wantboard case <span><img src="/dev/assets/arrow.svg"
+                alt=""></span></a></li>
+        <li class="yellow"> <a href="/boomdesign.html">See Boom case <span><img src="/dev/assets/arrow.svg"
+                alt=""></span></a></li>
+      </ul>
     </div>
   </section><!-- end of container-->
 
@@ -220,18 +261,14 @@
     <section class="contentContainer">
       <div class="footerContent">
         <div class="contact footerCol">
-          <h3>Contact</h3>
-          <ul>
-            <li><a href="mailto:lee.richardson4@gmail.com">Email</a></li>
-            <li><a href="https://www.linkedin.com/in/lrchrdsn/">LinkedIn</a></li>
-            <li><a href="https://dribbble.com/leerr">Dribbble</a></li>
-          </ul>
+          <h3 class="ital">Want to work together?</h3>
+          <p>Contact me via <a href="mailto:hileerichardson@gmail.com">email</a>, <a href="tel:+4552824513">phone</a> or
+            add me on <a href="https://www.linkedin.com/in/lrchrdsn/">LinkedIn.</a></p>
         </div>
         <div class="weather footerCol">
-          <h3>Weather</h3>
+          <h3 class="ital">How is it outside?</h3>
           <p class="weatherTextHolder">It's <span class="weatherDegrees"></span>°C and <span class="weatherText"></span>
             in Copenhagen.</p>
-
         </div>
       </div>
     </section>

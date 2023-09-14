@@ -1,12 +1,37 @@
-@import 'mixins.scss';
-
 /* footer =======================================*/
 
+
 footer {
-	background-color: #fed876;
+	background-color: #FDFF80;
+	border: 1px solid #262424;
+	border-radius: 2rem 2rem 0 0;
+
+	.weather {
+		text-align: right;
+	}
+
+	p {
+		color: #262424;
+		margin-top: 0.2rem;
+	}
+
+
+
+	a {
+		text-decoration: none;
+		-webkit-transition: all 1s;
+		-o-transition: all 1s;
+		transition: all 1s;
+		border-bottom: #262424 1px solid;
+
+		&:hover {
+			border-bottom: #262424 2px dashed;
+		}
+	}
 }
 
 .footerContent {
+
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
@@ -18,31 +43,10 @@ footer {
 	-webkit-box-pack: justify;
 	-ms-flex-pack: justify;
 	justify-content: space-between;
-	padding: 2rem 0;
+	padding: 4rem 0;
 
-	.contact {
-		ul {
-			display: -webkit-box;
-			display: -ms-flexbox;
-			display: flex;
-			-webkit-box-pack: justify;
-			-ms-flex-pack: justify;
-			justify-content: space-between;
-			margin: 0;
-			width: 20vw;
-		}
-
-	}
-
-	.weather p,
-	.weather h3 {
-		text-align: right;
-	}
-
-	.weatherTextHolder {
-		margin: 0;
-	}
 }
+
 
 /* end of footer =======================================*/
 
@@ -51,6 +55,7 @@ footer {
 
 
 	.footerContent {
+
 		-webkit-box-orient: vertical;
 		-webkit-box-direction: normal;
 		-ms-flex-direction: column;
@@ -58,30 +63,22 @@ footer {
 		-webkit-box-align: start;
 		-ms-flex-align: start;
 		align-items: start;
-		width: 100%;
+		width: 75vw;
 		-ms-flex-wrap: wrap;
 		flex-wrap: wrap;
 
 		.footerCol {
 			margin: 1rem 0;
+			text-align: left;
 		}
 
 		.contact {
 			ul {
 				width: 50vw;
+				-webkit-box-orient: vertical;
+				-webkit-box-direction: normal;
+				-ms-flex-direction: column;
 				flex-direction: column;
-			}
-		}
-
-
-		.weather {
-
-			h3 {
-				text-align: left;
-			}
-
-			p {
-				text-align: left;
 			}
 		}
 	}
@@ -89,16 +86,9 @@ footer {
 }
 
 @media (min-width: 1910px) {
+
 	.footerContent {
 		padding: 4rem 0;
-
-		.contact ul {
-			margin-top: 1rem;
-		}
-
-		.weather .weatherTextHolder {
-			margin-top: 1rem;
-		}
 	}
 
 }

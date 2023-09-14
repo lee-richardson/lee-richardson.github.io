@@ -7,7 +7,8 @@ function handleError(err) {
   function updateTime() {         
     setTimeout(function() {   
       const time = new Date();
-      const ticker = time.toLocaleTimeString('en-GB');
+      // const ticker = time.toLocaleTimeString('en-GB', ([], { hour: "2-digit", minute: "2-digit" }));
+      const ticker = time.toLocaleTimeString('en-GB', ([], { hour: "2-digit", minute: "2-digit"}));
       document.querySelector(".timeText").innerHTML = ticker + " "; 
       updateTime();     
     }, 1000)
@@ -18,13 +19,13 @@ function handleError(err) {
     let hoursText = document.querySelector(".changeText");
     let hour = new Date().getHours();
     let day = new Date().getDay();
-    if (hour >= 8 && hour <= 18 && day == 1 || day == 5)
+    if (hour >= 8 && hour <= 15)
     {
       hoursText.innerHTML = "open for business.";
     }
     else
     {
-    hoursText.innerHTML = "available Monday to Friday, 8 - 17.";
+    hoursText.innerHTML = "available weekdays 8 - 18.";
     }
 
     }, 1000)
@@ -48,3 +49,23 @@ function handleError(err) {
     weatherWidgetDesc.innerHTML = weatherDesc;
   }
   updateWeather();
+
+
+  document.addEventListener("DOMContentLoaded", function () {
+    const footer = document.querySelector(".sliding-footer");
+    let prevScrollY = window.scrollY;
+
+    window.addEventListener("scroll", function () {
+        const currentScrollY = window.scrollY;
+
+        if (currentScrollY > prevScrollY) {
+            // Scrolling down
+            footer.style.bottom = "0";
+        } else {
+            // Scrolling up
+            footer.style.bottom = "-100px";
+        }
+
+        prevScrollY = currentScrollY;
+    });
+});

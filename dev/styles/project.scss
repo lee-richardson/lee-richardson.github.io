@@ -1,41 +1,10 @@
-@import 'mixins.scss';
 @import 'footer.scss';
 @import 'menu.scss';
 
 
 
 .caseHeader {
-	display: -webkit-box;
-	display: -ms-flexbox;
-	display: flex;
-	margin-top: 4rem;
-	border-bottom: 1px solid #1a1f54;
-
-	.titles {
-		-webkit-box-orient: vertical;
-		-webkit-box-direction: normal;
-		-ms-flex-direction: column;
-		flex-direction: column;
-		max-width: 50%;
-		margin-top: 4rem;
-
-		h1 {
-			font-size: 4rem;
-			line-height: 4.5rem;
-		}
-	}
-
-	.result {
-		max-width: 100%;
-
-		img {
-			max-width: 50%;
-			height: auto;
-		}
-	}
-}
-
-.caseIntro {
+	margin-top: 5rem;
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
@@ -43,126 +12,121 @@
 	-webkit-box-direction: normal;
 	-ms-flex-direction: column;
 	flex-direction: column;
+	-ms-flex-pack: distribute;
+	justify-content: center;
+	height: fit-content;
 
-	.caseList {
+	.titles {
+		width: 100%;
 		display: -webkit-box;
 		display: -ms-flexbox;
 		display: flex;
-		-webkit-box-pack: justify;
-		-ms-flex-pack: justify;
-		justify-content: space-between;
-		padding: 0.5rem 0 2rem 0;
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		-ms-flex-direction: column;
+		flex-direction: column;
+		align-items: center;
 
-		.caseBlurb {
-			-webkit-box-orient: vertical;
-			-webkit-box-direction: normal;
-			-ms-flex-direction: column;
-			flex-direction: column;
-			width: 40%;
 
-			.title {
-				margin: 0.5rem 0;
-			}
+		h1 {
+			margin: 2rem 0 8rem 0;
+			text-align: center;
+			width: 80%;
+		}
 
-			.content {
-				margin: 0;
+		.bigquestion {
+			text-align: left;
+			margin: 0 0 8rem 0;
+
+			.more {
+				display: -webkit-box;
+				display: -ms-flexbox;
+				display: flex;
+				width: 45%;
+				-webkit-box-pack: justify;
+				-ms-flex-pack: justify;
+				justify-content: space-between;
+
+				.col {
+					margin: 1rem 0 0 0;
+
+					h4 {
+						margin: 0 0 0.5rem 0;
+					}
+				}
 			}
 		}
+
+		p {
+			max-width: 100%;
+		}
+
 	}
+
+	.image {
+		.result {
+			border-radius: 2rem;
+			border: 1px solid #000;
+			background-color: #fff;
+			padding: 0.3rem;
+		}
+	}
+
 }
 
-.figmaContainer {
-	top: 4.5rem;
+
+.mainContent {
+
+	margin: 4rem auto;
 
 	img {
-		position: relative;
-		top: 2.5rem;
-		right: 0.7rem;
-	}
-
-	.figmaBox {
-		background-color: #D2D3D7;
-		border-radius: 0.3rem;
-		width: -webkit-fit-content;
-		width: -moz-fit-content;
-		width: fit-content;
-
-		h5 {
-			padding: 0.4rem;
-			color: #000;
-		}
-	}
-}
-
-.figmaContainer {
-	-webkit-animation: move 1s infinite linear;
-	animation: move 1s infinite linear;
-}
-
-
-@-webkit-keyframes move {
-	0% {
-		-webkit-transform: translateX(0);
-		-ms-transform: translateX(0);
-		transform: translateX(0);
-	}
-
-	50% {
-		-webkit-transform: translateX(5rem);
-		-ms-transform: translateX(5rem);
-		transform: translateX(5rem);
-	}
-
-	100% {
-		-webkit-transform: translateX(0);
-		-ms-transform: translateX(0);
-		transform: translateX(0);
-	}
-}
-
-
-@keyframes move {
-
-	0% {
-		-webkit-transform: translateX(0);
-		-ms-transform: translateX(0);
-		transform: translateX(0);
-	}
-
-	50% {
-		-webkit-transform: translateX(5rem);
-		-ms-transform: translateX(5rem);
-		transform: translateX(5rem);
-	}
-
-	100% {
-		-webkit-transform: translateX(0);
-		-ms-transform: translateX(0);
-		transform: translateX(0);
-	}
-}
-
-
-
-
-
-.caseStudy {
-	margin: 4rem auto;
-	width: 70vw;
-
-	.caseStudyTitle {
-		margin: 4rem 0 0.5rem 0;
-	}
-
-	.caseTitle {
-		margin-top: 4rem;
+		margin: 2rem 0 0 0;
+		border-radius: 2rem;
+		border: 1px solid #000;
+		background-color: #fff;
+		padding: 0.3rem;
 	}
 
 	.caption {
 		margin-bottom: 2rem;
+		font-size: 1.1rem;
+		font-family: 'CooperLightItal';
+	}
+
+	.boldText {
+		font-family: 'UniversBold';
 	}
 }
 
+
+.grid {
+	background-color: #FDFD80;
+	border-radius: 2rem;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: row;
+	flex-direction: row;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+	padding: 2rem;
+	border: 1px solid #262424;
+
+	.whatelement {
+		width: 40%;
+		margin: 2rem;
+
+		h3 {
+			margin: 1rem 0 0.2rem 0;
+		}
+	}
+}
+
+.mainContent {
+	margin: 5rem 0 0 0;
+}
 
 .caseStudyImg {
 	text-align: center;
@@ -178,11 +142,11 @@ ul {
 
 img {
 	max-width: 100%;
-	margin: 2rem 0 0 0;
 }
 
 .secondaryCaseTitle {
-	margin: 2rem 0 0.5rem 0;
+	margin: 2rem 0 0.4rem 0;
+	font-family: 'CooperLightItal';
 }
 
 .endMessageText {
@@ -195,6 +159,7 @@ img {
 }
 
 .centreImgContainer {
+
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
@@ -203,12 +168,54 @@ img {
 	justify-content: center;
 }
 
+.otherlinks {
+	margin: 12rem 0;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: column;
+	flex-direction: column;
 
+	ul {
+		width: 100%;
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-orient: horizontal;
+		-webkit-box-direction: normal;
+		-ms-flex-direction: row;
+		flex-direction: row;
+		-ms-flex-wrap: wrap;
+		flex-wrap: wrap;
+		-webkit-box-align: left;
+		-ms-flex-align: left;
+		align-items: left;
+		margin-top: 0.5rem;
+	}
+
+	li {
+		background-color: #fff;
+		padding: 1rem;
+		border: 1px solid #262424;
+		width: -webkit-fit-content;
+		width: -moz-fit-content;
+		width: fit-content;
+		border-radius: 2rem;
+		margin: 0.3rem 0;
+
+		&:hover {
+			background-color: #ABFF8B;
+
+		}
+	}
+}
 
 
 
 // media queries //
-@media only screen and (min-device-width: 319px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) {
+@media only screen and (min-device-width: 319px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 2) {
 
 	.contentContainer {
 		width: 90vw;
@@ -216,53 +223,58 @@ img {
 	}
 
 	.subHeader {
-		// margin-top: 10rem;
+		margin: 0;
 
-		.whatgrid .whatelement {
-			margin: 1rem 0;
+		.grid {
+			display: -webkit-box;
+			display: -ms-flexbox;
+			display: flex;
+
+			.whatelement {
+				margin: 0.5rem 0;
+				width: 100%;
+			}
 		}
 	}
 
 	.caseStudy {
 		width: 100%;
 		margin-top: 0;
-
-		img {
-			margin: 1rem 0;
-		}
 	}
 
 	.caseHeader {
-		display: -webkit-box;
-		display: -ms-flexbox;
-		display: flex;
-		-webkit-box-orient: vertical;
-		-webkit-box-direction: normal;
-		-ms-flex-direction: column;
-		flex-direction: column;
-		-webkit-box-pack: start;
-		-ms-flex-pack: start;
-		justify-content: start;
-		position: relative;
-		margin-top: 8rem;
+
 
 		.titles {
 			max-width: 100%;
 			margin: 0;
+			height: auto;
+
+			h1 {
+				width: 100%;
+				margin: 2rem 0 4rem 0;
+			}
+
+			p {
+				max-width: 100%;
+			}
+
+			.bigquestion {
+
+				.ital {
+					margin-bottom: 0.4rem;
+				}
+
+
+				.more {
+					flex-direction: column;
+					width: 100%;
+				}
+			}
 		}
 
 		.result {
 			width: 100%;
-		}
-
-		.figmaContainer {
-			position: absolute;
-			top: 8rem;
-			left: 10rem;
-
-			img {
-				top: 4.5rem;
-			}
 		}
 	}
 
@@ -280,16 +292,47 @@ img {
 		}
 	}
 
-	.bigMessage {
-		margin: 4rem 0;
-		padding: 0;
-		height: 25vh;
+	.otherlinks {
+		ul {
+			width: 100%;
+			display: -webkit-box;
+			display: -ms-flexbox;
+			display: flex;
+			-webkit-box-orient: horizontal;
+			-webkit-box-direction: normal;
+			-ms-flex-direction: row;
+			flex-direction: row;
+			-ms-flex-wrap: wrap;
+			flex-wrap: wrap;
+			-webkit-box-align: left;
+			-ms-flex-align: left;
+			align-items: left;
+			margin-top: 0.5rem;
+
+		}
+
+		li {
+			background-color: #EBEBEB;
+			padding: 1rem;
+			border: 1px solid #262424;
+			width: -webkit-fit-content;
+			width: -moz-fit-content;
+			width: fit-content;
+			border-radius: 4rem;
+			margin: 0.3rem 0;
+		}
 	}
 
 	// .caseStudyTitle {
 	// 	margin-bottom: 3rem;
 	// }
 
+	@media (min-width: 1910px) {
 
 
+		.contentContainer {
+			width: 60vw;
+		}
+
+	}
 }
