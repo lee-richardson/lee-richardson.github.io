@@ -34,29 +34,6 @@
 			width: 80%;
 		}
 
-		.bigquestion {
-			text-align: left;
-			margin: 0 0 8rem 0;
-
-			.more {
-				display: -webkit-box;
-				display: -ms-flexbox;
-				display: flex;
-				width: 45%;
-				-webkit-box-pack: justify;
-				-ms-flex-pack: justify;
-				justify-content: space-between;
-
-				.col {
-					margin: 1rem 0 0 0;
-
-					h4 {
-						margin: 0 0 0.5rem 0;
-					}
-				}
-			}
-		}
-
 		p {
 			max-width: 100%;
 		}
@@ -72,6 +49,33 @@
 		}
 	}
 
+}
+
+
+.bigquestion {
+	text-align: left;
+	margin: 0 0 8rem 0;
+
+	.more {
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		width: 80%;
+		-webkit-box-pack: justify;
+		-ms-flex-pack: justify;
+		justify-content: space-between;
+		flex-wrap: wrap;
+		-ms-flex-wrap: wrap;
+		flex-wrap: wrap;
+
+		.col {
+			margin: 0.5rem 0 2rem 0;
+
+			h4 {
+				margin: 0 0 0.5rem 0;
+			}
+		}
+	}
 }
 
 
@@ -149,23 +153,37 @@ img {
 	font-family: 'CooperLightItal';
 }
 
-.endMessageText {
-	text-align: center;
-	margin-top: 4rem;
+a {
+	border-bottom: #262424 2px solid;
+	-webkit-transition: all 1s;
+	-o-transition: all 1s;
+	transition: all 1s;
+
+	&:hover {
+		border-bottom: #262424 2px dashed;
+	}
 }
 
-.nextLink {
-	margin-top: 1rem;
-}
+.questions {
 
-.centreImgContainer {
-
-	display: -webkit-box;
-	display: -ms-flexbox;
 	display: flex;
-	-webkit-box-pack: center;
-	-ms-flex-pack: center;
-	justify-content: center;
+	flex-direction: row;
+	margin: 6rem 0;
+	width: 100%;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+
+	.questionelement {
+		border: #262424 1px solid;
+		border-radius: 1rem;
+		background-color: #FDFE7E;
+		padding: 2rem;
+		margin: 1rem;
+
+		.question {
+			margin-bottom: 1rem;
+		}
+	}
 }
 
 .otherlinks {
@@ -179,37 +197,39 @@ img {
 	flex-direction: column;
 
 	ul {
-		width: 100%;
-		display: -webkit-box;
-		display: -ms-flexbox;
 		display: flex;
-		-webkit-box-orient: horizontal;
-		-webkit-box-direction: normal;
-		-ms-flex-direction: row;
-		flex-direction: row;
-		-ms-flex-wrap: wrap;
-		flex-wrap: wrap;
-		-webkit-box-align: left;
-		-ms-flex-align: left;
-		align-items: left;
-		margin-top: 0.5rem;
-	}
+		flex-direction: column;
+		margin: 1rem 0 0 0;
 
-	li {
-		background-color: #fff;
-		padding: 1rem;
-		border: 1px solid #262424;
-		width: -webkit-fit-content;
-		width: -moz-fit-content;
-		width: fit-content;
-		border-radius: 2rem;
-		margin: 0.3rem 0;
+		li {
+			display: flex;
+			background-color: #fff;
+			padding: 0.8rem;
+			border: 1px solid #262424;
+			width: -webkit-fit-content;
+			width: -moz-fit-content;
+			width: fit-content;
+			border-radius: 8rem;
 
-		&:hover {
-			background-color: #ABFF8B;
+			a {
+				border-bottom: none;
+			}
 
+			&:hover {
+				background-color: #ABFF8B;
+			}
+
+
+			img {
+				margin: 0;
+				max-width: 100%;
+				border: none;
+				padding: 0;
+				background-color: transparent;
+			}
 		}
 	}
+
 }
 
 
@@ -252,7 +272,7 @@ img {
 
 			h1 {
 				width: 100%;
-				margin: 2rem 0 4rem 0;
+				margin: 2rem 0 0 0;
 			}
 
 			p {
@@ -278,6 +298,31 @@ img {
 		}
 	}
 
+
+
+	.bigquestion {
+		text-align: left;
+		margin: 0 0 8rem 0;
+
+		.more {
+
+			width: 100%;
+
+
+			.col {
+				margin: 0.5rem 0 1rem 0;
+
+				h4 {
+					margin: 0 0 0.2rem 0;
+				}
+
+				p {
+					padding: 0.1rem 0;
+				}
+			}
+		}
+	}
+
 	.caseIntro .caseList {
 		-webkit-box-orient: vertical;
 		-webkit-box-direction: normal;
@@ -292,40 +337,6 @@ img {
 		}
 	}
 
-	.otherlinks {
-		ul {
-			width: 100%;
-			display: -webkit-box;
-			display: -ms-flexbox;
-			display: flex;
-			-webkit-box-orient: horizontal;
-			-webkit-box-direction: normal;
-			-ms-flex-direction: row;
-			flex-direction: row;
-			-ms-flex-wrap: wrap;
-			flex-wrap: wrap;
-			-webkit-box-align: left;
-			-ms-flex-align: left;
-			align-items: left;
-			margin-top: 0.5rem;
-
-		}
-
-		li {
-			background-color: #EBEBEB;
-			padding: 1rem;
-			border: 1px solid #262424;
-			width: -webkit-fit-content;
-			width: -moz-fit-content;
-			width: fit-content;
-			border-radius: 4rem;
-			margin: 0.3rem 0;
-		}
-	}
-
-	// .caseStudyTitle {
-	// 	margin-bottom: 3rem;
-	// }
 
 	@media (min-width: 1910px) {
 
