@@ -629,15 +629,23 @@ a {
     border-bottom: #262424 2px dashed; }
 
 .questions {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
   flex-direction: row;
   margin: 6rem 0;
   width: 100%;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
   justify-content: flex-start; }
   .questions .questionelement {
     border: #262424 1px solid;
-    border-radius: 1rem;
+    border-radius: 2rem;
     background-color: #FDFE7E;
     padding: 2rem;
     margin: 1rem; }
@@ -654,10 +662,17 @@ a {
   -ms-flex-direction: column;
   flex-direction: column; }
   .otherlinks ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
     margin: 1rem 0 0 0; }
     .otherlinks ul li {
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
       background-color: #fff;
       padding: 0.8rem;
@@ -704,6 +719,9 @@ a {
     .caseHeader .titles .bigquestion .ital {
       margin-bottom: 0.4rem; }
     .caseHeader .titles .bigquestion .more {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
       flex-direction: column;
       width: 100%; }
   .caseHeader .result {
@@ -727,9 +745,15 @@ a {
     padding: 0; }
     .caseIntro .caseList .caseBlurb {
       width: 100%;
-      margin-top: 1rem; } }
+      margin-top: 1rem; }
+  .questions {
+    margin: 2rem 0; }
+    .questions .questionelement {
+      margin: 0.5rem; }
+      .questions .questionelement .question {
+        margin-bottom: 0.5rem; } }
 
-@media only screen and (min-device-width: 319px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 2) and (min-width: 1910px) {
+@media (min-width: 1910px) {
   .contentContainer {
     width: 60vw; } }
 
@@ -933,6 +957,8 @@ footer {
     .cv .cvList .desc {
       width: 100%; }
       .cv .cvList .desc p {
+        width: -webkit-fit-content;
+        width: -moz-fit-content;
         width: fit-content; }
     .cv .cvList h3 {
       margin: 0; }
@@ -1601,15 +1627,23 @@ a {
     border-bottom: #262424 2px dashed; }
 
 .questions {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
   flex-direction: row;
   margin: 6rem 0;
   width: 100%;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
   justify-content: flex-start; }
   .questions .questionelement {
     border: #262424 1px solid;
-    border-radius: 1rem;
+    border-radius: 2rem;
     background-color: #FDFE7E;
     padding: 2rem;
     margin: 1rem; }
@@ -1626,10 +1660,17 @@ a {
   -ms-flex-direction: column;
   flex-direction: column; }
   .otherlinks ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
     margin: 1rem 0 0 0; }
     .otherlinks ul li {
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
       background-color: #fff;
       padding: 0.8rem;
@@ -1676,6 +1717,9 @@ a {
     .caseHeader .titles .bigquestion .ital {
       margin-bottom: 0.4rem; }
     .caseHeader .titles .bigquestion .more {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
       flex-direction: column;
       width: 100%; }
   .caseHeader .result {
@@ -1699,9 +1743,15 @@ a {
     padding: 0; }
     .caseIntro .caseList .caseBlurb {
       width: 100%;
-      margin-top: 1rem; } }
+      margin-top: 1rem; }
+  .questions {
+    margin: 2rem 0; }
+    .questions .questionelement {
+      margin: 0.5rem; }
+      .questions .questionelement .question {
+        margin-bottom: 0.5rem; } }
 
-@media only screen and (min-device-width: 319px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 2) and (min-width: 1910px) {
+@media (min-width: 1910px) {
   .contentContainer {
     width: 60vw; } }
 
@@ -1965,6 +2015,8 @@ footer {
     .cv .cvList .desc {
       width: 100%; }
       .cv .cvList .desc p {
+        width: -webkit-fit-content;
+        width: -moz-fit-content;
         width: fit-content; }
     .cv .cvList h3 {
       margin: 0; }
