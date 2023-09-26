@@ -540,21 +540,6 @@ footer {
       margin: 2rem 0 8rem 0;
       text-align: center;
       width: 80%; }
-    .caseHeader .titles .bigquestion {
-      text-align: left;
-      margin: 0 0 8rem 0; }
-      .caseHeader .titles .bigquestion .more {
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        width: 45%;
-        -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-        justify-content: space-between; }
-        .caseHeader .titles .bigquestion .more .col {
-          margin: 1rem 0 0 0; }
-          .caseHeader .titles .bigquestion .more .col h4 {
-            margin: 0 0 0.5rem 0; }
     .caseHeader .titles p {
       max-width: 100%; }
   .caseHeader .image .result {
@@ -562,6 +547,25 @@ footer {
     border: 1px solid #000;
     background-color: #fff;
     padding: 0.3rem; }
+
+.bigquestion {
+  text-align: left;
+  margin: 0 0 8rem 0; }
+  .bigquestion .more {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 80%;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap; }
+    .bigquestion .more .col {
+      margin: 0.5rem 0 2rem 0; }
+      .bigquestion .more .col h4 {
+        margin: 0 0 0.5rem 0; }
 
 .mainContent {
   margin: 4rem auto; }
@@ -616,20 +620,29 @@ img {
   margin: 2rem 0 0.4rem 0;
   font-family: 'CooperLightItal'; }
 
-.endMessageText {
-  text-align: center;
-  margin-top: 4rem; }
+a {
+  border-bottom: #262424 2px solid;
+  -webkit-transition: all 1s;
+  -o-transition: all 1s;
+  transition: all 1s; }
+  a:hover {
+    border-bottom: #262424 2px dashed; }
 
-.nextLink {
-  margin-top: 1rem; }
-
-.centreImgContainer {
-  display: -webkit-box;
-  display: -ms-flexbox;
+.questions {
   display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center; }
+  flex-direction: row;
+  margin: 6rem 0;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: flex-start; }
+  .questions .questionelement {
+    border: #262424 1px solid;
+    border-radius: 1rem;
+    background-color: #FDFE7E;
+    padding: 2rem;
+    margin: 1rem; }
+    .questions .questionelement .question {
+      margin-bottom: 1rem; }
 
 .otherlinks {
   margin: 12rem 0;
@@ -641,31 +654,28 @@ img {
   -ms-flex-direction: column;
   flex-direction: column; }
   .otherlinks ul {
-    width: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: row;
-    flex-direction: row;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-    -webkit-box-align: left;
-    -ms-flex-align: left;
-    align-items: left;
-    margin-top: 0.5rem; }
-  .otherlinks li {
-    background-color: #fff;
-    padding: 1rem;
-    border: 1px solid #262424;
-    width: -webkit-fit-content;
-    width: -moz-fit-content;
-    width: fit-content;
-    border-radius: 2rem;
-    margin: 0.3rem 0; }
-    .otherlinks li:hover {
-      background-color: #ABFF8B; }
+    flex-direction: column;
+    margin: 1rem 0 0 0; }
+    .otherlinks ul li {
+      display: flex;
+      background-color: #fff;
+      padding: 0.8rem;
+      border: 1px solid #262424;
+      width: -webkit-fit-content;
+      width: -moz-fit-content;
+      width: fit-content;
+      border-radius: 8rem; }
+      .otherlinks ul li a {
+        border-bottom: none; }
+      .otherlinks ul li:hover {
+        background-color: #ABFF8B; }
+      .otherlinks ul li img {
+        margin: 0;
+        max-width: 100%;
+        border: none;
+        padding: 0;
+        background-color: transparent; }
 
 @media only screen and (min-device-width: 319px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 2) {
   .contentContainer {
@@ -688,7 +698,7 @@ img {
     height: auto; }
     .caseHeader .titles h1 {
       width: 100%;
-      margin: 2rem 0 4rem 0; }
+      margin: 2rem 0 0 0; }
     .caseHeader .titles p {
       max-width: 100%; }
     .caseHeader .titles .bigquestion .ital {
@@ -698,6 +708,17 @@ img {
       width: 100%; }
   .caseHeader .result {
     width: 100%; }
+  .bigquestion {
+    text-align: left;
+    margin: 0 0 8rem 0; }
+    .bigquestion .more {
+      width: 100%; }
+      .bigquestion .more .col {
+        margin: 0.5rem 0 1rem 0; }
+        .bigquestion .more .col h4 {
+          margin: 0 0 0.2rem 0; }
+        .bigquestion .more .col p {
+          padding: 0.1rem 0; }
   .caseIntro .caseList {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -706,31 +727,7 @@ img {
     padding: 0; }
     .caseIntro .caseList .caseBlurb {
       width: 100%;
-      margin-top: 1rem; }
-  .otherlinks ul {
-    width: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: row;
-    flex-direction: row;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-    -webkit-box-align: left;
-    -ms-flex-align: left;
-    align-items: left;
-    margin-top: 0.5rem; }
-  .otherlinks li {
-    background-color: #EBEBEB;
-    padding: 1rem;
-    border: 1px solid #262424;
-    width: -webkit-fit-content;
-    width: -moz-fit-content;
-    width: fit-content;
-    border-radius: 4rem;
-    margin: 0.3rem 0; } }
+      margin-top: 1rem; } }
 
 @media only screen and (min-device-width: 319px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 2) and (min-width: 1910px) {
   .contentContainer {
@@ -894,23 +891,15 @@ footer {
   background-color: #fff;
   border-radius: 2rem;
   border: 1px solid #262424; }
-  .cvList .info {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: row;
-    flex-direction: row;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
-    width: 80%; }
+  .cvList ul {
+    margin: 1rem 0; }
+    .cvList ul li {
+      padding: 0.2rem; }
   .cvList .desc {
     width: 70%;
-    margin: 0.5rem 0; }
+    margin: 1rem 0 0 0; }
   .cvList .moreinfo ul li {
-    margin: 0.5rem 0; }
+    margin: 1rem 0; }
 
 .education {
   margin: 0;
@@ -1523,21 +1512,6 @@ footer {
       margin: 2rem 0 8rem 0;
       text-align: center;
       width: 80%; }
-    .caseHeader .titles .bigquestion {
-      text-align: left;
-      margin: 0 0 8rem 0; }
-      .caseHeader .titles .bigquestion .more {
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        width: 45%;
-        -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-        justify-content: space-between; }
-        .caseHeader .titles .bigquestion .more .col {
-          margin: 1rem 0 0 0; }
-          .caseHeader .titles .bigquestion .more .col h4 {
-            margin: 0 0 0.5rem 0; }
     .caseHeader .titles p {
       max-width: 100%; }
   .caseHeader .image .result {
@@ -1545,6 +1519,25 @@ footer {
     border: 1px solid #000;
     background-color: #fff;
     padding: 0.3rem; }
+
+.bigquestion {
+  text-align: left;
+  margin: 0 0 8rem 0; }
+  .bigquestion .more {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 80%;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap; }
+    .bigquestion .more .col {
+      margin: 0.5rem 0 2rem 0; }
+      .bigquestion .more .col h4 {
+        margin: 0 0 0.5rem 0; }
 
 .mainContent {
   margin: 4rem auto; }
@@ -1599,20 +1592,29 @@ img {
   margin: 2rem 0 0.4rem 0;
   font-family: 'CooperLightItal'; }
 
-.endMessageText {
-  text-align: center;
-  margin-top: 4rem; }
+a {
+  border-bottom: #262424 2px solid;
+  -webkit-transition: all 1s;
+  -o-transition: all 1s;
+  transition: all 1s; }
+  a:hover {
+    border-bottom: #262424 2px dashed; }
 
-.nextLink {
-  margin-top: 1rem; }
-
-.centreImgContainer {
-  display: -webkit-box;
-  display: -ms-flexbox;
+.questions {
   display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center; }
+  flex-direction: row;
+  margin: 6rem 0;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: flex-start; }
+  .questions .questionelement {
+    border: #262424 1px solid;
+    border-radius: 1rem;
+    background-color: #FDFE7E;
+    padding: 2rem;
+    margin: 1rem; }
+    .questions .questionelement .question {
+      margin-bottom: 1rem; }
 
 .otherlinks {
   margin: 12rem 0;
@@ -1624,31 +1626,28 @@ img {
   -ms-flex-direction: column;
   flex-direction: column; }
   .otherlinks ul {
-    width: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: row;
-    flex-direction: row;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-    -webkit-box-align: left;
-    -ms-flex-align: left;
-    align-items: left;
-    margin-top: 0.5rem; }
-  .otherlinks li {
-    background-color: #fff;
-    padding: 1rem;
-    border: 1px solid #262424;
-    width: -webkit-fit-content;
-    width: -moz-fit-content;
-    width: fit-content;
-    border-radius: 2rem;
-    margin: 0.3rem 0; }
-    .otherlinks li:hover {
-      background-color: #ABFF8B; }
+    flex-direction: column;
+    margin: 1rem 0 0 0; }
+    .otherlinks ul li {
+      display: flex;
+      background-color: #fff;
+      padding: 0.8rem;
+      border: 1px solid #262424;
+      width: -webkit-fit-content;
+      width: -moz-fit-content;
+      width: fit-content;
+      border-radius: 8rem; }
+      .otherlinks ul li a {
+        border-bottom: none; }
+      .otherlinks ul li:hover {
+        background-color: #ABFF8B; }
+      .otherlinks ul li img {
+        margin: 0;
+        max-width: 100%;
+        border: none;
+        padding: 0;
+        background-color: transparent; }
 
 @media only screen and (min-device-width: 319px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 2) {
   .contentContainer {
@@ -1671,7 +1670,7 @@ img {
     height: auto; }
     .caseHeader .titles h1 {
       width: 100%;
-      margin: 2rem 0 4rem 0; }
+      margin: 2rem 0 0 0; }
     .caseHeader .titles p {
       max-width: 100%; }
     .caseHeader .titles .bigquestion .ital {
@@ -1681,6 +1680,17 @@ img {
       width: 100%; }
   .caseHeader .result {
     width: 100%; }
+  .bigquestion {
+    text-align: left;
+    margin: 0 0 8rem 0; }
+    .bigquestion .more {
+      width: 100%; }
+      .bigquestion .more .col {
+        margin: 0.5rem 0 1rem 0; }
+        .bigquestion .more .col h4 {
+          margin: 0 0 0.2rem 0; }
+        .bigquestion .more .col p {
+          padding: 0.1rem 0; }
   .caseIntro .caseList {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1689,31 +1699,7 @@ img {
     padding: 0; }
     .caseIntro .caseList .caseBlurb {
       width: 100%;
-      margin-top: 1rem; }
-  .otherlinks ul {
-    width: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: row;
-    flex-direction: row;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-    -webkit-box-align: left;
-    -ms-flex-align: left;
-    align-items: left;
-    margin-top: 0.5rem; }
-  .otherlinks li {
-    background-color: #EBEBEB;
-    padding: 1rem;
-    border: 1px solid #262424;
-    width: -webkit-fit-content;
-    width: -moz-fit-content;
-    width: fit-content;
-    border-radius: 4rem;
-    margin: 0.3rem 0; } }
+      margin-top: 1rem; } }
 
 @media only screen and (min-device-width: 319px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 2) and (min-width: 1910px) {
   .contentContainer {
@@ -1937,23 +1923,15 @@ footer {
   background-color: #fff;
   border-radius: 2rem;
   border: 1px solid #262424; }
-  .cvList .info {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: row;
-    flex-direction: row;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
-    width: 80%; }
+  .cvList ul {
+    margin: 1rem 0; }
+    .cvList ul li {
+      padding: 0.2rem; }
   .cvList .desc {
     width: 70%;
-    margin: 0.5rem 0; }
+    margin: 1rem 0 0 0; }
   .cvList .moreinfo ul li {
-    margin: 0.5rem 0; }
+    margin: 1rem 0; }
 
 .education {
   margin: 0;
