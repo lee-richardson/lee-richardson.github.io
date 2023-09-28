@@ -514,6 +514,9 @@ footer {
     .menu .menuContainer {
       width: 90vw; } }
 
+.contentContainer {
+  width: 90vw; }
+
 .caseHeader {
   margin-top: 5rem;
   display: -webkit-box;
@@ -537,7 +540,7 @@ footer {
     flex-direction: column;
     align-items: center; }
     .caseHeader .titles h1 {
-      margin: 2rem 0 8rem 0;
+      margin: 6rem 0;
       text-align: center;
       width: 80%; }
     .caseHeader .titles p {
@@ -548,27 +551,19 @@ footer {
     background-color: #fff;
     padding: 0.3rem; }
 
-.bigquestion {
+.projectquestion {
   text-align: left;
-  margin: 0 0 8rem 0; }
-  .bigquestion .more {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    width: 80%;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap; }
-    .bigquestion .more .col {
-      margin: 0.5rem 0 2rem 0; }
-      .bigquestion .more .col h4 {
-        margin: 0 0 0.5rem 0; }
+  margin: 0;
+  background-color: #fff;
+  padding: 2rem;
+  border: 1px solid #262424;
+  border-radius: 2rem; }
 
 .mainContent {
   margin: 4rem auto; }
+  .mainContent .narrowContentContainer {
+    width: 60vw;
+    margin: 0 auto; }
   .mainContent img {
     margin: 2rem 0 0 0;
     border-radius: 2rem;
@@ -617,7 +612,7 @@ img {
   max-width: 100%; }
 
 .secondaryCaseTitle {
-  margin: 2rem 0 0.4rem 0;
+  margin: 4rem 0 0.4rem 0;
   font-family: 'CooperLightItal'; }
 
 a {
@@ -627,6 +622,9 @@ a {
   transition: all 1s; }
   a:hover {
     border-bottom: #262424 2px dashed; }
+
+.success {
+  margin: 4rem 0; }
 
 .questions {
   display: -webkit-box;
@@ -650,10 +648,12 @@ a {
     padding: 2rem;
     margin: 1rem; }
     .questions .questionelement .question {
-      margin-bottom: 1rem; }
+      margin-bottom: 0.5rem; }
+      .questions .questionelement .question h4 {
+        margin: 0; }
 
 .otherlinks {
-  margin: 12rem 0;
+  margin: 4rem 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -716,9 +716,9 @@ a {
       margin: 2rem 0 0 0; }
     .caseHeader .titles p {
       max-width: 100%; }
-    .caseHeader .titles .bigquestion .ital {
+    .caseHeader .titles .projectquestion .ital {
       margin-bottom: 0.4rem; }
-    .caseHeader .titles .bigquestion .more {
+    .caseHeader .titles .projectquestion .more {
       -webkit-box-orient: vertical;
       -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -726,17 +726,11 @@ a {
       width: 100%; }
   .caseHeader .result {
     width: 100%; }
-  .bigquestion {
+  .mainContent .narrowContentContainer {
+    width: 90vw; }
+  .projectquestion {
     text-align: left;
-    margin: 0 0 8rem 0; }
-    .bigquestion .more {
-      width: 100%; }
-      .bigquestion .more .col {
-        margin: 0.5rem 0 1rem 0; }
-        .bigquestion .more .col h4 {
-          margin: 0 0 0.2rem 0; }
-        .bigquestion .more .col p {
-          padding: 0.1rem 0; }
+    margin: 4rem 0; }
   .caseIntro .caseList {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -746,6 +740,8 @@ a {
     .caseIntro .caseList .caseBlurb {
       width: 100%;
       margin-top: 1rem; }
+  .success {
+    margin: 4rem 0; }
   .questions {
     margin: 2rem 0; }
     .questions .questionelement {
@@ -902,6 +898,10 @@ footer {
 .cv h2 {
   margin-bottom: 1rem; }
 
+.narrowContentContainer {
+  width: 60vw;
+  margin: 0 auto; }
+
 .cvList {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -920,7 +920,7 @@ footer {
     .cvList ul li {
       padding: 0.2rem; }
   .cvList .desc {
-    width: 70%;
+    width: 90%;
     margin: 1rem 0 0 0; }
   .cvList .moreinfo ul li {
     margin: 1rem 0; }
@@ -1512,6 +1512,9 @@ footer {
     .menu .menuContainer {
       width: 90vw; } }
 
+.contentContainer {
+  width: 90vw; }
+
 .caseHeader {
   margin-top: 5rem;
   display: -webkit-box;
@@ -1535,7 +1538,7 @@ footer {
     flex-direction: column;
     align-items: center; }
     .caseHeader .titles h1 {
-      margin: 2rem 0 8rem 0;
+      margin: 6rem 0;
       text-align: center;
       width: 80%; }
     .caseHeader .titles p {
@@ -1546,27 +1549,19 @@ footer {
     background-color: #fff;
     padding: 0.3rem; }
 
-.bigquestion {
+.projectquestion {
   text-align: left;
-  margin: 0 0 8rem 0; }
-  .bigquestion .more {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    width: 80%;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap; }
-    .bigquestion .more .col {
-      margin: 0.5rem 0 2rem 0; }
-      .bigquestion .more .col h4 {
-        margin: 0 0 0.5rem 0; }
+  margin: 0;
+  background-color: #fff;
+  padding: 2rem;
+  border: 1px solid #262424;
+  border-radius: 2rem; }
 
 .mainContent {
   margin: 4rem auto; }
+  .mainContent .narrowContentContainer {
+    width: 60vw;
+    margin: 0 auto; }
   .mainContent img {
     margin: 2rem 0 0 0;
     border-radius: 2rem;
@@ -1615,7 +1610,7 @@ img {
   max-width: 100%; }
 
 .secondaryCaseTitle {
-  margin: 2rem 0 0.4rem 0;
+  margin: 4rem 0 0.4rem 0;
   font-family: 'CooperLightItal'; }
 
 a {
@@ -1625,6 +1620,9 @@ a {
   transition: all 1s; }
   a:hover {
     border-bottom: #262424 2px dashed; }
+
+.success {
+  margin: 4rem 0; }
 
 .questions {
   display: -webkit-box;
@@ -1648,10 +1646,12 @@ a {
     padding: 2rem;
     margin: 1rem; }
     .questions .questionelement .question {
-      margin-bottom: 1rem; }
+      margin-bottom: 0.5rem; }
+      .questions .questionelement .question h4 {
+        margin: 0; }
 
 .otherlinks {
-  margin: 12rem 0;
+  margin: 4rem 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1714,9 +1714,9 @@ a {
       margin: 2rem 0 0 0; }
     .caseHeader .titles p {
       max-width: 100%; }
-    .caseHeader .titles .bigquestion .ital {
+    .caseHeader .titles .projectquestion .ital {
       margin-bottom: 0.4rem; }
-    .caseHeader .titles .bigquestion .more {
+    .caseHeader .titles .projectquestion .more {
       -webkit-box-orient: vertical;
       -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -1724,17 +1724,11 @@ a {
       width: 100%; }
   .caseHeader .result {
     width: 100%; }
-  .bigquestion {
+  .mainContent .narrowContentContainer {
+    width: 90vw; }
+  .projectquestion {
     text-align: left;
-    margin: 0 0 8rem 0; }
-    .bigquestion .more {
-      width: 100%; }
-      .bigquestion .more .col {
-        margin: 0.5rem 0 1rem 0; }
-        .bigquestion .more .col h4 {
-          margin: 0 0 0.2rem 0; }
-        .bigquestion .more .col p {
-          padding: 0.1rem 0; }
+    margin: 4rem 0; }
   .caseIntro .caseList {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1744,6 +1738,8 @@ a {
     .caseIntro .caseList .caseBlurb {
       width: 100%;
       margin-top: 1rem; }
+  .success {
+    margin: 4rem 0; }
   .questions {
     margin: 2rem 0; }
     .questions .questionelement {
@@ -1960,6 +1956,10 @@ footer {
 .cv h2 {
   margin-bottom: 1rem; }
 
+.narrowContentContainer {
+  width: 60vw;
+  margin: 0 auto; }
+
 .cvList {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1978,7 +1978,7 @@ footer {
     .cvList ul li {
       padding: 0.2rem; }
   .cvList .desc {
-    width: 70%;
+    width: 90%;
     margin: 1rem 0 0 0; }
   .cvList .moreinfo ul li {
     margin: 1rem 0; }
@@ -2448,15 +2448,13 @@ ul {
     body h4 {
       font-size: 1.2rem;
       line-height: 1.3; }
-  .contentContainer {
-    width: 95vw; }
   .caption {
     font-size: 1.1rem; }
   .landingHeader {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    height: 70vh; }
+    height: 60vh; }
     .landingHeader h3 {
       width: 90%;
       text-align: center; }
@@ -2496,8 +2494,7 @@ ul {
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
-    width: 100%;
-    margin-bottom: 4rem; }
+    width: 100%; }
   .zoomcont {
     width: 100%; }
     .zoomcont .zoomImage {
