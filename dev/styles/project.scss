@@ -1,7 +1,9 @@
 @import 'footer.scss';
 @import 'menu.scss';
 
-
+.contentContainer {
+	width: 90vw;
+}
 
 .caseHeader {
 	margin-top: 5rem;
@@ -29,7 +31,7 @@
 
 
 		h1 {
-			margin: 2rem 0 8rem 0;
+			margin: 6rem 0;
 			text-align: center;
 			width: 80%;
 		}
@@ -52,34 +54,25 @@
 }
 
 
-.bigquestion {
+
+.projectquestion {
 	text-align: left;
-	margin: 0 0 8rem 0;
+	margin: 0;
+	background-color: #fff;
+	padding: 2rem;
+	border: 1px solid #262424;
+	border-radius: 2rem;
 
-	.more {
-		display: -webkit-box;
-		display: -ms-flexbox;
-		display: flex;
-		width: 80%;
-		-webkit-box-pack: justify;
-		-ms-flex-pack: justify;
-		justify-content: space-between;
-		flex-wrap: wrap;
-		-ms-flex-wrap: wrap;
-		flex-wrap: wrap;
 
-		.col {
-			margin: 0.5rem 0 2rem 0;
-
-			h4 {
-				margin: 0 0 0.5rem 0;
-			}
-		}
-	}
 }
 
 
 .mainContent {
+
+	.narrowContentContainer {
+		width: 60vw;
+		margin: 0 auto;
+	}
 
 	margin: 4rem auto;
 
@@ -149,7 +142,7 @@ img {
 }
 
 .secondaryCaseTitle {
-	margin: 2rem 0 0.4rem 0;
+	margin: 4rem 0 0.4rem 0;
 	font-family: 'CooperLightItal';
 }
 
@@ -164,8 +157,11 @@ a {
 	}
 }
 
-.questions {
+.success {
+	margin: 4rem 0;
+}
 
+.questions {
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
@@ -189,13 +185,17 @@ a {
 		margin: 1rem;
 
 		.question {
-			margin-bottom: 1rem;
+			margin-bottom: 0.5rem;
+
+			h4 {
+				margin: 0;
+			}
 		}
 	}
 }
 
 .otherlinks {
-	margin: 12rem 0;
+	margin: 4rem 0;
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
@@ -254,8 +254,8 @@ a {
 
 	.contentContainer {
 		width: 90vw;
-
 	}
+
 
 	.subHeader {
 		margin: 0;
@@ -294,7 +294,7 @@ a {
 				max-width: 100%;
 			}
 
-			.bigquestion {
+			.projectquestion {
 
 				.ital {
 					margin-bottom: 0.4rem;
@@ -316,29 +316,16 @@ a {
 		}
 	}
 
+	.mainContent {
 
-
-	.bigquestion {
-		text-align: left;
-		margin: 0 0 8rem 0;
-
-		.more {
-
-			width: 100%;
-
-
-			.col {
-				margin: 0.5rem 0 1rem 0;
-
-				h4 {
-					margin: 0 0 0.2rem 0;
-				}
-
-				p {
-					padding: 0.1rem 0;
-				}
-			}
+		.narrowContentContainer {
+			width: 90vw;
 		}
+	}
+
+	.projectquestion {
+		text-align: left;
+		margin: 4rem 0;
 	}
 
 	.caseIntro .caseList {
@@ -346,7 +333,6 @@ a {
 		-webkit-box-direction: normal;
 		-ms-flex-direction: column;
 		flex-direction: column;
-
 		padding: 0;
 
 		.caseBlurb {
@@ -355,6 +341,9 @@ a {
 		}
 	}
 
+	.success {
+		margin: 4rem 0;
+	}
 
 	.questions {
 		margin: 2rem 0;

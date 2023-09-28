@@ -579,66 +579,6 @@ ul {
 	font-family: 'CooperLightItal';
 }
 
-// .whatgrid {
-// 	display: -webkit-box;
-// 	display: -ms-flexbox;
-// 	display: flex;
-// 	-webkit-box-orient: horizontal;
-// 	-webkit-box-direction: normal;
-// 	-ms-flex-direction: row;
-// 	flex-direction: row;
-// 	-ms-flex-wrap: wrap;
-// 	flex-wrap: wrap;
-// 	margin: 1rem 0 0 0;
-// 	border: 1px solid #262424;
-// 	padding: 2rem 3rem;
-// 	border-radius: 2rem;
-
-// 	.title {
-// 		margin-bottom: 4rem;
-// 	}
-
-// 	.whatelement {
-// 		width: 50%;
-// 		margin: 2rem 0;
-
-// 		p {
-// 			width: 90%;
-// 		}
-// 	}
-
-// 	ul {
-// 		margin: 0.5rem 0 0 0;
-// 	}
-// }
-
-// .whatido {
-
-// 	.whatgrid {
-// 		background-color: #90DDFF;
-
-// 		.whatelement {
-// 			width: 100%;
-// 			margin: 2rem 0;
-// 		}
-
-// 		ul {
-// 			display: flex;
-// 			flex-wrap: wrap;
-// 		}
-
-// 		li {
-// 			background-color: white;
-// 			width: fit-content;
-// 			padding: 1rem;
-// 			margin: 0.2rem 0;
-// 			border-radius: 2rem;
-// 			border: 1px solid #262424;
-// 		}
-// 	}
-
-// }
-
 
 .whatgrid {
 	display: -webkit-box;
@@ -722,9 +662,6 @@ ul {
 		}
 	}
 
-	.contentContainer {
-		width: 95vw;
-	}
 
 
 	.caption {
@@ -736,7 +673,7 @@ ul {
 		display: -webkit-box;
 		display: -ms-flexbox;
 		display: flex;
-		height: 70vh;
+		height: 60vh;
 
 		h3 {
 			width: 90%;
@@ -803,7 +740,7 @@ ul {
 		-ms-flex-direction: column;
 		flex-direction: column;
 		width: 100%;
-		margin-bottom: 4rem;
+		// margin-bottom: 4rem;
 	}
 
 	.zoomcont {
@@ -861,72 +798,6 @@ ul {
 
 
 }
-
-
-
-// tablet media queries //
-
-// @media only screen and (min-device-width: 680px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 2) {
-
-
-// 	h1 {
-// 		font-size: 3rem;
-// 		line-height: 1.2;
-// 	}
-
-
-// 	h2 {
-// 		font-size: 2rem;
-// 		line-height: 1.2;
-// 	}
-
-// 	h3 {
-// 		font-size: 1.2rem;
-// 		line-height: 1.2;
-// 	}
-
-// 	p {
-// 		font-size: 18px;
-// 		line-height: 1.3;
-// 	}
-
-// 	a {
-// 		font-size: 18px;
-// 		line-height: 1.3;
-// 	}
-
-// 	.workgrid {
-// 		-webkit-box-orient: vertical;
-// 		-webkit-box-direction: normal;
-// 		flex-wrap: wrap;
-// 		margin-bottom: 0;
-
-// 		.workitem {
-// 			flex-basis: 45%;
-
-
-// 			.project-info-mobile {
-// 				display: block;
-// 				margin-top: 1rem;
-// 			}
-// 		}
-
-// 	}
-
-// .whatido {
-// 	.whatidomain {
-// 		padding: 2rem;
-
-// 		.whatelement {
-// 			flex-wrap: wrap;
-// 			flex-basis: 50%;
-// 		}
-// 	}
-// }
-
-// }
-
-
 
 // large screen media queries //
 @media (min-width: 1910px) {
