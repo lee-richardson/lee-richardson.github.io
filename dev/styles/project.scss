@@ -15,7 +15,10 @@
 	-ms-flex-direction: column;
 	flex-direction: column;
 	-ms-flex-pack: distribute;
+	-webkit-box-pack: center;
 	justify-content: center;
+	height: -webkit-fit-content;
+	height: -moz-fit-content;
 	height: fit-content;
 
 	.titles {
@@ -27,6 +30,8 @@
 		-webkit-box-direction: normal;
 		-ms-flex-direction: column;
 		flex-direction: column;
+		-webkit-box-align: center;
+		-ms-flex-align: center;
 		align-items: center;
 
 
@@ -123,6 +128,11 @@
 
 .mainContent {
 	margin: 5rem 0 0 0;
+
+
+	h4 {
+		margin: 2rem 0 0.2rem 0;
+	}
 }
 
 .caseStudyImg {
@@ -132,6 +142,8 @@
 		max-width: 50%;
 	}
 }
+
+
 
 ul {
 	margin: 0;
