@@ -969,6 +969,9 @@ footer {
         width: fit-content; }
     .cv .cvList h3 {
       margin: 0; }
+  .narrowContentContainer {
+    width: 90vw;
+    margin: 0 auto; }
   .education h2 {
     text-align: left; }
   .education ul li {
@@ -2034,6 +2037,9 @@ footer {
         width: fit-content; }
     .cv .cvList h3 {
       margin: 0; }
+  .narrowContentContainer {
+    width: 90vw;
+    margin: 0 auto; }
   .education h2 {
     text-align: left; }
   .education ul li {
