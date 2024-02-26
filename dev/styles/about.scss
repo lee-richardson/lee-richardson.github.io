@@ -1,124 +1,142 @@
 @import 'menu.scss';
 @import 'footer.scss';
 
-
-body {
-    background-color: #F5F5F5;
-}
-
-.aboutHeader {
-    align-items: center;
+.aboutheader {
     display: flex;
-    justify-content: center;
-    flex-direction: column;
+    width: 100%;
+    margin-top: 4rem;
+
+    .aboutintro {
+        display: flex;
+        flex-direction: row;
+        margin: 4rem 0;
+    }
+
+    img {
+        max-width: 50%;
+    }
+
 
     .text {
-        width: 100%;
-    }
-
-    .zoomcont {
-        background-color: #D0F1FE;
-        padding: 2rem;
-        border: 1px solid #000;
-        border-radius: 2rem;
-    }
-
-    .zoomImage {
-        margin: 4rem 0;
-        background-color: #E3E3E3;
-        border-radius: 2rem;
-        width: 60%;
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-        flex-direction: column;
-        -webkit-box-align: center;
-        -ms-flex-align: center;
+        height: 100%;
         align-items: center;
-        padding: 0.3rem;
-        border: 1px solid #000;
-        background-color: #fff;
+        margin: 0rem 4rem 4rem 4rem;
 
-        img {
-            width: 100%;
+        p {
             margin: 0;
-            border-radius: 2rem 2rem 0 0;
         }
+    }
 
-        .zoomControls {
-
-            display: -webkit-box;
-            display: -ms-flexbox;
-            display: flex;
-            -webkit-box-orient: horizontal;
-            -webkit-box-direction: normal;
-            -ms-flex-direction: row;
-            flex-direction: row;
-            -ms-flex-pack: distribute;
-            justify-content: space-around;
-            width: 35%;
-            margin-top: 1rem;
-
-            img {
-                width: 3rem;
-            }
-
-            .zoomStar {
-                width: 4rem;
-            }
-
-        }
+    h1 {
+        font-family: 'untsansmed';
+        text-align: center;
     }
 
 }
 
-.work {
+.skills {
+    border-radius: 1rem;
+    width: 100%;
     margin: 8rem 0;
 
-    .chat {
-        margin: 0 auto;
-        width: 90vw;
+    .skillsgrid {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        margin: 1rem 0;
+        justify-content: space-between;
 
+        .skillelement {
+            width: 30%;
+            border-radius: 0.5rem;
+
+            ul {
+                padding: 0;
+                list-style-type: square;
+
+                li {
+                    margin: 0.5rem 0 0 1rem;
+                }
+            }
+        }
     }
-
 }
 
 
-.aboutfooter {
-    background-color: #2e2e2e;
-    border-top: 0.5px solid #E3E3E3;
 
-    p,
-    a {
-
-        color: #fff;
-    }
-
-}
+@media only screen and (min-device-width: 318px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 2) {
 
 
-
-@media only screen and (min-device-width: 319px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 2) {
-
-
-    .aboutHeader {
+    .aboutheader {
         margin-top: 4rem;
         height: auto;
 
-        .abouttitle {
+        .aboutintro {
             display: flex;
-            flex-wrap: nowrap;
-            justify-content: flex-start;
-            height: auto;
+            flex-direction: column;
+            margin: 2rem 0 0 0;
+
+            img {
+                max-width: 100%;
+            }
+
+            .text {
+                height: 100%;
+                margin: 2rem 0;
+            }
+        }
+
+    }
+
+    .skills {
+        width: 100%;
+        margin: 4rem 0;
+
+        .skillsgrid {
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            margin: 1rem 0;
+
+            .skillelement {
+                width: 100%;
+                border-radius: 0.5rem;
+                margin: 2rem 0;
+            }
+        }
+
+
+
+        ul {
+            padding: 0;
+            list-style-type: square;
+            margin: 1rem 0 0 0;
+        }
+    }
+
+    .refCont {
+        width: 100%;
+        margin: 8rem 0;
+
+        .refsgrid {
+            width: 100%;
+            flex-direction: column;
+            margin: 0;
+
+            .reference {
+                width: 100%;
+                margin-bottom: 4rem;
+            }
+
+            p {
+                text-align: center;
+
+            }
         }
     }
 
     .work {
         margin: 8rem 0;
-
 
     }
 
@@ -139,27 +157,8 @@ body {
             margin-bottom: 4rem;
         }
 
-        .zoomImage {
-            width: 100%;
-            padding: 1rem;
-
-            img {
-                margin: 0;
-            }
-
-            .zoomControls {
-                img {
-                    width: 2.5rem;
-                }
-
-                .zoomStar {
-                    width: 3rem;
-                }
-            }
-        }
-
-
     }
+
 
 
     .bigMessage {
@@ -167,25 +166,15 @@ body {
         height: auto;
     }
 
-    .contactInfo {
-        margin: 2rem 0 6rem 0;
-
-        .contactText {
-            width: 100%;
-        }
-
-        h3 {
-            font-size: 1.4rem;
-        }
-
-        .contactPhoto .cphimage {
-            width: 100%;
-            margin-bottom: 0;
-        }
-    }
 
 
 }
+
+
+
+
+
+
 
 @media (min-width: 1910px) {
     .aboutHeader {

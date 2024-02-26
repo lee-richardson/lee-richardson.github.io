@@ -2,32 +2,22 @@
 
 .menu {
 
-
 	a {
 		text-decoration: none;
-		-webkit-transition: all 1s;
-		-o-transition: all 1s;
-		transition: all 1s;
-		border-bottom: #262424 1px solid;
-
-		&:hover {
-			border-bottom: #262424 2px dashed;
-		}
+		border-bottom: none;
 	}
 
-	background-color: #F5F5F5;
+	background-color: #F7F7F7;
 	z-index: 10;
-	border-radius: 0 0 1rem 1rem;
 	position: sticky;
 	top: 0px;
-	height: auto;
 	width: 100%;
 	-webkit-box-align: center;
 	-ms-flex-align: center;
 	align-items: center;
-	-webkit-transition: all 0.5s;
-	-o-transition: all 0.5s;
-	transition: all 0.5s;
+	// -webkit-transition: all 0.5s;
+	// -o-transition: all 0.5s;
+	// transition: all 0.5s;
 	-webkit-box-align: baseline;
 	-ms-flex-align: baseline;
 	align-items: baseline;
@@ -41,8 +31,8 @@
 		-webkit-box-direction: normal;
 		-ms-flex-direction: row;
 		flex-direction: row;
-		width: 90vw;
-		padding: 0.8rem 0;
+		width: 95vw;
+		padding: 0.5em 0;
 		-webkit-box-pack: justify;
 		-ms-flex-pack: justify;
 		justify-content: space-between;
@@ -50,7 +40,8 @@
 	}
 
 	.menu-head {
-
+		margin: 0;
+		padding: 0;
 		display: -webkit-box;
 		display: -ms-flexbox;
 		display: flex;
@@ -58,6 +49,7 @@
 		-webkit-box-direction: normal;
 		-ms-flex-direction: row;
 		flex-direction: row;
+
 	}
 
 
@@ -71,9 +63,14 @@
 		flex-direction: row;
 		-ms-flex-pack: distribute;
 		justify-content: space-around;
+		margin: 0;
 
 		li {
-			margin: 0 1rem;
+			padding-left: 1rem;
+
+			a {
+				font-family: 'untsansreg';
+			}
 		}
 	}
 }
