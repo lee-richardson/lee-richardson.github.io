@@ -196,15 +196,15 @@ legend {
 
 //large display
 @font-face {
-	font-family: 'abcmax';
-	src: url(/dev/assets/font/GintoNordBold.ttf) format("opentype");
+	font-family: 'GTMed';
+	src: url(/dev/assets/font/GintoNordRegular.ttf) format("opentype");
 	font-weight: normal;
 	font-style: normal;
 }
 
 //main display
 @font-face {
-	font-family: 'untsansmed';
+	font-family: 'GTReg';
 	src: url(/dev/assets/font/GintoNordRegular.ttf) format("opentype");
 	font-weight: normal;
 	font-style: normal;
@@ -213,7 +213,7 @@ legend {
 
 //body
 @font-face {
-	font-family: 'untsansreg';
+	font-family: 'SuLi';
 	src: url(/dev/assets/font/SuisseIntl-Light.otf) format("opentype");
 	font-weight: normal;
 	font-style: normal;
@@ -222,16 +222,8 @@ legend {
 
 //ital
 @font-face {
-	font-family: 'untsansital';
+	font-family: 'SulLiIt';
 	src: url(/dev/assets/font/SuisseIntl-LightItalic.otf) format("opentype");
-	font-weight: normal;
-	font-style: normal;
-}
-
-//tst
-@font-face {
-	font-family: 'testfont';
-	src: url(/dev/assets/font/GintoNordRegular.ttf) format("opentype");
 	font-weight: normal;
 	font-style: normal;
 }
@@ -241,9 +233,9 @@ html {
 }
 
 body {
-	font-size: 1.3rem;
+	font-size: 1rem;
 	line-height: 1.4;
-	font-family: 'untsansreg';
+	font-family: 'SuLi';
 	margin: 0;
 	-webkit-transition: all 0.5s;
 	-o-transition: all 0.5s;
@@ -294,30 +286,25 @@ a {
 h1 {
 	font-size: 5rem;
 	line-height: 1;
-	font-family: 'abcmax';
+	font-family: 'GTMed';
 }
 
 h2 {
 	font-size: 2.5rem;
 	line-height: 1.1;
-	font-family: 'untsansmed';
+	font-family: 'GTReg';
 }
 
 h3 {
 	font-size: 1.5rem;
 	line-height: 1.4;
-	font-family: 'untsansmed';
+	font-family: 'GTReg';
 }
 
 h4 {
 	font-size: 1rem;
 	line-height: 1.4;
-	font-family: 'untsansreg';
-}
-
-
-.testfont {
-	font-family: 'testfont';
+	font-family: 'SuLi';
 }
 
 img {
@@ -357,7 +344,7 @@ img {
 
 		span {
 			font-size: 8rem;
-			font-family: 'abcmax';
+			font-family: 'GTMed';
 			line-height: 1.2;
 		}
 	}
@@ -448,7 +435,7 @@ img {
 			flex-direction: column;
 
 			h2 {
-				font-family: 'untsansmed';
+				font-family: 'GTReg';
 			}
 
 			.info {
@@ -461,11 +448,6 @@ img {
 					display: flex;
 					flex-direction: column;
 					margin: 0.5rem 0;
-
-					.upper {
-						font-family: 'untsansmed';
-						margin-right: 0.5rem;
-					}
 
 					p {
 						margin: 0;
@@ -518,13 +500,13 @@ img {
 	}
 
 	.refname {
-		font-family: 'untsansmed';
+		font-family: 'GTReg';
 		text-transform: uppercase;
 	}
 
 	.refbody {
 		margin: 0;
-		font-family: 'untsansital';
+		font-family: 'SulLiIt';
 	}
 
 
@@ -741,13 +723,13 @@ img {
 		}
 
 		.refname {
-			font-family: 'untsansmed';
+			font-family: 'GTreg';
 			text-transform: uppercase;
 		}
 
 		.refbody {
 			margin: 0;
-			font-family: 'untsansital';
+			font-family: 'SulLiIt';
 		}
 
 
