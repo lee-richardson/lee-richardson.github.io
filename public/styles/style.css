@@ -1,4 +1,15 @@
 /* menu =======================================*/
+.headerContainer {
+  display: flex; }
+
+.header,
+.landingheader {
+  height: 80vh;
+  text-align: center; }
+
+/* end of menu =======================================*/
+
+/* menu =======================================*/
 .menu {
   background-color: #F7F7F7;
   z-index: 10;
