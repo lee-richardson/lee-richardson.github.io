@@ -1,13 +1,14 @@
-/* menu =======================================*/
+@import 'footer.scss';
+@import 'menu.scss';
+
+
 
 .headerContainer {
 	display: flex;
-}
 
-.header,
-.landingheader {
-	height: 80vh;
-	text-align: center;
-}
+	.landingHeader {
+		height: 80vh;
+		text-align: center;
+	}
 
-/* end of menu =======================================*/
+}

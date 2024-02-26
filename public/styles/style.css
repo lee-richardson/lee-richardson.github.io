@@ -1,13 +1,153 @@
-/* menu =======================================*/
-.headerContainer {
-  display: flex; }
+/* footer =======================================*/
+footer {
+  background-color: #FFF0B0; }
+  footer p {
+    margin: 0; }
+  footer .contentContainer {
+    width: 95vw;
+    padding-top: 2rem; }
+  footer h4 {
+    font-family: 'untsansmed';
+    font-size: 1rem; }
+  footer .weather {
+    text-align: right; }
+  footer ul {
+    width: auto;
+    display: flex;
+    margin: 0;
+    flex-direction: row;
+    padding: 0;
+    justify-content: space-between; }
+  footer ul li {
+    -webkit-transition: all 1s;
+    -o-transition: all 0.2s;
+    transition: all 0.2s;
+    margin-right: 1rem; }
+    footer ul li a {
+      text-decoration: none; }
 
-.header,
-.landingheader {
-  height: 80vh;
-  text-align: center; }
+.footerContent {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  width: 100%;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  text-align: left;
+  padding: 2rem 0; }
+
+.bottomfooter {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  text-align: left;
+  padding-bottom: 4rem; }
+
+/* end of footer =======================================*/
+@media only screen and (min-device-width: 319px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) {
+  .footerContent {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: start;
+    width: 100vw;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap; }
+    .footerContent .footerCol {
+      margin: 1rem 0;
+      text-align: left; }
+    .footerContent .contact ul {
+      width: 50vw;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column; } }
+
+@media (min-width: 1910px) {
+  .footerContent {
+    padding: 2rem 0; } }
+
+/* menu =======================================*/
+.menu {
+  background-color: #F7F7F7;
+  z-index: 10;
+  position: sticky;
+  top: 0px;
+  width: 100%;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-align: baseline;
+  -ms-flex-align: baseline;
+  align-items: baseline; }
+  .menu a {
+    text-decoration: none;
+    border-bottom: none; }
+  .menu .menuContainer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    width: 95vw;
+    padding: 0.5em 0;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    margin: 0 auto; }
+  .menu .menu-head {
+    margin: 0;
+    padding: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row; }
+  .menu .menu-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    margin: 0; }
+    .menu .menu-list li {
+      padding-left: 1rem; }
+      .menu .menu-list li a {
+        font-family: 'untsansreg'; }
 
 /* end of menu =======================================*/
+@media only screen and (min-device-width: 318px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) {
+  .menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; }
+    .menu .menuContainer {
+      width: 90vw; } }
+
+.headerContainer {
+  display: flex; }
+  .headerContainer .landingHeader {
+    height: 80vh;
+    text-align: center; }
 
 /* menu =======================================*/
 .menu {
