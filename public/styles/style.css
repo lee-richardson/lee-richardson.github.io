@@ -145,9 +145,12 @@ footer {
 
 .headerContainer {
   display: flex; }
-  .headerContainer .landingHeader {
+  .headerContainer .fourohfourHeader {
     height: 80vh;
-    text-align: center; }
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; }
 
 /* menu =======================================*/
 .menu {

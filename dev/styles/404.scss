@@ -6,9 +6,12 @@
 .headerContainer {
 	display: flex;
 
-	.landingHeader {
+	.fourohfourHeader {
 		height: 80vh;
 		text-align: center;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
 	}
 
 }
