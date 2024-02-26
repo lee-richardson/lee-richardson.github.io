@@ -126,7 +126,7 @@ footer {
     -webkit-box-align: start;
     -ms-flex-align: start;
     align-items: start;
-    width: 75vw;
+    width: 100vw;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap; }
     .footerContent .footerCol {
@@ -306,7 +306,7 @@ footer {
     -webkit-box-align: start;
     -ms-flex-align: start;
     align-items: start;
-    width: 75vw;
+    width: 100vw;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap; }
     .footerContent .footerCol {
@@ -451,7 +451,7 @@ footer {
     -webkit-box-align: start;
     -ms-flex-align: start;
     align-items: start;
-    width: 75vw;
+    width: 100vw;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap; }
     .footerContent .footerCol {
@@ -885,7 +885,7 @@ footer {
     -webkit-box-align: start;
     -ms-flex-align: start;
     align-items: start;
-    width: 75vw;
+    width: 100vw;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap; }
     .footerContent .footerCol {
@@ -1336,7 +1336,7 @@ footer {
     -webkit-box-align: start;
     -ms-flex-align: start;
     align-items: start;
-    width: 75vw;
+    width: 100vw;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap; }
     .footerContent .footerCol {
@@ -1516,7 +1516,7 @@ footer {
     -webkit-box-align: start;
     -ms-flex-align: start;
     align-items: start;
-    width: 75vw;
+    width: 100vw;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap; }
     .footerContent .footerCol {
@@ -1950,7 +1950,7 @@ footer {
     -webkit-box-align: start;
     -ms-flex-align: start;
     align-items: start;
-    width: 75vw;
+    width: 100vw;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap; }
     .footerContent .footerCol {
@@ -2027,7 +2027,7 @@ footer {
     -webkit-box-align: start;
     -ms-flex-align: start;
     align-items: start;
-    width: 75vw;
+    width: 100vw;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap; }
     .footerContent .footerCol {
@@ -2510,7 +2510,7 @@ img {
 @media only screen and (min-device-width: 318px) and (max-device-width: 1080px) and (-webkit-min-device-pixel-ratio: 2) {
   body {
     line-height: 1.6;
-    font-size: 18px; }
+    font-size: 16px; }
     body h1 {
       font-size: 2rem;
       line-height: 1.3; }
@@ -2521,8 +2521,10 @@ img {
       font-size: 1.4rem;
       line-height: 1.3; }
     body h4 {
-      font-size: 1.2rem;
+      font-size: 1rem;
       line-height: 1.3; }
+    body ul li {
+      line-height: 1.6; }
   .caption {
     font-size: 1.1rem; }
   .landingHeader {
