@@ -2,32 +2,50 @@
 
 
 footer {
-	background-color: #FDFF80;
-	border: 1px solid #262424;
-	border-radius: 2rem 2rem 0 0;
+
+	background-color: #FFF0B0;
+
+	p {
+		margin: 0;
+	}
+
+
+	.contentContainer {
+		width: 95vw;
+		padding-top: 2rem;
+	}
+
+	h4 {
+		font-family: 'untsansmed';
+		font-size: 1rem;
+	}
 
 	.weather {
 		text-align: right;
 	}
 
-	p {
-		color: #262424;
-		margin-top: 0.2rem;
+
+	ul {
+		width: auto;
+		display: flex;
+		margin: 0;
+		flex-direction: row;
+		padding: 0;
+		justify-content: space-between;
 	}
 
-
-
-	a {
-		text-decoration: none;
+	ul li {
 		-webkit-transition: all 1s;
-		-o-transition: all 1s;
-		transition: all 1s;
-		border-bottom: #262424 1px solid;
+		-o-transition: all 0.2s;
+		transition: all 0.2s;
 
-		&:hover {
-			border-bottom: #262424 2px dashed;
+		margin-right: 1rem;
+
+		a {
+			text-decoration: none;
 		}
 	}
+
 }
 
 .footerContent {
@@ -43,8 +61,17 @@ footer {
 	-webkit-box-pack: justify;
 	-ms-flex-pack: justify;
 	justify-content: space-between;
-	padding: 4rem 0;
+	text-align: left;
+	padding: 2rem 0;
 
+}
+
+.bottomfooter {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	text-align: left;
+	padding-bottom: 4rem;
 }
 
 
@@ -88,7 +115,7 @@ footer {
 @media (min-width: 1910px) {
 
 	.footerContent {
-		padding: 4rem 0;
+		padding: 2rem 0;
 	}
 
 }
