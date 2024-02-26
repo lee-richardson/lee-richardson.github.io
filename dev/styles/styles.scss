@@ -54,11 +54,6 @@ dfn {
 	font-style: italic
 }
 
-mark {
-	background: #ff0;
-	color: #262424;
-}
-
 code,
 kbd,
 pre,
@@ -199,69 +194,71 @@ legend {
 @import 'resume.scss';
 @import 'menu.scss';
 
+//large display
+@font-face {
+	font-family: 'abcmax';
+	src: url(/dev/assets/font/GintoNordMedium.ttf) format("opentype");
+	font-weight: normal;
+	font-style: normal;
+}
 
 //main display
 @font-face {
-	font-family: 'CooperLightItal';
-	src: url(/dev/assets/font/CooperLtBT-Italic.ttf) format("opentype");
+	font-family: 'untsansmed';
+	src: url(/dev/assets/font/GintoNordRegular.ttf) format("opentype");
 	font-weight: normal;
 	font-style: normal;
 }
+
 
 //body
 @font-face {
-	font-family: 'UniverRoman';
-	src: url(/dev/assets/font/UniversLTStd55Roman.otf) format("opentype");
-	font-weight: normal;
-	font-style: normal;
-}
-
-//bodylight
-@font-face {
-	font-family: 'UniversLight';
-	src: url(/dev/assets/font/UniversLTStd-Light.otf) format("opentype");
-	font-weight: normal;
-	font-style: normal;
-}
-
-//bodyital
-@font-face {
-	font-family: 'UniversItal';
-	src: url(/dev/assets/font/UniversLTStd-Obl.otf) format("opentype");
+	font-family: 'untsansreg';
+	src: url(/dev/assets/font/SuisseIntl-Light.otf) format("opentype");
 	font-weight: normal;
 	font-style: normal;
 }
 
 
-//boldtext
+//ital
 @font-face {
-	font-family: 'UniversBold';
-	src: url(/dev/assets/font/UniversLTStd-Bold.otf) format("opentype");
+	font-family: 'untsansital';
+	src: url(/dev/assets/font/SuisseIntl-LightItalic.otf) format("opentype");
+	font-weight: normal;
+	font-style: normal;
+}
+
+//tst
+@font-face {
+	font-family: 'testfont';
+	src: url(/dev/assets/font/GintoNordRegular.ttf) format("opentype");
 	font-weight: normal;
 	font-style: normal;
 }
 
 html {
-	background-color: #F5F5F5;
+	background-color: #F7F7F7;
 }
 
 body {
-	font-size: 18px;
+	font-size: 1.3rem;
 	line-height: 1.4;
-	font-family: 'UniverRoman';
+	font-family: 'untsansreg';
 	margin: 0;
 	-webkit-transition: all 0.5s;
 	-o-transition: all 0.5s;
 	transition: all 0.5s;
-	color: #262424;
+	color: #404040;
 }
 
-p {
+s p {
 	margin: 0;
+	line-height: 1.6;
+
 }
 
 .caption {
-	font-size: 16px;
+	font-size: 1rem;
 }
 
 .contentContainer {
@@ -270,23 +267,8 @@ p {
 }
 
 
-.rotate {
-	-webkit-animation: moveRotate 20s infinite linear;
-	animation: moveRotate 20s infinite linear;
-}
-
-@keyframes moveRotate {
-	0% {
-		-webkit-transform: rotate(0);
-		-ms-transform: rotate(0);
-		transform: rotate(0);
-	}
-
-	100% {
-		-webkit-transform: rotate(360deg);
-		-ms-transform: rotate(360deg);
-		transform: rotate(360deg);
-	}
+ul {
+	list-style-type: none;
 }
 
 
@@ -298,48 +280,56 @@ h4 {
 }
 
 a {
-	color: #262424;
+	color: #404040;
 	text-decoration: none;
-	-webkit-transition: all 0.2s;
-	-o-transition: all 0.2s;
-	transition: all 0.2s;
 	line-height: 1;
+	transition-timing-function: ease-in-out;
+
+	&:hover {
+		border-bottom: 1px solid #404040;
+	}
+
 }
 
 h1 {
-	font-size: 3.5rem;
-	line-height: 1.2;
-	margin: 0.4rem 0;
+	font-size: 5rem;
+	line-height: 1;
+	font-family: 'abcmax';
 }
 
 h2 {
-	font-size: 2.8rem;
-	line-height: 1.2;
-	margin: 0.4rem 0;
-
+	font-size: 2.5rem;
+	line-height: 1.1;
+	font-family: 'untsansmed';
 }
 
 h3 {
-	font-size: 2rem;
-	line-height: 1.2;
-	margin: 0.2rem 0;
+	font-size: 1.5rem;
+	line-height: 1.4;
+	font-family: 'untsansmed';
 }
 
 h4 {
-	font-size: 1.5rem;
-	line-height: 1.2;
-	margin: 0.2rem 0;
+	font-size: 1rem;
+	line-height: 1.4;
+	font-family: 'untsansreg';
 }
 
-.boldText {
-	font-family: 'MatterMed';
+
+.testfont {
+	font-family: 'testfont';
+}
+
+img {
+	border-radius: 0.5rem;
 }
 
 .landingHeader {
-	height: 80vh;
+	height: fit-content;
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
+	margin: 2rem 0;
 	-webkit-box-orient: vertical;
 	-webkit-box-direction: normal;
 	-ms-flex-direction: column;
@@ -350,11 +340,33 @@ h4 {
 	-webkit-box-pack: center;
 	-ms-flex-pack: center;
 	justify-content: center;
-	// margin-bottom: 8rem;
 
-	h3 {
-		width: 50%;
-		text-align: center;
+	.stretch {
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+
+		.row {
+			justify-content: space-between;
+			display: flex;
+		}
+
+		.alt {
+			color: #A1A1AA;
+		}
+
+		span {
+			font-size: 8rem;
+			font-family: 'abcmax';
+			line-height: 1.2;
+		}
+
+		.small {
+			font-size: 1.6rem;
+			font-family: 'untsansmed';
+			text-transform: uppercase;
+			line-height: 0;
+		}
 	}
 
 	.titles {
@@ -369,58 +381,26 @@ h4 {
 		-webkit-box-pack: center;
 		-ms-flex-pack: center;
 		justify-content: center;
-
-		h1 {
-
-			.whitebg {
-				background-color: #fff;
-				padding: 1.4rem;
-				border: 1px solid #262424;
-				border-radius: 4rem;
-			}
-		}
 	}
 }
 
-
-ul {
-	list-style-type: none;
-	padding: 0;
-}
-
-.titles {
-	width: 100%;
-	display: -webkit-box;
-	display: -ms-flexbox;
+.headerContainer {
+	width: 95vw;
+	justify-content: center;
 	display: flex;
-
-	img {
-		width: 50%;
-	}
-
+	margin: 0 auto;
 }
 
-.main {
-	margin-top: 4rem;
+.introtext {
+	margin: 4rem auto;
+	text-align: center;
+	width: 75%;
 }
 
-
-.bigquestion {
-	background-color: #fff;
-	padding: 2rem;
-	border: 1px solid #262424;
-	border-radius: 2rem;
-	margin: 8rem 0;
-}
-
-.ital {
-	font-family: 'CooperLightItal';
-	text-align: left;
-}
-
-.reg {
-	font-family: 'UniversLight';
-
+.workgridintro {
+	width: 100%;
+	text-align: center;
+	margin-bottom: 2rem;
 }
 
 .workgrid {
@@ -436,20 +416,23 @@ ul {
 	-webkit-box-pack: justify;
 	-ms-flex-pack: justify;
 	justify-content: space-between;
-	margin-bottom: 8rem;
 	flex-wrap: wrap;
 	-webkit-box-align: start;
 	-ms-flex-align: start;
 	align-items: flex-start;
 	border-radius: 1rem;
+	margin: 4rem 0 8rem 0;
 
 	.workitem {
 		-ms-flex-preferred-size: 48%;
 		flex-basis: 48%;
 		margin: 2rem 0;
-		background-color: #ECECEC;
-		padding: 1rem;
-		border-radius: 2rem;
+		border-radius: 1rem;
+		transition: all .2s ease-in-out;
+
+		&:hover {
+			transform: scale(1.02);
+		}
 
 		.workImg {
 			display: -webkit-box;
@@ -459,190 +442,109 @@ ul {
 			-webkit-transition: all 0.5s;
 			-o-transition: all 0.5s;
 			transition: all 0.5s;
-			padding: 0.3rem;
-			border: 1px solid #262424;
-			background-color: #fff;
-			border-radius: 2rem;
 		}
 
 		.subContainer {
 			display: -webkit-box;
 			display: -ms-flexbox;
 			display: flex;
+			margin: 1rem 0 0 0;
 			-webkit-box-orient: vertical;
 			-webkit-box-direction: normal;
 			-ms-flex-direction: column;
 			flex-direction: column;
-			margin: 0.5rem 0;
 
-
-			a {
-				width: -webkit-fit-content;
-				width: -moz-fit-content;
-				width: fit-content;
-				padding: 0.8rem;
-				background-color: #ABFF8B;
-				border-radius: 8rem;
-				border: 1px solid #262424;
+			h2 {
+				font-family: 'untsansmed';
 			}
 
+			.info {
+				display: flex;
+				flex-direction: column;
+				width: auto;
+				margin: 0.5rem 0;
 
+				.inforow {
+					display: flex;
+					flex-direction: column;
+					margin: 0.5rem 0;
 
-			p {
-				color: #262424;
-				margin-bottom: 1rem;
+					.upper {
+						font-family: 'untsansmed';
+						margin-right: 0.5rem;
+					}
+
+					p {
+						margin: 0;
+						line-height: 1.4;
+					}
+				}
 			}
-
 		}
 	}
 
-	//end of workitem
-
 }
 
-.about {
-	display: -webkit-box;
-	display: -ms-flexbox;
-	display: flex;
-	-webkit-box-orient: horizontal;
-	-webkit-box-direction: normal;
-	-ms-flex-direction: row;
-	flex-direction: row;
-	width: 100%;
-	height: auto;
-}
 
-.quickintro {
-	border: 1px solid #262424;
-	background-color: #90DDFF;
-	border-radius: 2rem;
-	padding: 2rem;
-	width: 50%;
-	z-index: 5;
-	height: -webkit-fit-content;
-	height: -moz-fit-content;
-	height: fit-content;
+//end of workitem
 
-}
 
-.zoomcont {
-	width: 60%;
-}
 
-.zoomImage {
-	margin: 4rem auto 0rem auto;
-	background-color: #E3E3E3;
-	border-radius: 2rem;
-	width: 100%;
-	display: -webkit-box;
-	display: -ms-flexbox;
-	display: flex;
-	-webkit-box-orient: vertical;
-	-webkit-box-direction: normal;
-	-ms-flex-direction: column;
-	flex-direction: column;
-	-webkit-box-align: center;
-	-ms-flex-align: center;
-	align-items: center;
-	padding: 0.3rem;
-	border: 1px solid #262424;
-	background-color: #fff;
+.refCont {
+	text-align: left;
+	margin: 4rem 0;
 
-	img {
-		width: 100%;
-		margin: 0;
-		border-radius: 2rem 2rem 0 0;
+	h2 {
+		margin: 0 0 4rem 0;
+		text-align: center;
 	}
 
-	.zoomControls {
-
-		display: -webkit-box;
-		display: -ms-flexbox;
+	.reflist {
 		display: flex;
-		-webkit-box-orient: horizontal;
-		-webkit-box-direction: normal;
-		-ms-flex-direction: row;
+		flex-direction: column;
+	}
+
+	.reference {
+		display: flex;
 		flex-direction: row;
-		-ms-flex-pack: distribute;
-		justify-content: space-around;
-		width: 20%;
-		margin: 1rem 0;
+		width: 100%;
+		justify-content: space-between;
 
-		img {
-			width: 2.5rem;
-			padding: 0 0.2rem 0 0.2rem;
+		.imagehere {
+			width: 45%;
+
+			img {
+				width: 100%;
+			}
 		}
 
-		.zoomStar {
-			width: 3rem;
-		}
-
-	}
-}
-
-.zoomhead {
-	font-family: 'CooperLightItal';
-}
-
-
-.whatgrid {
-	display: -webkit-box;
-	display: -ms-flexbox;
-	display: flex;
-	-webkit-box-orient: horizontal;
-	-webkit-box-direction: normal;
-	-ms-flex-direction: row;
-	flex-direction: row;
-	-ms-flex-wrap: wrap;
-	flex-wrap: wrap;
-	-webkit-box-pack: justify;
-	-ms-flex-pack: justify;
-	justify-content: space-between;
-	margin-bottom: 8rem;
-
-	.title {
-		display: -webkit-box;
-		display: -ms-flexbox;
-		display: flex;
-		-webkit-box-pack: center;
-		-ms-flex-pack: center;
-		justify-content: center;
-
-		.reg {
-			text-align: center;
-			margin: 8rem 0;
-			width: 70%;
+		.textcontent {
+			width: 50%;
+			margin: 0;
 		}
 	}
 
-
-	.whatelement {
-		-ms-flex-preferred-size: 48%;
-		flex-basis: 48%;
-		margin: 0 0 3rem 0;
-		text-align: left;
-
-		h4 {
-			text-align: left;
-		}
-
-		img {
-			background-color: #fff;
-			padding: 0.3rem;
-			border: #262424 1px solid;
-			border-radius: 2rem;
-			margin: 0 0 0.5rem 0;
-		}
-
+	.refname {
+		font-family: 'untsansmed';
+		text-transform: uppercase;
 	}
+
+	.refbody {
+		margin: 0;
+		font-family: 'untsansital';
+	}
+
+
 }
+
+
 
 
 // mobile media queries //
 @media only screen and (min-device-width: 318px) and (max-device-width: 1080px) and (-webkit-min-device-pixel-ratio: 2) {
 
 	body {
-		line-height: 1.3;
+		line-height: 1.6;
 		font-size: 18px;
 
 		h1 {
@@ -667,8 +569,6 @@ ul {
 		}
 	}
 
-
-
 	.caption {
 		font-size: 1.1rem;
 	}
@@ -679,6 +579,12 @@ ul {
 		display: -ms-flexbox;
 		display: flex;
 		height: 60vh;
+		margin: 2rem 0 0 0;
+
+
+		.stretch span {
+			font-size: 3rem;
+		}
 
 		h3 {
 			width: 90%;
@@ -686,23 +592,24 @@ ul {
 		}
 	}
 
-
-	.titles {
-		height: 60vh;
-
-		.titlespara p {
-			margin-top: 1rem;
-			width: 90vw;
-		}
+	.main .introtext {
+		margin: 2rem 0;
 	}
 
+	ul {
+		padding: 0;
+	}
+
+	.work {
+		margin: 0 0 4rem 0;
+	}
 
 	.workgrid {
 
 		.workitem {
 			-ms-flex-preferred-size: 100%;
 			flex-basis: 100%;
-			margin: 0 0 2rem 0;
+			margin: 0 0 4rem 0;
 
 			.worktitle {
 				img {
@@ -715,6 +622,7 @@ ul {
 				-ms-flex-align: left;
 				align-items: left;
 				text-align: left;
+				margin: 0.5rem 0 0 0;
 				display: -webkit-box;
 				display: -ms-flexbox;
 				display: flex;
@@ -745,7 +653,7 @@ ul {
 		-ms-flex-direction: column;
 		flex-direction: column;
 		width: 100%;
-		// margin-bottom: 4rem;
+		margin: 0 0 4rem 0;
 	}
 
 	.zoomcont {
@@ -756,9 +664,10 @@ ul {
 		}
 	}
 
+
 	.quickintro {
 		border: 1px solid #262424;
-		border-radius: 2rem;
+		border-radius: 1rem;
 		padding: 2rem;
 		width: 100%;
 		z-index: 5;
@@ -766,7 +675,6 @@ ul {
 		height: -moz-fit-content;
 		height: fit-content;
 	}
-
 
 	.whatgrid {
 		-webkit-box-orient: vertical;
@@ -801,6 +709,53 @@ ul {
 		width: 100%;
 	}
 
+	.refCont {
+		text-align: left;
+
+		h2 {
+			text-align: center;
+			margin: 0;
+		}
+
+		.reflist {
+			display: flex;
+			flex-direction: column;
+		}
+
+		.reference {
+			display: flex;
+			flex-direction: column;
+			width: 100%;
+			justify-content: space-between;
+			margin: 2rem 0;
+
+			.imagehere {
+				width: 100%;
+
+				img {
+					width: 100%;
+				}
+			}
+
+			.textcontent {
+				width: 100%;
+				margin: 1rem 0;
+			}
+		}
+
+		.refname {
+			font-family: 'untsansmed';
+			text-transform: uppercase;
+		}
+
+		.refbody {
+			margin: 0;
+			font-family: 'untsansital';
+		}
+
+
+	}
+
 
 }
 
@@ -813,8 +768,11 @@ ul {
 
 	.main {
 		margin-top: 8rem;
+
 	}
 }
+
+
 
 // large screen media queries //
 @media (min-width: 1910px) {
@@ -829,7 +787,7 @@ ul {
 
 		h2 {
 			font-size: 3.2rem;
-			line-height: 1.2;
+			line-height: 1.3;
 
 		}
 
