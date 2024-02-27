@@ -7,8 +7,7 @@ footer {
     width: 95vw;
     padding-top: 2rem; }
   footer h4 {
-    font-family: 'GTReg';
-    font-size: 1rem; }
+    font-family: 'GTReg'; }
   footer .weather {
     text-align: right; }
   footer ul {
@@ -229,8 +228,7 @@ footer {
     width: 95vw;
     padding-top: 2rem; }
   footer h4 {
-    font-family: 'GTReg';
-    font-size: 1rem; }
+    font-family: 'GTReg'; }
   footer .weather {
     text-align: right; }
   footer ul {
@@ -409,8 +407,7 @@ footer {
     width: 95vw;
     padding-top: 2rem; }
   footer h4 {
-    font-family: 'GTReg';
-    font-size: 1rem; }
+    font-family: 'GTReg'; }
   footer .weather {
     text-align: right; }
   footer ul {
@@ -554,8 +551,7 @@ footer {
     width: 95vw;
     padding-top: 2rem; }
   footer h4 {
-    font-family: 'GTReg';
-    font-size: 1rem; }
+    font-family: 'GTReg'; }
   footer .weather {
     text-align: right; }
   footer ul {
@@ -988,8 +984,7 @@ footer {
     width: 95vw;
     padding-top: 2rem; }
   footer h4 {
-    font-family: 'GTReg';
-    font-size: 1rem; }
+    font-family: 'GTReg'; }
   footer .weather {
     text-align: right; }
   footer ul {
@@ -1439,8 +1434,7 @@ footer {
     width: 95vw;
     padding-top: 2rem; }
   footer h4 {
-    font-family: 'GTReg';
-    font-size: 1rem; }
+    font-family: 'GTReg'; }
   footer .weather {
     text-align: right; }
   footer ul {
@@ -1619,8 +1613,7 @@ footer {
     width: 95vw;
     padding-top: 2rem; }
   footer h4 {
-    font-family: 'GTReg';
-    font-size: 1rem; }
+    font-family: 'GTReg'; }
   footer .weather {
     text-align: right; }
   footer ul {
@@ -2053,8 +2046,7 @@ footer {
     width: 95vw;
     padding-top: 2rem; }
   footer h4 {
-    font-family: 'GTReg';
-    font-size: 1rem; }
+    font-family: 'GTReg'; }
   footer .weather {
     text-align: right; }
   footer ul {
@@ -2130,8 +2122,7 @@ footer {
     width: 95vw;
     padding-top: 2rem; }
   footer h4 {
-    font-family: 'GTReg';
-    font-size: 1rem; }
+    font-family: 'GTReg'; }
   footer .weather {
     text-align: right; }
   footer ul {
@@ -2790,7 +2781,8 @@ img {
 
 @media (min-width: 1910px) {
   body {
-    line-height: 1.4; }
+    line-height: 1.4;
+    font-size: 16px; }
     body h1 {
       font-size: 5rem;
       line-height: 1.2; }
@@ -2801,9 +2793,11 @@ img {
       font-size: 2.5rem;
       line-height: 1.1; }
     body h4 {
-      font-size: 2rem;
-      line-height: 1.1; }
+      font-size: 1.4rem;
+      line-height: 1.4; }
   .contentContainer {
-    width: 60vw; }
+    width: 90vw; }
+  .landingHeader {
+    height: 90vh; }
   .whatelement p {
     margin-top: 1rem; } }

@@ -758,6 +758,7 @@ img {
 
 	body {
 		line-height: 1.4;
+		font-size: 16px;
 
 		h1 {
 			font-size: 5rem;
@@ -776,17 +777,18 @@ img {
 		}
 
 		h4 {
-			font-size: 2rem;
-			line-height: 1.1;
+			font-size: 1.4rem;
+			line-height: 1.4;
 		}
 	}
 
-
 	.contentContainer {
-		width: 60vw;
+		width: 90vw;
 	}
 
-
+	.landingHeader {
+		height: 90vh;
+	}
 
 	.whatelement p {
 		margin-top: 1rem;
