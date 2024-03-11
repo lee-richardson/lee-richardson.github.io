@@ -1,6 +1,6 @@
 /* footer =======================================*/
 footer {
-  background-color: #FFF0B0; }
+  background-color: #FDAC3D; }
   footer p {
     margin: 0; }
   footer .contentContainer {
@@ -221,7 +221,7 @@ footer {
 
 /* footer =======================================*/
 footer {
-  background-color: #FFF0B0; }
+  background-color: #FDAC3D; }
   footer p {
     margin: 0; }
   footer .contentContainer {
@@ -400,7 +400,7 @@ footer {
 
 /* footer =======================================*/
 footer {
-  background-color: #FFF0B0; }
+  background-color: #FDAC3D; }
   footer p {
     margin: 0; }
   footer .contentContainer {
@@ -544,7 +544,7 @@ footer {
 
 /* footer =======================================*/
 footer {
-  background-color: #FFF0B0; }
+  background-color: #FDAC3D; }
   footer p {
     margin: 0; }
   footer .contentContainer {
@@ -977,7 +977,7 @@ footer {
 
 /* footer =======================================*/
 footer {
-  background-color: #FFF0B0; }
+  background-color: #FDAC3D; }
   footer p {
     margin: 0; }
   footer .contentContainer {
@@ -1427,7 +1427,7 @@ legend {
 
 /* footer =======================================*/
 footer {
-  background-color: #FFF0B0; }
+  background-color: #FDAC3D; }
   footer p {
     margin: 0; }
   footer .contentContainer {
@@ -1606,7 +1606,7 @@ footer {
 
 /* footer =======================================*/
 footer {
-  background-color: #FFF0B0; }
+  background-color: #FDAC3D; }
   footer p {
     margin: 0; }
   footer .contentContainer {
@@ -2039,7 +2039,7 @@ footer {
 
 /* footer =======================================*/
 footer {
-  background-color: #FFF0B0; }
+  background-color: #FDAC3D; }
   footer p {
     margin: 0; }
   footer .contentContainer {
@@ -2115,7 +2115,7 @@ footer {
 
 /* footer =======================================*/
 footer {
-  background-color: #FFF0B0; }
+  background-color: #FDAC3D; }
   footer p {
     margin: 0; }
   footer .contentContainer {
@@ -2409,30 +2409,30 @@ footer {
 
 @font-face {
   font-family: 'GTMed';
-  src: url(/dev/assets/font/GintoNordMedium.ttf) format("opentype");
+  src: url(/dev/assets/font/GT-America-Expanded-Medium.otf) format("opentype");
   font-weight: normal;
   font-style: normal; }
 
 @font-face {
   font-family: 'GTReg';
-  src: url(/dev/assets/font/GintoNordRegular.ttf) format("opentype");
+  src: url(/dev/assets/font/GT-America-Expanded-Medium.otf) format("opentype");
   font-weight: normal;
   font-style: normal; }
 
 @font-face {
   font-family: 'SuLi';
-  src: url(/dev/assets/font/SuisseIntl-Light.otf) format("opentype");
+  src: url(/dev/assets/font/GT-America-Regular.otf) format("opentype");
   font-weight: normal;
   font-style: normal; }
 
 @font-face {
   font-family: 'SulLiIt';
-  src: url(/dev/assets/font/SuisseIntl-LightItalic.otf) format("opentype");
+  src: url(/dev/assets/font/GT-America-Regular.otf) format("opentype");
   font-weight: normal;
   font-style: normal; }
 
 html {
-  background-color: #F7F7F7; }
+  background-color: #EEEDEB; }
 
 body {
   font-size: 1rem;
@@ -2664,7 +2664,7 @@ img {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    height: 60vh;
+    height: 80vh;
     margin: 2rem 0 0 0; }
     .landingHeader .stretch span {
       font-size: 3rem; }
